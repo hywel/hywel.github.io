@@ -7,11 +7,9 @@
 
 # Site settings
 title: Hywel Stoakes
-<<<<<<< HEAD
 email: hywel |dot| stoakes | at | gmail |dot| com
 description: > # this means to ignore newlines until "baseurl:"
   A blog to record musings about language and speech.
->>>>>>> d6973e887ca114cbabeea873c3ce30a1b097da09
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hywel.github.io" # the base hostname & protocol for your site
 twitter_username: hywel_
