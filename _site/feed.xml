@@ -2,12 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hywel Stoakes</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <description>
+Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://hywel.github.io/myblog/</link>
-    <atom:link href="http://hywel.github.io/myblog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Nov 2015 20:36:27 +1100</pubDate>
-    <lastBuildDate>Tue, 17 Nov 2015 20:36:27 +1100</lastBuildDate>
+    <link>http://hywel.github.io/</link>
+    <atom:link href="http://hywel.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 17 Nov 2015 21:47:01 +1100</pubDate>
+    <lastBuildDate>Tue, 17 Nov 2015 21:47:01 +1100</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -28,8 +29,8 @@
 
 </description>
         <pubDate>Tue, 17 Nov 2015 20:32:06 +1100</pubDate>
-        <link>http://hywel.github.io/myblog/jekyll/update/2015/11/17/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://hywel.github.io/myblog/jekyll/update/2015/11/17/welcome-to-jekyll.html</guid>
+        <link>http://hywel.github.io/jekyll/update/2015/11/17/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://hywel.github.io/jekyll/update/2015/11/17/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
