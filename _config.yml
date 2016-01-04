@@ -1,4 +1,4 @@
-baseurl: /hywel.github.io
+baseurl:
 title: Hywel Stoakes
 subtitle: Phonetics and beyond
 author: hywel stoakes
@@ -24,8 +24,3 @@ page:
 editor: gvim
 git:
   branch: master
-transfer:
-  command: rsync
-  settings: -av
-  source: _site/
-  destination: ~/DATA_II/Website/hywel.github.io
