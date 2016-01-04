@@ -1,10 +1,10 @@
 baseurl:
 title: Hywel Stoakes
-subtitle: Phonetics and beyond
+subtitle: Phonetics, Speech, Language, and Beyond
 author: hywel stoakes
 simple_search: https://duckduckgo.com
 description: A Jekyll theme that uses the Tuft theme by Clay Harmon
-name: the tufte
+name: the simplified tufte
 markdown: Kramdown
 kramdown:  
   input: GFM
