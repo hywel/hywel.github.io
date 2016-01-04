@@ -49,21 +49,20 @@
 
 <h3 id="mathjax-improperly-parsing-greater-and-less-than-and-ampersands-inside-blocks">Mathjax improperly parsing greater and less than and ampersands inside blocks</h3>
 
-<p>The mathjax plugin has been modified to contain all the block style mathjax inside a <code class="highlighter-rouge">&lt;div class="mathblock"&gt;..&lt;/div&gt;</code> tag wrapper pair<br />
+<p>The mathjax plugin has been modified to contain all the block style mathjax inside a <code>&lt;div class="mathblock"&gt;..&lt;/div&gt;</code> tag wrapper pair<br />
 which fixes many of the issues with conflicts with the Kramdown parser. Some examples sent to me by Quxiaofeng are now parsing correctly, I believe.</p>
 
 <p>This code:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="c">% math  %}</span>
-  D = <span class="k">\left</span>(<span class="nt">\begin{matrix}</span>
-  1 <span class="p">&amp;</span> -1 <span class="p">&amp;</span> <span class="p">&amp;</span> <span class="p">&amp;</span> <span class="p">&amp;</span> <span class="k">\\</span>
-  <span class="p">&amp;</span>    <span class="p">&amp;</span> <span class="k">\cdots</span> <span class="p">&amp;</span>   <span class="p">&amp;</span> <span class="k">\\</span>
-  <span class="p">&amp;</span>    <span class="p">&amp;</span>        <span class="p">&amp;</span> 1 <span class="p">&amp;</span> -1
- <span class="nt">\end{matrix}</span>
- <span class="k">\right</span>)
-<span class="p">{</span><span class="c">% endmath %}</span>
+<pre><code class="language-latex">{% math  %}
+  D = \left(\begin{matrix}
+  1 &amp; -1 &amp; &amp; &amp; &amp; \\
+  &amp;    &amp; \cdots &amp;   &amp; \\
+  &amp;    &amp;        &amp; 1 &amp; -1
+ \end{matrix}
+ \right)
+{% endmath %}
 </code></pre>
-</div>
 <p>yields this:</p>
 
 <div class="mathblock"><script type="math/tex; mode=display">
@@ -140,15 +139,14 @@ D = \left(\begin{matrix}
 
 <p>Okay, this is a really strange thing about the Jekyll Markdown engine I have never noticed before. If you have a list, and you put a blank line between the items like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>    + list item 1
+<pre><code>    + list item 1
 
      + list item 2
 </code></pre>
-</div>
 
 <p>It will create an html tag structure like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;ul&gt;
+<pre><code>&lt;ul&gt;
    &lt;li&gt;
       &lt;p&gt;list item 1&lt;/p&gt;
   &lt;/li&gt;
@@ -157,24 +155,21 @@ D = \left(\begin{matrix}
    &lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
-</div>
 <p>Which <em>totally</em> goofs up the layout CSS.</p>
 
 <p>However, if your Markdown is this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>    + list item 1
+<pre><code>    + list item 1
      + list item 2
 </code></pre>
-</div>
 
 <p>It will create a tag structure like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;ul&gt;
+<pre><code>&lt;ul&gt;
    &lt;li&gt;list item 1&lt;/li&gt;
    &lt;li&gt;list item 2&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
-</div>
 
 <p>Here is the same content as above, with a blank line separating the list items. Notice how the sidenotes get squashed into the main content area:</p>
 
@@ -201,7 +196,7 @@ D = \left(\begin{matrix}
 
 <p>Example of the proper way to write an url inside a Liquid full-width image tag.</p>
 
-<p>This code: <code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">fullwidth</span><span class="w"> </span><span class="nt">"assets/img/rhino.png"</span><span class="w"> </span><span class="nt">"Tufte pet rhino (via &lt;a href=\"//www.edwardtufte.com/tufte/\"&gt;Edward Tufte&lt;/a&gt;)"</span><span class="w">  </span><span class="err">%}</span></code></p>
+<p>This code: <code>{% fullwidth "assets/img/rhino.png" "Tufte pet rhino (via &lt;a href=\"//www.edwardtufte.com/tufte/\"&gt;Edward Tufte&lt;/a&gt;)"  %}</code></p>
 
 <figure class="fullwidth"><img src="/assets/img/rhino.png" /><figcaption>Tufte's pet rhino (via <a href="//www.edwardtufte.com/tufte/">Edward Tufte</a>)</figcaption></figure>
 
