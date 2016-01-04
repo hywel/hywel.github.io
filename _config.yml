@@ -10,7 +10,7 @@ kramdown:
   input: GFM
   syntax_highlighter: pygments
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-highlighter: rouge
+highlighter: pygments
 permalink: /articles/:short_year/:title
 timezone: Australia/Melbourne
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
