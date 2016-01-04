@@ -8,6 +8,6 @@ categories: jekyll update
 This is to test out the syntax highlighting.
 
 ```
-This is a code block
+This is a code block and more
 ```
 
