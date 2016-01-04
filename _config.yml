@@ -4,12 +4,12 @@ subtitle: Phonetics and beyond
 author: hywel stoakes
 simple_search: https://duckduckgo.com
 description: A Jekyll theme that uses the Tuft theme by Clay Harmon
-name: tufte
+name: the tufte
 markdown: Kramdown
 kramdown:  
   input: GFM
   syntax_highlighter: pygments
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown_ext: "markdown,mkdown,mkdn,mkd,mmd,md"
 highlighter: pygments
 permalink: /articles/:short_year/:title
 timezone: Australia/Melbourne
