@@ -6,7 +6,7 @@ simple_search: https://duckduckgo.com
 description: A Jekyll theme that uses the Tuft theme by Clay Harmon
 name: the simplified tufte
 markdown: Kramdown
-kramdown:  
+kramdown:
   input: GFM
   syntax_highlighter: pygments
 markdown_ext: "markdown,mkdown,mkdn,mkd,mmd,md"
