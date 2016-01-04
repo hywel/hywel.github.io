@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hywel Stoakes</title>
+    <description>A Jekyll theme that uses the Tuft theme by Clay Harmon</description>
+    <link>/hywel.github.io/</link>
+    <atom:link href="/hywel.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 04 Jan 2016 14:50:03 +1100</pubDate>
+    <lastBuildDate>Mon, 04 Jan 2016 14:50:03 +1100</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>First Post!</title>
+        <description>&lt;p&gt;This is a little information on how I will use the site: &lt;br /&gt;
+For code snippets and to link to my projects. I will add more soon. This is a local update.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/screenshot.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 17 Nov 2015 20:32:06 +1100</pubDate>
+        <link>/hywel.github.io/articles/15/welcome-to-jekyll</link>
+        <guid isPermaLink="true">/hywel.github.io/articles/15/welcome-to-jekyll</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
