@@ -21,6 +21,6 @@ post:
 page:
   template: _page.txt
   extension: md
-editor: gvim
+editor: mate
 git:
   branch: master
