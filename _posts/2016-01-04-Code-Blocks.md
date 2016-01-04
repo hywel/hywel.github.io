@@ -11,3 +11,7 @@ This is to test out the syntax highlighting.
 This is a code block and more and more
 ```
 
+```{r,eval=FALSE}
+servr::jekyll(command="bundle exec jekyll build")
+```
+
