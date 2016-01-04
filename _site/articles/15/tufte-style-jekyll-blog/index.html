@@ -46,7 +46,8 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>‘The Tufte Jekyll theme’ is an attempt to create a website design with the look and feel of Edward Tufte’s books and handouts. Tufte’s style is known for its extensive use of sidenotes, tight integration of graphics with text, and well-set typography.<!--more--> The idea for this project is essentially cribbed wholesale from Tufte and R Markdown’s Tufte Handout format<label for="One" class="margin-toggle sidenote-number"></label><input type="checkbox" id="One" class="margin-toggle" /><span class="sidenote">See <a href="https://tufte-latex.github.io/tufte-latex/">tufte-latex.github.io/tufte-latex/</a> and <a href="http://rmarkdown.rstudio.com/tufte_handout_format.html">rmarkdown.rstudio.com/tufte_handout_format</a> </span> This page is an adaptation of the <a href="http://rmarkdown.rstudio.com/examples/tufte-handout.pdf">Tufte Handout PDF</a>.</p>
+<p>‘The Tufte Jekyll theme’ is an attempt to create a website design with the look and feel of Edward Tufte’s books and handouts. Tufte’s style is known for its extensive use of sidenotes, tight integration of graphics with text, and well-set typography.<!--more--> The idea for this project is essentially cribbed wholesale from Tufte and R Markdown’s Tufte Handout format<br />
+ This page is an adaptation of the <a href="http://rmarkdown.rstudio.com/examples/tufte-handout.pdf">Tufte Handout PDF</a>.</p>
 
 <h2 id="jekyll-customizations">Jekyll customizations</h2>
 
@@ -101,14 +102,12 @@ $link-style: color; // choices are 'color' or 'underline'. Default is color usin
 
 <p>While this Jekyll theme supports more specific headings, if you feel the urge to reach for a heading of level 4 or higher, consider redesigning your document.</p>
 
-<p><span class="newthought">In his later books</span> <label for="two" class="margin-toggle sidenote-number"></label><input type="checkbox" id="two" class="margin-toggle" /><span class="sidenote"><a href="http://www.edwardtufte.com/tufte/books_be">http://www.edwardtufte.com/tufte/books_be</a> </span>, Tufte starts each section with a bit of vertical space, a non-indented paragraph, and sets the first few words of the sentence in small caps. To accomplish this using this style, enclose the sentence fragment you want styled with small caps in a custom Liquid tag called ‘newthought’ like so:</p>
-
-<pre><code class="language-Liquid">{% newthought 'In his later books' %}
-</code></pre>
+<p>‘In his later books’<br />
+ Tufte starts each section with a bit of vertical space, a non-indented paragraph, and sets the first few words of the sentence in small caps. To accomplish this using this style, enclose the sentence fragment you want styled with small caps in a custom Liquid tag called ‘newthought’ like so:</p>
 
 <h3 id="text">Text</h3>
 
-<p>In print, Tufte uses the proprietary Monotype Bembo<label for="3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="3" class="margin-toggle" /><span class="sidenote">See Tufte’s comment in the <a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000Vt">Tufte book fonts</a> thread. </span> font. A similar effect is achieved in digital formats with the now open-source ETBembo, which Tufte-Jekyll supplies with a <code>@font-face</code> reference to a .ttf file. Thanks to <a href="https://github.com/daveliepmann/tufte-css/commit/0a810a7d5f4707941c6f9fe99a53ec41f50a5c00">Linjie Ding</a>, italicized text uses the ETBembo Italic font instead of mechanically skewing the characters. In case ETBembo somehow doesn’t work, Tufte CSS degrades gracefully to other serif fonts like Palatino and Georgia. Notice that Tufte CSS includes separate font files for bold (strong) and italic (emphasis), instead of relying on the browser to mechanically transform the text. This is typographic best practice. It’s also really important. Thus concludes my unnecessary use of em and strong for the purpose of example.</p>
+<p>In print, Tufte uses the proprietary Monotype Bembo font. A similar effect is achieved in digital formats with the now open-source ETBembo, which Tufte-Jekyll supplies with a <code>@font-face</code> reference to a .ttf file. Thanks to <a href="https://github.com/daveliepmann/tufte-css/commit/0a810a7d5f4707941c6f9fe99a53ec41f50a5c00">Linjie Ding</a>, italicized text uses the ETBembo Italic font instead of mechanically skewing the characters. In case ETBembo somehow doesn’t work, Tufte CSS degrades gracefully to other serif fonts like Palatino and Georgia. Notice that Tufte CSS includes separate font files for bold (strong) and italic (emphasis), instead of relying on the browser to mechanically transform the text. This is typographic best practice. It’s also really important. Thus concludes my unnecessary use of em and strong for the purpose of example.</p>
 
 <p>Code snippets ape GitHub’s font selection using Microsoft’s <a href="http://www.microsoft.com/typography/ClearTypeFonts.mspx"><em>Consolas</em></a> and the sans-serif font uses Tufte’s choice of Gill Sans. Since this is not a free font, and some systems will not have it installed, the free google font <a href="https://www.google.com/fonts/specimen/Lato"><em>Lato</em></a> is designated as a fallback.</p>
 
@@ -164,9 +163,7 @@ $link-style: color; // choices are 'color' or 'underline'. Default is color usin
 
 <h3 id="sidenotes">Sidenotes</h3>
 
-<p>Sidenotes<label for="sn-id-whatever" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-id-whatever" class="margin-toggle" /><span class="sidenote">This is a sidenote and <em>displays a superscript</em> </span> display a superscript. The <em>sidenote</em> Liquid tag contains two components. The first is an identifier allowing the sidenote to be targeted by the twitchy index fingers of mobile device users so that all the yummy sidenote goodness is revealed when the superscript is tapped. The second components is the actual content of the sidenote. Both of these components should be enclosed in single quotes. Note that we are using the CSS ‘counter’ trick to automagically keep track of the number sequence on each page or post. On small screens, the sidenotes disappear and when the superscript is clicked, a side note will open below the content, which can then be closed with a similar click. Here is the markup for the sidenote at the beginning of this paragraph:</p>
-
-<p><code>{% sidenote 'sn-id-whatever' 'This is a sidenote and *displays a superscript*'%}</code></p>
+<p>Sidenotes display a superscript. The <em>sidenote</em> Liquid tag contains two components. The first is an identifier allowing the sidenote to be targeted by the twitchy index fingers of mobile device users so that all the yummy sidenote goodness is revealed when the superscript is tapped. The second components is the actual content of the sidenote. Both of these components should be enclosed in single quotes. Note that we are using the CSS ‘counter’ trick to automagically keep track of the number sequence on each page or post. On small screens, the sidenotes disappear and when the superscript is clicked, a side note will open below the content, which can then be closed with a similar click. Here is the markup for the sidenote at the beginning of this paragraph:</p>
 
 <h3 id="margin-notes">Margin notes</h3>
 
@@ -275,7 +272,6 @@ $link-style: color; // choices are 'color' or 'underline'. Default is color usin
 
 <p>As an example of alternative table styles, academic publications written in <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> often rely on the <code>booktabs</code> package to produce clean, clear tables. Similar results can be achieved in Tufte CSS with the <code>booktabs</code> class, as demonstrated in this table:</p>
 
-<p><label for="table-2-id" class="margin-toggle"> ⊕</label><input type="checkbox" id="table-2-id" class="margin-toggle" /><span class="marginnote"><em>Table 2</em>: A table with booktabs style formatting </span></p>
 <div class="table-wrapper">
 <table class="booktabs">
           <thead>
