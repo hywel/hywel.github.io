@@ -33,6 +33,7 @@ The workflow is as follows:
 # Testing code chunks take 2
 
 {% highlight r %}
+require(ggplot2)
 df <- data.frame(gp = factor(rep(letters[1:3], each = 10)),
                  y = rnorm(30))
 # Compute sample mean and standard deviation in each group
@@ -48,13 +49,7 @@ ggplot() +
                 colour = 'red', width = 0.4)
 {% endhighlight %}
 
-
-
-{% highlight text %}
-## Error in eval(expr, envir, enclos): could not find function "ggplot"
-{% endhighlight %}
-
-
+![plot of chunk unnamed-chunk-2](/figures/unnamed-chunk-2-1.png) 
 
 {% highlight r %}
 ggsave(filename = "figures/Rplot.png")
@@ -63,6 +58,6 @@ ggsave(filename = "figures/Rplot.png")
 
 
 {% highlight text %}
-## Error in eval(expr, envir, enclos): could not find function "ggsave"
+## Saving 7 x 7 in image
 {% endhighlight %}
 Lets see if this works?
