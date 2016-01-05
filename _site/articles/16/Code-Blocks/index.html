@@ -48,7 +48,7 @@
 
 <p>I have also found another <a href="http://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/">blog post</a> that details some further packages that use the aforementioned packaages as a basis. I will investigate and detail findings here…</p>
 
-<p>Before getting on to that however, I will start with some tests using the markdown that Jekyll will both understand and github pages will compile - this makes us of Liquid tags such as “% highlight r”.</p>
+<p>Before getting on to that however, I will start with some tests using the markdown that Jekyll will both understand and github pages will compile - this makes us of Liquid tags such as “% highlight r % endhighlight %”.</p>
 
 <p>Github pages only supports a subset of the liquid tags and doesn’t allow use of the plug-in architecture. For this reason I had to change my plans to use the very elegant <a href="https://github.com/clayh53/tufte-jekyll">Tufte Theme</a> developed by <a href="https://github.com/clayh53">Clay Harmon</a>, as this doesn’t seem to compile well on github pages - I could compile locally and then push to gituhub, but I was looking for something more flexible and quickly updatable on-the-go!</p>
 
@@ -56,20 +56,7 @@
 
 <h1 id="highlighting">Highlighting</h1>
 
-<p>For example, here is the command within <em>R</em> that can be used to build a site locally, ready for pushing to github<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.  This is different to the triple backtick syntax of <strong>RStudio</strong> flavoured Rmarkdown.</p>
-
-<p>=======<br />
-I am currently investigating how to embed code blocks and tables and have them compile on github pages. This post is using the <code>kramdown</code> markup flavour, but in the future I would like to use <a href="http://www.rstudio.com">RStudio IDE</a> and Rmarkdown to add to <a href="http://jekyllrb.com">Jekyll</a>. I think that the The R package <a href="https://github.com/yihui/servr"><strong>servr</strong></a> will also be very useful and the associated <code>knitr-jekyll</code> repo developed by Yihui Xie.</p>
-
-<p>I have also found another <a href="http://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/">blog post</a> that details some further packages that use these as a basis. I will investigate and detail findings here</p>
-
-<p>Before getting on to that, I will start with some tests using the markdown that Jekyll with understand and compile - this makes us of Liquid tags such as `</p>
-
-<p>`</p>
-
-<h1 id="highlighting-1">Highlighting</h1>
-
-<p>For example here is the command within R that can be used to build a site locally ready for pushing to github. his is different to the triple backtick syntax of RStudio flavoured Rmarkdown.</p>
+<p>For example, here is the command within <em>R</em> that can be used to build a site locally, ready for pushing to github<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. This is different to the triple backtick syntax of <strong>RStudio</strong> flavoured Rmarkdown.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r">servr<span class="o">::</span>jekyll<span class="p">(</span>command<span class="o">=</span><span class="s">&quot;bundle exec jekyll build&quot;</span><span class="p">)</span></code></pre></div>
 
@@ -211,6 +198,23 @@ I am currently investigating how to embed code blocks and tables and have them c
 <h2 id="figures">Figures</h2>
 
 <p>Another important feature will be the ability to generate figures quickly using <a href="http://ggplot2.org"><code>ggplot2</code></a> and other packages within <em>R</em>.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">df <span class="o">&lt;-</span> <span class="kt">data.frame</span><span class="p">(</span>gp <span class="o">=</span> <span class="kp">factor</span><span class="p">(</span><span class="kp">rep</span><span class="p">(</span><span class="kc">letters</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">],</span> each <span class="o">=</span> <span class="m">10</span><span class="p">)),</span>
+                 y <span class="o">=</span> rnorm<span class="p">(</span><span class="m">30</span><span class="p">))</span>
+<span class="c1"># Compute sample mean and standard deviation in each group</span>
+ds <span class="o">&lt;-</span> plyr<span class="o">::</span>ddply<span class="p">(</span>df<span class="p">,</span> <span class="s">&quot;gp&quot;</span><span class="p">,</span> plyr<span class="o">::</span>summarise<span class="p">,</span> mean <span class="o">=</span> <span class="kp">mean</span><span class="p">(</span>y<span class="p">),</span> sd <span class="o">=</span> sd<span class="p">(</span>y<span class="p">))</span>
+
+
+ggplot<span class="p">()</span> <span class="o">+</span>
+  geom_point<span class="p">(</span>data <span class="o">=</span> df<span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> gp<span class="p">,</span> y <span class="o">=</span> y<span class="p">))</span> <span class="o">+</span>
+  geom_point<span class="p">(</span>data <span class="o">=</span> ds<span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> gp<span class="p">,</span> y <span class="o">=</span> <span class="kp">mean</span><span class="p">),</span>
+             colour <span class="o">=</span> <span class="s">&#39;red&#39;</span><span class="p">,</span> size <span class="o">=</span> <span class="m">3</span><span class="p">)</span> <span class="o">+</span>
+  geom_errorbar<span class="p">(</span>data <span class="o">=</span> ds<span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> gp<span class="p">,</span> y <span class="o">=</span> <span class="kp">mean</span><span class="p">,</span>
+                               ymin <span class="o">=</span> mean <span class="o">-</span> sd<span class="p">,</span> ymax <span class="o">=</span> mean <span class="o">+</span> sd<span class="p">),</span>
+                colour <span class="o">=</span> <span class="s">&#39;red&#39;</span><span class="p">,</span> width <span class="o">=</span> <span class="m">0.4</span><span class="p">)</span>
+ggsave<span class="p">(</span>filename <span class="o">=</span> <span class="s">&quot;assets/img/Rplot.png&quot;</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/assets/img/Rplot.png" alt="A Plot output from R" /></p>
 
 <div class="footnotes">
   <ol>

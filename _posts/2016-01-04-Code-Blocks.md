@@ -17,7 +17,7 @@ So back to the highlighting and visualisation of results...
  
 # Highlighting #
 
-For example, here is the command within *R* that can be used to build a site locally, ready for pushing to github[^1].  This is different to the triple backtick syntax of **RStudio** flavoured Rmarkdown. 
+For example, here is the command within *R* that can be used to build a site locally, ready for pushing to github[^1]. This is different to the triple backtick syntax of **RStudio** flavoured Rmarkdown. 
 
 [^1]: Not sure why the following code blocks are truncated - it may be the theme.
  
@@ -73,4 +73,23 @@ The Tufte package has very elegant tables reminiscent of the `booktabs` package 
 ## Figures
 
 Another important feature will be the ability to generate figures quickly using [`ggplot2`](http://ggplot2.org) and other packages within *R*.
+
+{% highlight r %}
+df <- data.frame(gp = factor(rep(letters[1:3], each = 10)),
+                 y = rnorm(30))
+# Compute sample mean and standard deviation in each group
+ds <- plyr::ddply(df, "gp", plyr::summarise, mean = mean(y), sd = sd(y))
+
+
+ggplot() +
+  geom_point(data = df, aes(x = gp, y = y)) +
+  geom_point(data = ds, aes(x = gp, y = mean),
+             colour = 'red', size = 3) +
+  geom_errorbar(data = ds, aes(x = gp, y = mean,
+                               ymin = mean - sd, ymax = mean + sd),
+                colour = 'red', width = 0.4)
+ggsave(filename = "assets/img/Rplot.png")
+{% endhighlight %}
+
+![A Plot output from R](/assets/img/Rplot.png)
 
