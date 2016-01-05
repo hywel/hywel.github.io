@@ -1,0 +1,396 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Syntax Highlighting &#8211; Hywel Stoakes</title>
+<meta name="description" content="I am currently investigating how to embed code blocks and tables within a static page and have them compile on github pages. This post is using the kramdown markup flavour, but in the future I would like to use RStudio IDE and Rmarkdown to add pages to a static server using Jekyll. I think that the R package servr will also be very useful along with the associated knitr-jekyll repo developed by Yihui Xie who also developed the incredibly useful and very powerful knitr.
+
+">
+<meta name="keywords" content="">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Syntax Highlighting">
+<meta name="twitter:description" content="I am currently investigating how to embed code blocks and tables within a static page and have them compile on github pages. This post is using the kramdown markup flavour, but in the future I would like to use RStudio IDE and Rmarkdown to add pages to a static server using Jekyll. I think that the R package servr will also be very useful along with the associated knitr-jekyll repo developed by Yihui Xie who also developed the incredibly useful and very powerful knitr.
+
+">
+<meta name="twitter:site" content="@hywel_">
+<meta name="twitter:creator" content="@hywel_">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_AU">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Syntax Highlighting">
+<meta property="og:description" content="I am currently investigating how to embed code blocks and tables within a static page and have them compile on github pages. This post is using the kramdown markup flavour, but in the future I would like to use RStudio IDE and Rmarkdown to add pages to a static server using Jekyll. I think that the R package servr will also be very useful along with the associated knitr-jekyll repo developed by Yihui Xie who also developed the incredibly useful and very powerful knitr.
+
+">
+<meta property="og:url" content="http://localhost:4000/jekyll/update/Code-Blocks/">
+<meta property="og:site_name" content="Hywel Stoakes">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/jekyll/update/Code-Blocks/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Hywel Stoakes Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/articles/" >Articles</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/theme-setup/" >Theme Setup</a></li>
+		  
+		    
+		        
+		        
+		    <li><a href="http://mademistakes.com" target="_blank">Made Mistakes</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://localhost:4000/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://localhost:4000/" class="site-logo" rel="home" title="Hywel Stoakes"><img src="http://localhost:4000/images/site-logo.png" width="200" height="200" alt="Hywel Stoakes logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://localhost:4000/">Hywel Stoakes</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">Computer aided techniques for Phonetics speech language and beyond.</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          
+        </ul>
+        
+          <h1 class="entry-title">Syntax Highlighting</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Hywel Stoake bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Hywel Stoake</span></span>
+        <span class="entry-date date published"><time datetime="2016-01-05T10:59:11+11:00"><i class="fa fa-calendar-o"></i> January 05, 2016</time></span>
+        
+        
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p>I am currently investigating how to embed code blocks and tables within a static page and have them compile on github pages. This post is using the <code>kramdown</code> markup flavour, but in the future I would like to use <a href="http://www.rstudio.com">RStudio IDE</a> and <a href="http://rmarkdown.rstudio.com">Rmarkdown</a> to add pages to a static server using <a href="http://jekyllrb.com">Jekyll</a>. I think that the <em>R</em> package <a href="https://github.com/yihui/servr"><strong>servr</strong></a> will also be very useful along with the associated <code>knitr-jekyll</code> repo developed by <a href="https://github.com/yihui">Yihui Xie</a> who also developed the incredibly useful and very powerful <a href="https://github.com/yihui/knitr">knitr</a>.</p>
+
+<p>I have also found another <a href="http://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/">blog post</a> that details some refinements and use the aforementioned packages as the basis. I will investigate and detail findings here…</p>
+
+<p>Before getting on to that however, I will start with some tests using the markdown that Jekyll will both understand and github pages will compile - this makes us of Liquid tags such as “% highlight r % endhighlight %”.</p>
+
+<p>Github pages only supports a subset of the liquid tags and doesn’t allow use of the plug-in architecture. For this reason I had to change my plans to use the very elegant <a href="https://github.com/clayh53/tufte-jekyll">Tufte Theme</a> developed by <a href="https://github.com/clayh53">Clay Harmon</a>, as this doesn’t seem to compile well on github pages - I could compile locally and then push to gituhub, but I was looking for something more flexible and quickly updatable on-the-go!</p>
+
+<p>So back to the highlighting and visualisation of results…</p>
+
+<h1 id="highlighting">Highlighting</h1>
+
+<p>For example, here is the command within <em>R</em> that can be used to build a site locally, ready for pushing to github<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. This is different to the triple backtick syntax of <strong>RStudio</strong> flavoured Rmarkdown.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">servr<span class="o">::</span>jekyll<span class="p">(</span>command<span class="o">=</span><span class="s">&quot;bundle exec jekyll build&quot;</span><span class="p">)</span></code></pre></div>
+
+<p>Note: That I need to use this command rather than the default <code>command="jekyll build"</code> as there seems to be some problems finding the ruby gems in <code>\usr\bin\</code> on OS X <em>El Capitan</em>. This has been detailed elsewhere and once I settle on a stable implementation I will write about the steps. A related problem is that I can’t use the autoregeneration feature <code>--watch</code> using the <code>servr::jekyll</code> function.</p>
+
+<p>If needed the site can be compiled without serving using the following syntax:.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">servr<span class="o">::</span>jekyll<span class="p">(</span>command<span class="o">=</span><span class="s">&quot;bundle exec jekyll build&quot;</span><span class="p">,</span> serve <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span></code></pre></div>
+
+<h1 id="early-days">Early Days</h1>
+
+<p>All of this is still early days and I am looking forward to starting to play around with tables that are produced by <code>kable</code> which can be embedded directly onto pages.</p>
+
+<p>For example:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">knitr<span class="o">::</span>kable<span class="p">(</span><span class="kp">head</span><span class="p">(</span>mtcars<span class="p">))</span></code></pre></div>
+
+<p>creates the following table:
+<code>
+|                  |  mpg| cyl| disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
+|:-----------------|----:|---:|----:|---:|----:|-----:|-----:|--:|--:|----:|----:|
+|Mazda RX4         | 21.0|   6|  160| 110| 3.90| 2.620| 16.46|  0|  1|    4|    4|
+|Mazda RX4 Wag     | 21.0|   6|  160| 110| 3.90| 2.875| 17.02|  0|  1|    4|    4|
+|Datsun 710        | 22.8|   4|  108|  93| 3.85| 2.320| 18.61|  1|  1|    4|    1|
+|Hornet 4 Drive    | 21.4|   6|  258| 110| 3.08| 3.215| 19.44|  1|  0|    3|    1|
+|Hornet Sportabout | 18.7|   8|  360| 175| 3.15| 3.440| 17.02|  0|  0|    3|    2|
+|Valiant           | 18.1|   6|  225| 105| 2.76| 3.460| 20.22|  1|  0|    3|    1|
+</code></p>
+
+<p>Which displays a formatted table on the site that looks like this:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+      <th style="text-align: right">mpg</th>
+      <th style="text-align: right">cyl</th>
+      <th style="text-align: right">disp</th>
+      <th style="text-align: right">hp</th>
+      <th style="text-align: right">drat</th>
+      <th style="text-align: right">wt</th>
+      <th style="text-align: right">qsec</th>
+      <th style="text-align: right">vs</th>
+      <th style="text-align: right">am</th>
+      <th style="text-align: right">gear</th>
+      <th style="text-align: right">carb</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Mazda RX4</td>
+      <td style="text-align: right">21.0</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">160</td>
+      <td style="text-align: right">110</td>
+      <td style="text-align: right">3.90</td>
+      <td style="text-align: right">2.620</td>
+      <td style="text-align: right">16.46</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Mazda RX4 Wag</td>
+      <td style="text-align: right">21.0</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">160</td>
+      <td style="text-align: right">110</td>
+      <td style="text-align: right">3.90</td>
+      <td style="text-align: right">2.875</td>
+      <td style="text-align: right">17.02</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Datsun 710</td>
+      <td style="text-align: right">22.8</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">108</td>
+      <td style="text-align: right">93</td>
+      <td style="text-align: right">3.85</td>
+      <td style="text-align: right">2.320</td>
+      <td style="text-align: right">18.61</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Hornet 4 Drive</td>
+      <td style="text-align: right">21.4</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">258</td>
+      <td style="text-align: right">110</td>
+      <td style="text-align: right">3.08</td>
+      <td style="text-align: right">3.215</td>
+      <td style="text-align: right">19.44</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Hornet Sportabout</td>
+      <td style="text-align: right">18.7</td>
+      <td style="text-align: right">8</td>
+      <td style="text-align: right">360</td>
+      <td style="text-align: right">175</td>
+      <td style="text-align: right">3.15</td>
+      <td style="text-align: right">3.440</td>
+      <td style="text-align: right">17.02</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Valiant</td>
+      <td style="text-align: right">18.1</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">225</td>
+      <td style="text-align: right">105</td>
+      <td style="text-align: right">2.76</td>
+      <td style="text-align: right">3.460</td>
+      <td style="text-align: right">20.22</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The Tufte package has very elegant tables reminiscent of the <code>booktabs</code> package in LaTeX. I will see if I can keep that functionality when I change themes?</p>
+
+<h2 id="figures">Figures</h2>
+
+<p>Another important feature will be the ability to generate figures quickly using <a href="http://ggplot2.org"><code>ggplot2</code></a> and other packages within <em>R</em>.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">df <span class="o">&lt;-</span> <span class="kt">data.frame</span><span class="p">(</span>gp <span class="o">=</span> <span class="kp">factor</span><span class="p">(</span><span class="kp">rep</span><span class="p">(</span><span class="kc">letters</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">],</span> each <span class="o">=</span> <span class="m">10</span><span class="p">)),</span>
+                 y <span class="o">=</span> rnorm<span class="p">(</span><span class="m">30</span><span class="p">))</span>
+<span class="c1"># Compute sample mean and standard deviation in each group</span>
+ds <span class="o">&lt;-</span> plyr<span class="o">::</span>ddply<span class="p">(</span>df<span class="p">,</span> <span class="s">&quot;gp&quot;</span><span class="p">,</span> plyr<span class="o">::</span>summarise<span class="p">,</span> mean <span class="o">=</span> <span class="kp">mean</span><span class="p">(</span>y<span class="p">),</span> sd <span class="o">=</span> sd<span class="p">(</span>y<span class="p">))</span>
+
+
+ggplot<span class="p">()</span> <span class="o">+</span>
+  geom_point<span class="p">(</span>data <span class="o">=</span> df<span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> gp<span class="p">,</span> y <span class="o">=</span> y<span class="p">))</span> <span class="o">+</span>
+  geom_point<span class="p">(</span>data <span class="o">=</span> ds<span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> gp<span class="p">,</span> y <span class="o">=</span> <span class="kp">mean</span><span class="p">),</span>
+             colour <span class="o">=</span> <span class="s">&#39;red&#39;</span><span class="p">,</span> size <span class="o">=</span> <span class="m">3</span><span class="p">)</span> <span class="o">+</span>
+  geom_errorbar<span class="p">(</span>data <span class="o">=</span> ds<span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> gp<span class="p">,</span> y <span class="o">=</span> <span class="kp">mean</span><span class="p">,</span>
+                               ymin <span class="o">=</span> mean <span class="o">-</span> sd<span class="p">,</span> ymax <span class="o">=</span> mean <span class="o">+</span> sd<span class="p">),</span>
+                colour <span class="o">=</span> <span class="s">&#39;red&#39;</span><span class="p">,</span> width <span class="o">=</span> <span class="m">0.4</span><span class="p">)</span>
+ggsave<span class="p">(</span>filename <span class="o">=</span> <span class="s">&quot;assets/img/Rplot.png&quot;</span><span class="p">)</span></code></pre></div>
+
+<p><img src="/assets/img/Rplot.png" alt="A Plot output from R" /></p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Not sure why all of the following code blocks are truncated - it may be the theme? They seem to be generally OK when viewing the actual post. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://localhost:4000/jekyll/update/A-New-Post/" class="btn" title="A Refresh for the New Year">Previous</a>
+      
+      
+        <a href="http://localhost:4000/jekyll/rstats/The-Next-Step/" class="btn" title="Serve Jekyll Websites with servr and knitr">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2016 Hywel Stoake. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://twitter.com/hywel_" title="Hywel Stoake on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	
+	
+	
+	
+	<a href="https://github.com/hywel" title="Hywel Stoake on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://localhost:4000';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>
