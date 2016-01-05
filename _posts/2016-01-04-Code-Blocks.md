@@ -5,9 +5,9 @@ date:   2016-01-05 10:59:11 +1100
 categories: jekyll update
 ---
 
-I am currently investigating how to embed code blocks and tables and have them compile on github pages. This post is using the `kramdown` markup flavour, but in the future I would like to use [RStudio IDE](http://www.rstudio.com) and [Rmarkdown](http://rmarkdown.rstudio.com) to add pages to a static server using [Jekyll](http://jekyllrb.com). I think that the *R* package [**servr**](https://github.com/yihui/servr) will also be very useful along with the associated `knitr-jekyll` repo developed by [Yihui Xie](https://github.com/yihui) who also developed the incredibly useful and very powerful [knitr](https://github.com/yihui/knitr).
+I am currently investigating how to embed code blocks and tables within a static page and have them compile on github pages. This post is using the `kramdown` markup flavour, but in the future I would like to use [RStudio IDE](http://www.rstudio.com) and [Rmarkdown](http://rmarkdown.rstudio.com) to add pages to a static server using [Jekyll](http://jekyllrb.com). I think that the *R* package [**servr**](https://github.com/yihui/servr) will also be very useful along with the associated `knitr-jekyll` repo developed by [Yihui Xie](https://github.com/yihui) who also developed the incredibly useful and very powerful [knitr](https://github.com/yihui/knitr).
 
-I have also found another [blog post](http://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/) that details some further packages that use the aforementioned packaages as a basis. I will investigate and detail findings here...
+I have also found another [blog post](http://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/) that details some refinements and use the aforementioned packages as the basis. I will investigate and detail findings here...
 
 Before getting on to that however, I will start with some tests using the markdown that Jekyll will both understand and github pages will compile - this makes us of Liquid tags such as "% highlight r % endhighlight %". 
 
