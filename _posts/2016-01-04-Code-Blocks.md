@@ -19,7 +19,7 @@ So back to the highlighting and visualisation of results...
 
 For example, here is the command within *R* that can be used to build a site locally, ready for pushing to github[^1]. This is different to the triple backtick syntax of **RStudio** flavoured Rmarkdown. 
 
-[^1]: Not sure why the following code blocks are truncated - it may be the theme.
+[^1]: Not sure why all of the following code blocks are truncated - it may be the theme? They seem to be generally OK when viewing the actual post.
  
 {% highlight r %}
 servr::jekyll(command="bundle exec jekyll build")
