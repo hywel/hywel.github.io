@@ -3,38 +3,7 @@
   
     {
       "title"			: "Serve Jekyll Websites with servr and knitr",
-      "link"			: "http://localhost:4000/jekyll/rstats/The-Next-Step/",
-      "excerpt"		: "<h1 id="writing-in-rstudio">Writing in Rstudio</h1>
-<p>This blog post has been written in Rstudio and using the <code>rmd2md</code> function. When this is run it will convert any file (with the <code>*.rmd</code> extention) that is found in the <code>_rmd</code> folder to the markdown that can be parsed by Jekyll and served on github pages.</p>
-
-<p>be sure to include the header between three dashes:</p>
-
-<p><code>
-#layout: post
-#status: process
-#published: false
-#date: 2016-01-05 14:23:34 +1100
-#title:  "The Post Title"
-#categories: tags
-</code></p>
-
-<p>The workflow is as follows:
-1. Write a post with the above header, and put it in the <code>_rmd</code> folder.
-2. Run the <a href="https://github.com/AndySouth/andysouth.github.io/blob/master/rmd2md.r">rmd2md()</a> command within <em>Rstudio</em>.
-3. Run <code>servr::jekyll(command="bundle exec jekyll build",serve=FALSE)</code> from the <a href="https://github.com/yihui/servr">servr</a> package to check that the site builds.
-4. Use git within <em>Rstudio</em> to add staged files, commit changes and push to the repository.
-5. Check post has worked.</p>
-
-<h1 id="testing-code-chunks-take-2">Testing code chunks take 2</h1>
-
-"
-    }
-  
-
-  
-    ,{
-      "title"			: "Serve Jekyll Websites with servr and knitr",
-      "link"			: "http://localhost:4000/jekyll/rstats/The-Next-Step/",
+      "link"			: "http://hywel.github.io/jekyll/rstats/The-Next-Step/",
       "excerpt"		: "<h1 id="writing-in-rstudio">Writing in Rstudio</h1>
 <p>This blog post has been rwitten in Rstudio and using the <code>rmd2md</code> function. When this is run it will convert any file (with the <code>*.rmd</code> extention) that is found in the <code>_rmd</code> folder to the markdown that can be parsed by Jekyll and served on github pages.</p>
 
@@ -65,7 +34,7 @@
   
     ,{
       "title"			: "Syntax Highlighting",
-      "link"			: "http://localhost:4000/jekyll/update/Code-Blocks/",
+      "link"			: "http://hywel.github.io/jekyll/update/Code-Blocks/",
       "excerpt"		: "<p>I am currently investigating how to embed code blocks and tables within a static page and have them compile on github pages. This post is using the <code>kramdown</code> markup flavour, but in the future I would like to use <a href="http://www.rstudio.com">RStudio IDE</a> and <a href="http://rmarkdown.rstudio.com">Rmarkdown</a> to add pages to a static server using <a href="http://jekyllrb.com">Jekyll</a>. I think that the <em>R</em> package <a href="https://github.com/yihui/servr"><strong>servr</strong></a> will also be very useful along with the associated <code>knitr-jekyll</code> repo developed by <a href="https://github.com/yihui">Yihui Xie</a> who also developed the incredibly useful and very powerful <a href="https://github.com/yihui/knitr">knitr</a>.</p>
 
 "
@@ -75,7 +44,7 @@
   
     ,{
       "title"			: "A Refresh for the New Year",
-      "link"			: "http://localhost:4000/jekyll/update/A-New-Post/",
+      "link"			: "http://hywel.github.io/jekyll/update/A-New-Post/",
       "excerpt"		: "<p>Here is a New Year Post! I will be refreshing my workflow in order to work within Rstudio and output posts directly to Jekyll and Github pages (Where this blog is hosted).</p>
 
 "
@@ -85,7 +54,7 @@
   
     ,{
       "title"			: "The Inaugural Posting",
-      "link"			: "http://localhost:4000/jekyll/update/boring/messing-about/",
+      "link"			: "http://hywel.github.io/jekyll/update/boring/messing-about/",
       "excerpt"		: "<h1 id="introduction">Introduction</h1>
 
 "
@@ -95,7 +64,7 @@
   
     ,{
       "title"			: "MathJax Example",
-      "link"			: "http://localhost:4000/blog/mathjax-example/",
+      "link"			: "http://hywel.github.io/blog/mathjax-example/",
       "excerpt"		: ""
     }
   
@@ -103,7 +72,7 @@
   
     ,{
       "title"			: "Serve Jekyll Websites with servr and knitr",
-      "link"			: "http://localhost:4000/jekyll,/rstats/jekyll-with-knitr/",
+      "link"			: "http://hywel.github.io/jekyll,/rstats/jekyll-with-knitr/",
       "excerpt"		: "<p>The R package <a href="https://github.com/yihui/servr"><strong>servr</strong></a> can be used to set up an HTTP server to serve files under a directory. Since <strong>servr</strong> v0.2, it has added a function <code>servr::jekyll()</code> specifically designed for websites based on Jekyll and R Markdown. The main features of this function are:</p>
 
 <ol>
@@ -127,44 +96,6 @@
   </ol>
 </div>
 "
-    }
-  
-
-  
-    ,{
-      "title"			: "Serve Jekyll Websites with servr and knitr",
-      "link"			: "http://localhost:4000/jekyll,/rstats/jekyll-with-knitr/",
-      "excerpt"		: "<p>The R package <a href="https://github.com/yihui/servr"><strong>servr</strong></a> can be used to set up an HTTP server to serve files under a directory. Since <strong>servr</strong> v0.2, it has added a function <code>servr::jekyll()</code> specifically designed for websites based on Jekyll and R Markdown. The main features of this function are:</p>
-
-<ol>
-  <li>R Markdown source files are re-compiled through <a href="http://yihui.name/knitr"><strong>knitr</strong></a> when their corresponding Markdown output files become older<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> than source files;</li>
-  <li>The web page will refresh itself automatically in the above case as well;</li>
-</ol>
-
-<p>As a result, all you need to do is write your blog posts (R Markdown documents), and you do not need to worry about re-building the website or calling <strong>knitr</strong> commands. Whenever you save a blog post in your text editor, the web page will be updated on the fly. This is particularly handy in the <a href="http://www.rstudio.com">RStudio IDE</a>, because after you run <code>servr::jekyll()</code> in the console, you can start writing or editing your R Markdown posts, and the HTML output, displayed in the RStudio viewer pane, will be in sync with your source post in the source panel (see the screenshot below).</p>
-
-<p><a href="http://i.imgur.com/gKVGhiP.png"><img src="http://i.imgur.com/gKVGhiP.png" alt="Jekyll with servr and knitr" /></a></p>
-
-<h2 id="prerequisites">Prerequisites</h2>
-
-<p>You must have installed the packages <strong>servr</strong> (&gt;= 0.2) and <strong>knitr</strong> (&gt;= 1.8).</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Determined by the modification time of files, i.e., <code>file.info(x)[, 'mtime']</code>. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-"
-    }
-  
-
-  
-    ,{
-      "title"			: "Hello World",
-      "link"			: "http://localhost:4000/blog/hello-world/",
-      "excerpt"		: ""
     }
   
 
@@ -179,7 +110,7 @@
   
     ,{
       "title"			: "About the Jekyll Theme",
-      "link"			: "http://localhost:4000/about/",
+      "link"			: "http://hywel.github.io/about/",
       "excerpt"		: "So Simple is a responsive Jekyll theme for your words and images."
     }
   
@@ -193,7 +124,7 @@
   
     ,{
       "title"			: "Theme Setup",
-      "link"			: "http://localhost:4000/theme-setup/",
+      "link"			: "http://hywel.github.io/theme-setup/",
       "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
     }
   
