@@ -9,7 +9,7 @@ I am currently investigating how to embed code blocks and tables and have them c
 
 I have also found another [blog post](http://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/) that details some further packages that use the aforementioned packaages as a basis. I will investigate and detail findings here...
 
-Before getting on to that however, I will start with some tests using the markdown that Jekyll will both understand and github pages will compile - this makes us of Liquid tags such as "% highlight r". 
+Before getting on to that however, I will start with some tests using the markdown that Jekyll will both understand and github pages will compile - this makes us of Liquid tags such as "% highlight r % endhighlight %". 
 
 Github pages only supports a subset of the liquid tags and doesn't allow use of the plug-in architecture. For this reason I had to change my plans to use the very elegant [Tufte Theme](https://github.com/clayh53/tufte-jekyll) developed by [Clay Harmon](https://github.com/clayh53), as this doesn't seem to compile well on github pages - I could compile locally and then push to gituhub, but I was looking for something more flexible and quickly updatable on-the-go!  
  
@@ -20,17 +20,6 @@ So back to the highlighting and visualisation of results...
 For example, here is the command within *R* that can be used to build a site locally, ready for pushing to github[^1].  This is different to the triple backtick syntax of **RStudio** flavoured Rmarkdown. 
 
 [^1]: Not sure why the following code blocks are truncated - it may be the theme.
-
-=======
-I am currently investigating how to embed code blocks and tables and have them compile on github pages. This post is using the `kramdown` markup flavour, but in the future I would like to use [RStudio IDE](http://www.rstudio.com) and Rmarkdown to add to [Jekyll](http://jekyllrb.com). I think that the The R package [**servr**](https://github.com/yihui/servr) will also be very useful and the associated `knitr-jekyll` repo developed by Yihui Xie.
-
-I have also found another [blog post](http://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/) that details some further packages that use these as a basis. I will investigate and detail findings here
-
-Before getting on to that, I will start with some tests using the markdown that Jekyll with understand and compile - this makes us of Liquid tags such as `{% highlight r %}{% endhighlight %}`
- 
-# Highlighting #
-
-For example here is the command within R that can be used to build a site locally ready for pushing to github. his is different to the triple backtick syntax of RStudio flavoured Rmarkdown. 
  
 {% highlight r %}
 servr::jekyll(command="bundle exec jekyll build")
