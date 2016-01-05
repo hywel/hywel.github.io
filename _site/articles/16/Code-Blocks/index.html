@@ -44,19 +44,32 @@
 <p class="subtitle">January 5, 2016</p>
 
 
-<p>I am currently investigating how to embed code blocks and tables and have them compile on github pages. This post is using the <code>kramdown</code> markup flavour, but in the future I would like to use <a href="http://www.rstudio.com">RStudio IDE</a> and <a href="http://rmarkdown.rstudio.com">Rmarkdown</a> to add pages to a static server using <a href="http://jekyllrb.com">Jekyll</a>. I think that the <em>R</em> package <a href="https://github.com/yihui/servr"><strong>servr</strong></a> will also be very useful along with the associated <code>knitr-jekyll</code> repo developed by <a href="https://github.com/yihui">Yihui Xie</a> who developed the incredibly useful <a href="https://github.com/yihui/knitr">knitr</a>.</p>
+<p>I am currently investigating how to embed code blocks and tables and have them compile on github pages. This post is using the <code>kramdown</code> markup flavour, but in the future I would like to use <a href="http://www.rstudio.com">RStudio IDE</a> and <a href="http://rmarkdown.rstudio.com">Rmarkdown</a> to add pages to a static server using <a href="http://jekyllrb.com">Jekyll</a>. I think that the <em>R</em> package <a href="https://github.com/yihui/servr"><strong>servr</strong></a> will also be very useful along with the associated <code>knitr-jekyll</code> repo developed by <a href="https://github.com/yihui">Yihui Xie</a> who also developed the incredibly useful and very powerful <a href="https://github.com/yihui/knitr">knitr</a>.</p>
 
 <p>I have also found another <a href="http://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/">blog post</a> that details some further packages that use the aforementioned packaages as a basis. I will investigate and detail findings here…</p>
 
 <p>Before getting on to that however, I will start with some tests using the markdown that Jekyll will both understand and github pages will compile - this makes us of Liquid tags such as “% highlight r”.</p>
 
-<p>Github pages only supports a subset of the liquid tags and doesn’t allow use of the plug-in architecture. I had hoped to use the <a href="https://github.com/clayh53/tufte-jekyll">Tufte Theme</a> developed by <a href="https://github.com/clayh53">Clay Harmon</a>, but this doesn’t seem to compile well on github pages - I could compile locally and then push to gituhub, but I was looking for something more flexible and quickly updatable on-the-go!</p>
+<p>Github pages only supports a subset of the liquid tags and doesn’t allow use of the plug-in architecture. For this reason I had to change my plans to use the very elegant <a href="https://github.com/clayh53/tufte-jekyll">Tufte Theme</a> developed by <a href="https://github.com/clayh53">Clay Harmon</a>, as this doesn’t seem to compile well on github pages - I could compile locally and then push to gituhub, but I was looking for something more flexible and quickly updatable on-the-go!</p>
 
 <p>So back to the highlighting and visualisation of results…</p>
 
 <h1 id="highlighting">Highlighting</h1>
 
-<p>For example, here is the command within R that can be used to build a site locally, ready for pushing to github<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.  This is different to the triple backtick syntax of <strong>RStudio</strong> flavoured Rmarkdown.</p>
+<p>For example, here is the command within <em>R</em> that can be used to build a site locally, ready for pushing to github<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.  This is different to the triple backtick syntax of <strong>RStudio</strong> flavoured Rmarkdown.</p>
+
+<p>=======<br />
+I am currently investigating how to embed code blocks and tables and have them compile on github pages. This post is using the <code>kramdown</code> markup flavour, but in the future I would like to use <a href="http://www.rstudio.com">RStudio IDE</a> and Rmarkdown to add to <a href="http://jekyllrb.com">Jekyll</a>. I think that the The R package <a href="https://github.com/yihui/servr"><strong>servr</strong></a> will also be very useful and the associated <code>knitr-jekyll</code> repo developed by Yihui Xie.</p>
+
+<p>I have also found another <a href="http://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/">blog post</a> that details some further packages that use these as a basis. I will investigate and detail findings here</p>
+
+<p>Before getting on to that, I will start with some tests using the markdown that Jekyll with understand and compile - this makes us of Liquid tags such as `</p>
+
+<p>`</p>
+
+<h1 id="highlighting-1">Highlighting</h1>
+
+<p>For example here is the command within R that can be used to build a site locally ready for pushing to github. his is different to the triple backtick syntax of RStudio flavoured Rmarkdown.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r">servr<span class="o">::</span>jekyll<span class="p">(</span>command<span class="o">=</span><span class="s">&quot;bundle exec jekyll build&quot;</span><span class="p">)</span></code></pre></div>
 
