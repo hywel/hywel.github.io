@@ -7,27 +7,9 @@
 <meta charset="utf-8">
 <title>Serve Jekyll Websites with servr and knitr &#8211; Hywel Stoakes</title>
 <meta name="description" content="Writing in Rstudio
-This blog post has been rwitten in Rstudio and using the rmd2md function. When this is run it will convert any file (with the *.rmd extention) that is found in the _rmd folder to the markdown that can be parsed by Jekyll and served on github pages.
+This blog post has been written in Rstudio and using the rmd2md function. When this is run it will convert any file (with the *.rmd extention) that is found in the _rmd folder to the markdown that can be parsed by Jekyll and served on github pages.
 
 be sure to include the header between three dashes:
-
-
-#layout: post
-#status: process
-#published: false
-#date: 2016-01-05 14:23:34 +1100
-#title:  "The Post Title"
-#categories: tags
-
-
-The workflow is as follows:
-1. Write a post with the above header, and put it in the _rmd folder.
-2. Run the rmd2md() command within Rstudio.
-3. Run servr::jekyll(command="bundle exec jekyll build",serve=FALSE) from the servr package to check that the site builds.
-4. Use git within Rstudio to add staged files, commit changes and push to the repository.
-5. Check post has worked.
-
-Testing code chunks take 2
 
 ">
 <meta name="keywords" content="">
@@ -37,27 +19,9 @@ Testing code chunks take 2
 <!-- Twitter Cards -->
 <meta name="twitter:title" content="Serve Jekyll Websites with servr and knitr">
 <meta name="twitter:description" content="Writing in Rstudio
-This blog post has been rwitten in Rstudio and using the rmd2md function. When this is run it will convert any file (with the *.rmd extention) that is found in the _rmd folder to the markdown that can be parsed by Jekyll and served on github pages.
+This blog post has been written in Rstudio and using the rmd2md function. When this is run it will convert any file (with the *.rmd extention) that is found in the _rmd folder to the markdown that can be parsed by Jekyll and served on github pages.
 
 be sure to include the header between three dashes:
-
-
-#layout: post
-#status: process
-#published: false
-#date: 2016-01-05 14:23:34 +1100
-#title:  "The Post Title"
-#categories: tags
-
-
-The workflow is as follows:
-1. Write a post with the above header, and put it in the _rmd folder.
-2. Run the rmd2md() command within Rstudio.
-3. Run servr::jekyll(command="bundle exec jekyll build",serve=FALSE) from the servr package to check that the site builds.
-4. Use git within Rstudio to add staged files, commit changes and push to the repository.
-5. Check post has worked.
-
-Testing code chunks take 2
 
 ">
 <meta name="twitter:site" content="@hywel_">
@@ -71,27 +35,9 @@ Testing code chunks take 2
 <meta property="og:type" content="article">
 <meta property="og:title" content="Serve Jekyll Websites with servr and knitr">
 <meta property="og:description" content="Writing in Rstudio
-This blog post has been rwitten in Rstudio and using the rmd2md function. When this is run it will convert any file (with the *.rmd extention) that is found in the _rmd folder to the markdown that can be parsed by Jekyll and served on github pages.
+This blog post has been written in Rstudio and using the rmd2md function. When this is run it will convert any file (with the *.rmd extention) that is found in the _rmd folder to the markdown that can be parsed by Jekyll and served on github pages.
 
 be sure to include the header between three dashes:
-
-
-#layout: post
-#status: process
-#published: false
-#date: 2016-01-05 14:23:34 +1100
-#title:  "The Post Title"
-#categories: tags
-
-
-The workflow is as follows:
-1. Write a post with the above header, and put it in the _rmd folder.
-2. Run the rmd2md() command within Rstudio.
-3. Run servr::jekyll(command="bundle exec jekyll build",serve=FALSE) from the servr package to check that the site builds.
-4. Use git within Rstudio to add staged files, commit changes and push to the repository.
-5. Check post has worked.
-
-Testing code chunks take 2
 
 ">
 <meta property="og:url" content="http://hywel.github.io/jekyll/rstats/The-Next-Step/">
@@ -218,25 +164,26 @@ Testing code chunks take 2
       </footer>
       <div class="entry-content">
         <h1 id="writing-in-rstudio">Writing in Rstudio</h1>
-<p>This blog post has been rwitten in Rstudio and using the <code>rmd2md</code> function. When this is run it will convert any file (with the <code>*.rmd</code> extention) that is found in the <code>_rmd</code> folder to the markdown that can be parsed by Jekyll and served on github pages.</p>
+<p>This blog post has been written in Rstudio and using the <code>rmd2md</code> function. When this is run it will convert any file (with the <code>*.rmd</code> extention) that is found in the <code>_rmd</code> folder to the markdown that can be parsed by Jekyll and served on github pages.</p>
 
 <p>be sure to include the header between three dashes:</p>
 
-<p><code>
-#layout: post
-#status: process
-#published: false
-#date: 2016-01-05 14:23:34 +1100
-#title:  "The Post Title"
-#categories: tags
-</code></p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#layout: post</span>
+<span class="c1">#status: process</span>
+<span class="c1">#published: false</span>
+<span class="c1">#date: 2016-01-05 14:23:34 +1100</span>
+<span class="c1">#title:  &quot;The Post Title&quot;</span>
+<span class="c1">#categories: tags</span></code></pre></div>
 
-<p>The workflow is as follows:
-1. Write a post with the above header, and put it in the <code>_rmd</code> folder.
-2. Run the <a href="https://github.com/AndySouth/andysouth.github.io/blob/master/rmd2md.r">rmd2md()</a> command within <em>Rstudio</em>.
-3. Run <code>servr::jekyll(command="bundle exec jekyll build",serve=FALSE)</code> from the <a href="https://github.com/yihui/servr">servr</a> package to check that the site builds.
-4. Use git within <em>Rstudio</em> to add staged files, commit changes and push to the repository.
-5. Check post has worked.</p>
+<p>The workflow is as follows:</p>
+
+<ol>
+  <li>Write a post with the above header, and put it in the <code>_rmd</code> folder.</li>
+  <li>Run the <a href="https://github.com/AndySouth/andysouth.github.io/blob/master/rmd2md.r">rmd2md()</a> command within <em>Rstudio</em>.</li>
+  <li>Run <code>servr::jekyll(command="bundle exec jekyll build",serve=FALSE)</code> from the <a href="https://github.com/yihui/servr">servr</a> package to check that the site builds.</li>
+  <li>Use git within <em>Rstudio</em> to add staged files, commit changes and push to the repository.</li>
+  <li>Check post has worked.</li>
+</ol>
 
 <h1 id="testing-code-chunks-take-2">Testing code chunks take 2</h1>
 
@@ -267,7 +214,7 @@ ggplot<span class="p">()</span> <span class="o">+</span>
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="http://hywel.github.io/jekyll/rstats/The-Next-Step/" class="btn" title="Serve Jekyll Websites with servr and knitr">Previous</a>
+        <a href="http://hywel.github.io/jekyll,/rstats/jekyll-with-knitr/" class="btn" title="Serve Jekyll Websites with servr and knitr">Previous</a>
       
       
     </nav><!-- /.pagination -->
