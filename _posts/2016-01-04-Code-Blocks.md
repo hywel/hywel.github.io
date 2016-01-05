@@ -56,7 +56,7 @@ creates the following table:
 ```
 
 
-Which displays in Markdown:
+Which displays a formatted table on the site that looks like this:
 
 
 |                  |  mpg| cyl| disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
