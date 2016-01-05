@@ -21,11 +21,13 @@ be sure to include the header between three dashes:
 ```
 
 The workflow is as follows:
+
 1. Write a post with the above header, and put it in the `_rmd` folder.
 2. Run the [rmd2md()](https://github.com/AndySouth/andysouth.github.io/blob/master/rmd2md.r) command within *Rstudio*.
 3. Run `servr::jekyll(command="bundle exec jekyll build",serve=FALSE)` from the [servr](https://github.com/yihui/servr) package to check that the site builds.
 4. Use git within *Rstudio* to add staged files, commit changes and push to the repository.
-5. Check post has worked.
+5. Check post has worked.  
+
 
 # Testing code chunks take 2
 ```{r}
