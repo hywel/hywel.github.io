@@ -34,7 +34,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: Hywel Stoakes
-  avatar: bio-photo.jpg
+  avatar: bio-avatar1.png
   email: hywel@email.com
   #disqus-shortname:
   twitter: hywel_
