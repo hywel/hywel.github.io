@@ -38,12 +38,12 @@ servr::jekyll(command="bundle exec jekyll build", serve = FALSE)
 
 All of this is still early days and I am looking forward to starting to play around with tables that are produced by `kable` which can be embedded directly onto pages.
 
-For Example:
+For example:
 {% highlight r %}
 knitr::kable(head(mtcars))
 {% endhighlight %}
 
-will create:
+creates the following table:
 ```
 |                  |  mpg| cyl| disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
 |:-----------------|----:|---:|----:|---:|----:|-----:|-----:|--:|--:|----:|----:|
