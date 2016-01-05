@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Another Post</title>
-  <meta name="description" content="This is to test out the syntax highlighting.This is a code block and more and more{r,eval=FALSE}servr::jekyll(command="bundle exec jekyll build")">
+  <title>Syntax Highlighting</title>
+  <meta name="description" content="I am currently investigating how to embed code blocks and tables and have them compile on github pages. This post is using the kramdown markup flavour, but i...">
 
 
   <link rel="stylesheet" href="/css/tufte.css">	
@@ -40,24 +40,177 @@
 	</nav>
 </header>
     <article class="group">
-      <h1>Another post</h1>
-<p class="subtitle">January 4, 2016</p>
+      <h1>Syntax highlighting</h1>
+<p class="subtitle">January 5, 2016</p>
 
 
-<p>This is to test out the syntax highlighting.</p>
+<p>I am currently investigating how to embed code blocks and tables and have them compile on github pages. This post is using the <code>kramdown</code> markup flavour, but in the future I would like to use <a href="http://www.rstudio.com">RStudio IDE</a> and <a href="http://rmarkdown.rstudio.com">Rmarkdown</a> to add pages to a static server using <a href="http://jekyllrb.com">Jekyll</a>. I think that the <em>R</em> package <a href="https://github.com/yihui/servr"><strong>servr</strong></a> will also be very useful along with the associated <code>knitr-jekyll</code> repo developed by <a href="https://github.com/yihui">Yihui Xie</a> who developed the incredibly useful <a href="https://github.com/yihui/knitr">knitr</a>.</p>
 
-<pre><code>This is a code block and more and more
-</code></pre>
+<p>I have also found another <a href="http://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/">blog post</a> that details some further packages that use the aforementioned packaages as a basis. I will investigate and detail findings here…</p>
 
-<p><code>{r,eval=FALSE}
-servr::jekyll(command="bundle exec jekyll build")
+<p>Before getting on to that however, I will start with some tests using the markdown that Jekyll will both understand and github pages will compile - this makes us of Liquid tags such as “% highlight r”.</p>
+
+<p>Github pages only supports a subset of the liquid tags and doesn’t allow use of the plug-in architecture. I had hoped to use the <a href="https://github.com/clayh53/tufte-jekyll">Tufte Theme</a> developed by <a href="https://github.com/clayh53">Clay Harmon</a>, but this doesn’t seem to compile well on github pages - I could compile locally and then push to gituhub, but I was looking for something more flexible and quickly updatable on-the-go!</p>
+
+<p>So back to the highlighting and visualisation of results…</p>
+
+<h1 id="highlighting">Highlighting</h1>
+
+<p>For example, here is the command within R that can be used to build a site locally, ready for pushing to github<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.  This is different to the triple backtick syntax of <strong>RStudio</strong> flavoured Rmarkdown.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">servr<span class="o">::</span>jekyll<span class="p">(</span>command<span class="o">=</span><span class="s">&quot;bundle exec jekyll build&quot;</span><span class="p">)</span></code></pre></div>
+
+<p>Note: That I need to use this command rather than the default <code>command="jekyll build"</code> as there seems to be some problems finding the ruby gems in <code>\usr\bin\</code> on OS X <em>El Capitan</em>. This has been detailed elsewhere and once I settle on a stable implementation I will write about the steps. A related problem is that I can’t use the autoregeneration feature <code>--watch</code> using the <code>servr::jekyll</code> function.</p>
+
+<p>If needed the site can be compiled without serving using the following syntax:.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">servr<span class="o">::</span>jekyll<span class="p">(</span>command<span class="o">=</span><span class="s">&quot;bundle exec jekyll build&quot;</span><span class="p">,</span> serve <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span></code></pre></div>
+
+<h1 id="early-days">Early Days</h1>
+
+<p>All of this is still early days and I am looking forward to starting to play around with tables that are produced by <code>kable</code> which can be embedded directly onto pages.</p>
+
+<p>For Example:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">knitr<span class="o">::</span>kable<span class="p">(</span><span class="kp">head</span><span class="p">(</span>mtcars<span class="p">))</span></code></pre></div>
+
+<p>will create:<br />
+<code>
+|                  |  mpg| cyl| disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
+|:-----------------|----:|---:|----:|---:|----:|-----:|-----:|--:|--:|----:|----:|
+|Mazda RX4         | 21.0|   6|  160| 110| 3.90| 2.620| 16.46|  0|  1|    4|    4|
+|Mazda RX4 Wag     | 21.0|   6|  160| 110| 3.90| 2.875| 17.02|  0|  1|    4|    4|
+|Datsun 710        | 22.8|   4|  108|  93| 3.85| 2.320| 18.61|  1|  1|    4|    1|
+|Hornet 4 Drive    | 21.4|   6|  258| 110| 3.08| 3.215| 19.44|  1|  0|    3|    1|
+|Hornet Sportabout | 18.7|   8|  360| 175| 3.15| 3.440| 17.02|  0|  0|    3|    2|
+|Valiant           | 18.1|   6|  225| 105| 2.76| 3.460| 20.22|  1|  0|    3|    1|
 </code></p>
 
+<p>Which displays in Markdown:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+      <th style="text-align: right">mpg</th>
+      <th style="text-align: right">cyl</th>
+      <th style="text-align: right">disp</th>
+      <th style="text-align: right">hp</th>
+      <th style="text-align: right">drat</th>
+      <th style="text-align: right">wt</th>
+      <th style="text-align: right">qsec</th>
+      <th style="text-align: right">vs</th>
+      <th style="text-align: right">am</th>
+      <th style="text-align: right">gear</th>
+      <th style="text-align: right">carb</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Mazda RX4</td>
+      <td style="text-align: right">21.0</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">160</td>
+      <td style="text-align: right">110</td>
+      <td style="text-align: right">3.90</td>
+      <td style="text-align: right">2.620</td>
+      <td style="text-align: right">16.46</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Mazda RX4 Wag</td>
+      <td style="text-align: right">21.0</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">160</td>
+      <td style="text-align: right">110</td>
+      <td style="text-align: right">3.90</td>
+      <td style="text-align: right">2.875</td>
+      <td style="text-align: right">17.02</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Datsun 710</td>
+      <td style="text-align: right">22.8</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">108</td>
+      <td style="text-align: right">93</td>
+      <td style="text-align: right">3.85</td>
+      <td style="text-align: right">2.320</td>
+      <td style="text-align: right">18.61</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Hornet 4 Drive</td>
+      <td style="text-align: right">21.4</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">258</td>
+      <td style="text-align: right">110</td>
+      <td style="text-align: right">3.08</td>
+      <td style="text-align: right">3.215</td>
+      <td style="text-align: right">19.44</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Hornet Sportabout</td>
+      <td style="text-align: right">18.7</td>
+      <td style="text-align: right">8</td>
+      <td style="text-align: right">360</td>
+      <td style="text-align: right">175</td>
+      <td style="text-align: right">3.15</td>
+      <td style="text-align: right">3.440</td>
+      <td style="text-align: right">17.02</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Valiant</td>
+      <td style="text-align: right">18.1</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">225</td>
+      <td style="text-align: right">105</td>
+      <td style="text-align: right">2.76</td>
+      <td style="text-align: right">3.460</td>
+      <td style="text-align: right">20.22</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The Tufte package has very elegant tables reminiscent of the <code>booktabs</code> package in LaTeX. I will see if I can keep that functionality when I change themes?</p>
+
+<h2 id="figures">Figures</h2>
+
+<p>Another important feature will be the ability to generate figures quickly using <a href="http://ggplot2.org"><code>ggplot2</code></a> and other packages within <em>R</em>.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Not sure why the following code blocks are truncated - it may be the theme. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 
 
     </article>
-    <span class="print-footer">Another Post - January 4, 2016 - hywel stoakes</span>
+    <span class="print-footer">Syntax Highlighting - January 5, 2016 - hywel stoakes</span>
     <footer>
   <hr class="slender">
   <ul class="footer-links">
