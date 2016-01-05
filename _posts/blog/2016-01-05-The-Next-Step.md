@@ -7,7 +7,7 @@ title:  "Serve Jekyll Websites with servr and knitr"
 categories: [jekyll, rstats]
 ---
 # Writing in Rstudio
-This blog post has been written in Rstudio and using the `rmd2md` function. When this is run it will convert any file (with the `*.rmd` extention) that is found in the `_rmd` folder to the markdown that can be parsed by Jekyll and served on github pages. 
+This blog post has been rwitten in Rstudio and using the `rmd2md` function. When this is run it will convert any file (with the `*.rmd` extention) that is found in the `_rmd` folder to the markdown that can be parsed by Jekyll and served on github pages. 
  
 be sure to include the header between three dashes:
  
@@ -45,7 +45,13 @@ ggplot() +
                 colour = 'red', width = 0.4)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-1](/figures/unnamed-chunk-1-1.png) 
+
+
+{% highlight text %}
+## Error in eval(expr, envir, enclos): could not find function "ggplot"
+{% endhighlight %}
+
+
 
 {% highlight r %}
 ggsave(filename = "figures/Rplot.png")
@@ -54,6 +60,6 @@ ggsave(filename = "figures/Rplot.png")
 
 
 {% highlight text %}
-## Saving 7 x 7 in image
+## Error in eval(expr, envir, enclos): could not find function "ggsave"
 {% endhighlight %}
 Lets see if this works?

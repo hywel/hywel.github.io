@@ -1,12 +1,12 @@
 # Authors
 
-billy_rick:
-  name: Billy Rick
+hywel_stoakes:
+  name: Hywel Stoakes
   web: http://thewhip.com
-  email: billy@rick.com
-  bio: "What do you want, jewels? I am a very extravagant man."
+  email: hywel@example.com
+  bio: "Three"
   avatar: bio-photo-2.jpg
-  twitter: extravagantman
+  twitter: hywel
   google:
     plus: BillyRick
 
