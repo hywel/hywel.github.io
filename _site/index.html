@@ -45,16 +45,150 @@
           
         <li class="listing">
           <hr class="slender">
-          <a href="/articles/16/Code-Blocks"><h3 class="contrast">Another Post</h3></a>
-          <br><span class="smaller">January 4, 2016</span>  <br/>
-          <div><p>This is to test out the syntax highlighting.</p>
+          <a href="/articles/16/Code-Blocks"><h3 class="contrast">Syntax Highlighting</h3></a>
+          <br><span class="smaller">January 5, 2016</span>  <br/>
+          <div><p>I am currently investigating how to embed code blocks and tables and have them compile on github pages. This post is using the <code>kramdown</code> markup flavour, but in the future I would like to use <a href="http://www.rstudio.com">RStudio IDE</a> and Rmarkdown to add to <a href="http://jekyllrb.com">Jekyll</a>. I think that the The R package <a href="https://github.com/yihui/servr"><strong>servr</strong></a> will also be very useful and the associated <code>knitr-jekyll</code> repo developed by Yihui Xie.</p>
 
-<pre><code>This is a code block and more and more
-</code></pre>
+<p>I have also found another <a href="http://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/">blog post</a> that details some further packages that use these as a basis. I will investigate and detail findings here</p>
 
-<p><code>{r,eval=FALSE}
-servr::jekyll(command="bundle exec jekyll build")
+<p>Before getting on to that, I will start with some tests using the markdown that Jekyll with understand and compile - this makes us of Liquid tags such as `</p>
+
+<p>`</p>
+
+<h1 id="highlighting">Highlighting</h1>
+
+<p>For example here is the command within R that can be used to build a site locally ready for pushing to github.</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">servr<span class="o">::</span>jekyll<span class="p">(</span>command<span class="o">=</span><span class="s">&quot;bundle exec jekyll build&quot;</span><span class="p">)</span></code></pre></div>
+
+<p>This is different to the triple backtick syntax of RStudio flavoured Rmarkdown.</p>
+
+<h1 id="early-days">Early Days</h1>
+
+<p>All of this is still early days and I am looking forward to starting to play around with tables that are produced by <code>kable</code> which can be embedded directly onto pages.</p>
+
+<p>For Example:</p>
+
+<div class="highlight"><pre><code class="language-r" data-lang="r">knitr<span class="o">::</span>kable<span class="p">(</span><span class="kp">head</span><span class="p">(</span>mtcars<span class="p">))</span></code></pre></div>
+
+<p>will create:<br />
+<code>
+|                  |  mpg| cyl| disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
+|:-----------------|----:|---:|----:|---:|----:|-----:|-----:|--:|--:|----:|----:|
+|Mazda RX4         | 21.0|   6|  160| 110| 3.90| 2.620| 16.46|  0|  1|    4|    4|
+|Mazda RX4 Wag     | 21.0|   6|  160| 110| 3.90| 2.875| 17.02|  0|  1|    4|    4|
+|Datsun 710        | 22.8|   4|  108|  93| 3.85| 2.320| 18.61|  1|  1|    4|    1|
+|Hornet 4 Drive    | 21.4|   6|  258| 110| 3.08| 3.215| 19.44|  1|  0|    3|    1|
+|Hornet Sportabout | 18.7|   8|  360| 175| 3.15| 3.440| 17.02|  0|  0|    3|    2|
+|Valiant           | 18.1|   6|  225| 105| 2.76| 3.460| 20.22|  1|  0|    3|    1|
 </code></p>
+
+<p>Which displays:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+      <th style="text-align: right">mpg</th>
+      <th style="text-align: right">cyl</th>
+      <th style="text-align: right">disp</th>
+      <th style="text-align: right">hp</th>
+      <th style="text-align: right">drat</th>
+      <th style="text-align: right">wt</th>
+      <th style="text-align: right">qsec</th>
+      <th style="text-align: right">vs</th>
+      <th style="text-align: right">am</th>
+      <th style="text-align: right">gear</th>
+      <th style="text-align: right">carb</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Mazda RX4</td>
+      <td style="text-align: right">21.0</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">160</td>
+      <td style="text-align: right">110</td>
+      <td style="text-align: right">3.90</td>
+      <td style="text-align: right">2.620</td>
+      <td style="text-align: right">16.46</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Mazda RX4 Wag</td>
+      <td style="text-align: right">21.0</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">160</td>
+      <td style="text-align: right">110</td>
+      <td style="text-align: right">3.90</td>
+      <td style="text-align: right">2.875</td>
+      <td style="text-align: right">17.02</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Datsun 710</td>
+      <td style="text-align: right">22.8</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">108</td>
+      <td style="text-align: right">93</td>
+      <td style="text-align: right">3.85</td>
+      <td style="text-align: right">2.320</td>
+      <td style="text-align: right">18.61</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Hornet 4 Drive</td>
+      <td style="text-align: right">21.4</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">258</td>
+      <td style="text-align: right">110</td>
+      <td style="text-align: right">3.08</td>
+      <td style="text-align: right">3.215</td>
+      <td style="text-align: right">19.44</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Hornet Sportabout</td>
+      <td style="text-align: right">18.7</td>
+      <td style="text-align: right">8</td>
+      <td style="text-align: right">360</td>
+      <td style="text-align: right">175</td>
+      <td style="text-align: right">3.15</td>
+      <td style="text-align: right">3.440</td>
+      <td style="text-align: right">17.02</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Valiant</td>
+      <td style="text-align: right">18.1</td>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">225</td>
+      <td style="text-align: right">105</td>
+      <td style="text-align: right">2.76</td>
+      <td style="text-align: right">3.460</td>
+      <td style="text-align: right">20.22</td>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">0</td>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">1</td>
+    </tr>
+  </tbody>
+</table>
 
 </div> 
         </li>
@@ -72,11 +206,12 @@ For code snippets and to link to my projects. I will add more soon.<br />
           
         <li class="listing">
           <hr class="slender">
-          <a href="/articles/15/messing-about"><h3 class="contrast">Messing Around in Jekyll</h3></a>
+          <a href="/articles/15/messing-about"><h3 class="contrast">The Inaugural Posting</h3></a>
           <br><span class="smaller">November 17, 2015</span>  <br/>
-          <div><p>This is a little information on how I will use the site: <br />
-For code snippets and to link to my projects. I will add more soon.<br />
-<img src="/assets/img/rhino.png" alt="Image description" /></p>
+          <div><h1 id="introduction">Introduction</h1>
+
+<p>Think of this as a repository to collect thoughts and code snippets for R and R packages related to phonetics and speech science.<br />
+<img src="/assets/img/rhino.png" alt="A Rhino " /></p>
 
 </div> 
         </li>
