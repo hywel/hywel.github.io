@@ -24,3 +24,9 @@ Looking for a simple, responsive, theme for your Jekyll powered blog? Well look 
 <a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install So Simple Theme</a>
 
 [^1]: Example: *domain.com/category-name/post-title*
+
+<a href="http://stackoverflow.com/users/960366/hywel">
+<img src="http://stackoverflow.com/users/flair/960366.png" width="208" height="58" alt="profile for hywel at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for hywel at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+</a>
+
+
