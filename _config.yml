@@ -33,7 +33,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Hywel Stoake
+  name: Hywel Stoakes
   avatar: bio-photo.jpg
   email: hywel@email.com
   #disqus-shortname:

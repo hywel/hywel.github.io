@@ -4,10 +4,10 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2016-01-05T21:16:07+11:00</updated>
+<updated>2016-01-05T21:20:23+11:00</updated>
 <id>http://localhost:4000/</id>
 <author>
-  <name>Hywel Stoake</name>
+  <name>Hywel Stoakes</name>
   <uri>http://localhost:4000/</uri>
   <email>hywel@email.com</email>
 </author>
@@ -22,7 +22,7 @@
   <published>2016-01-05T14:23:34+11:00</published>
   <updated>2016-01-05T14:23:34+11:00</updated>
   <author>
-    <name>Hywel Stoake</name>
+    <name>Hywel Stoakes</name>
     <uri>http://localhost:4000</uri>
     <email>hywel@email.com</email>
   </author>
@@ -72,7 +72,7 @@ ggplot&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quo
 
 &lt;p&gt;Lets see if this works?&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/jekyll/rstats/The-Next-Step/&quot;&gt;Serve Jekyll Websites with servr and knitr&lt;/a&gt; was originally published by Hywel Stoake at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hywel Stoakes&lt;/a&gt; on January 05, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/jekyll/rstats/The-Next-Step/&quot;&gt;Serve Jekyll Websites with servr and knitr&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hywel Stoakes&lt;/a&gt; on January 05, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -86,7 +86,7 @@ ggplot&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quo
   <published>2016-01-05T10:59:11+11:00</published>
   <updated>2016-01-05T10:59:11+11:00</updated>
   <author>
-    <name>Hywel Stoake</name>
+    <name>Hywel Stoakes</name>
     <uri>http://localhost:4000</uri>
     <email>hywel@email.com</email>
   </author>
@@ -271,7 +271,7 @@ ggsave&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;filename &lt;span class=&quo
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/jekyll/update/Code-Blocks/&quot;&gt;Syntax Highlighting&lt;/a&gt; was originally published by Hywel Stoake at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hywel Stoakes&lt;/a&gt; on January 05, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/jekyll/update/Code-Blocks/&quot;&gt;Syntax Highlighting&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hywel Stoakes&lt;/a&gt; on January 05, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -285,7 +285,7 @@ ggsave&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;filename &lt;span class=&quo
   <published>2016-01-04T19:14:15+11:00</published>
   <updated>2016-01-04T19:14:15+11:00</updated>
   <author>
-    <name>Hywel Stoake</name>
+    <name>Hywel Stoakes</name>
     <uri>http://localhost:4000</uri>
     <email>hywel@email.com</email>
   </author>
@@ -293,7 +293,7 @@ ggsave&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;filename &lt;span class=&quo
     &lt;p&gt;Here is a New Year Post! I will be refreshing my workflow in order to work within Rstudio and output posts directly to Jekyll and Github pages (Where this blog is hosted).&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/jekyll/update/A-New-Post/&quot;&gt;A Refresh for the New Year&lt;/a&gt; was originally published by Hywel Stoake at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hywel Stoakes&lt;/a&gt; on January 04, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/jekyll/update/A-New-Post/&quot;&gt;A Refresh for the New Year&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hywel Stoakes&lt;/a&gt; on January 04, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -307,7 +307,7 @@ ggsave&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;filename &lt;span class=&quo
   <published>2015-11-17T20:32:06+11:00</published>
   <updated>2015-11-17T20:32:06+11:00</updated>
   <author>
-    <name>Hywel Stoake</name>
+    <name>Hywel Stoakes</name>
     <uri>http://localhost:4000</uri>
     <email>hywel@email.com</email>
   </author>
@@ -318,7 +318,7 @@ ggsave&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;filename &lt;span class=&quo
 &lt;img src=&quot;/assets/img/rhino.png&quot; alt=&quot;A Rhino &quot; /&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/jekyll/update/boring/messing-about/&quot;&gt;The Inaugural Posting&lt;/a&gt; was originally published by Hywel Stoake at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hywel Stoakes&lt;/a&gt; on November 17, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/jekyll/update/boring/messing-about/&quot;&gt;The Inaugural Posting&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hywel Stoakes&lt;/a&gt; on November 17, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -332,7 +332,7 @@ ggsave&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;filename &lt;span class=&quo
   <published>2015-08-10T22:08:50+10:00</published>
   <updated>2015-08-10T22:08:50+10:00</updated>
   <author>
-    <name>Hywel Stoake</name>
+    <name>Hywel Stoakes</name>
     <uri>http://localhost:4000</uri>
     <email>hywel@email.com</email>
   </author>
@@ -356,7 +356,7 @@ mathjax: true
 
 &lt;p&gt;The only thing to look out for is the escaping of the backslash when using markdown, so the delimiters become &lt;code&gt;\\[ ... \\]&lt;/code&gt; and &lt;code&gt;\\( ... \\)&lt;/code&gt; for inline and block maths respectively.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/mathjax-example/&quot;&gt;MathJax Example&lt;/a&gt; was originally published by Hywel Stoake at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hywel Stoakes&lt;/a&gt; on August 10, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/mathjax-example/&quot;&gt;MathJax Example&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hywel Stoakes&lt;/a&gt; on August 10, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -370,7 +370,7 @@ mathjax: true
   <published>2014-09-28T00:00:00+10:00</published>
   <updated>2014-09-28T00:00:00+10:00</updated>
   <author>
-    <name>Hywel Stoake</name>
+    <name>Hywel Stoakes</name>
     <uri>http://localhost:4000</uri>
     <email>hywel@email.com</email>
   </author>
@@ -578,7 +578,7 @@ plot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;cars&lt;span class=&quot;p&quo
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/jekyll,/rstats/jekyll-with-knitr/&quot;&gt;Serve Jekyll Websites with servr and knitr&lt;/a&gt; was originally published by Hywel Stoake at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hywel Stoakes&lt;/a&gt; on September 28, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/jekyll,/rstats/jekyll-with-knitr/&quot;&gt;Serve Jekyll Websites with servr and knitr&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hywel Stoakes&lt;/a&gt; on September 28, 2014.&lt;/p&gt;
   </content>
 </entry>
 
@@ -592,7 +592,7 @@ plot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;cars&lt;span class=&quot;p&quo
   <published>2014-08-09T05:39:55+10:00</published>
   <updated>2014-08-09T05:39:55+10:00</updated>
   <author>
-    <name>Hywel Stoake</name>
+    <name>Hywel Stoakes</name>
     <uri>http://localhost:4000</uri>
     <email>hywel@email.com</email>
   </author>
@@ -615,7 +615,7 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/hello-world/&quot;&gt;Hello World&lt;/a&gt; was originally published by Hywel Stoake at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hywel Stoakes&lt;/a&gt; on August 09, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/hello-world/&quot;&gt;Hello World&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://localhost:4000&quot;&gt;Hywel Stoakes&lt;/a&gt; on August 09, 2014.&lt;/p&gt;
   </content>
 </entry>
 
