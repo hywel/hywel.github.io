@@ -5,6 +5,10 @@
     <lastmod>2016-01-05T14:23:34+11:00</lastmod>
   </url>
   <url>
+    <loc>http://localhost:4000/jekyll/rstats/The-Next-Step/</loc>
+    <lastmod>2016-01-05T14:23:34+11:00</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:4000/jekyll/update/Code-Blocks/</loc>
     <lastmod>2016-01-05T10:59:11+11:00</lastmod>
   </url>
@@ -25,6 +29,10 @@
     <lastmod>2014-09-28T00:00:00+10:00</lastmod>
   </url>
   <url>
+    <loc>http://localhost:4000/jekyll,/rstats/jekyll-with-knitr/</loc>
+    <lastmod>2014-09-28T00:00:00+10:00</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:4000/blog/hello-world/</loc>
     <lastmod>2014-08-09T05:39:55+10:00</lastmod>
   </url>
@@ -32,7 +40,7 @@
     <loc>http://localhost:4000/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/blog/</loc>
+    <loc>http://localhost:4000/about/</loc>
   </url>
   <url>
     <loc>http://localhost:4000/articles/</loc>
@@ -41,7 +49,7 @@
     <loc>http://localhost:4000/tags/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/about/</loc>
+    <loc>http://localhost:4000/blog/</loc>
   </url>
   <url>
     <loc>http://localhost:4000/theme-setup/</loc>
