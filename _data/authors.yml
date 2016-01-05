@@ -2,13 +2,13 @@
 
 hywel_stoakes:
   name: Hywel Stoakes
-  web: http://thewhip.com
+  web: hywel.github.io
   email: hywel@example.com
-  bio: "Three"
+  bio: "Phonetics!"
   avatar: bio-photo-2.jpg
-  twitter: hywel
-  google:
-    plus: BillyRick
+  twitter: hywel_
+  google: 
+    plus: hywel.stoakes
 
 cornelius_fiddlebone:
   name: Cornelius Fiddlebone
