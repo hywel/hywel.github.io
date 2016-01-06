@@ -47,6 +47,6 @@ ggplot() +
   geom_errorbar(data = ds, aes(x = gp, y = mean,
                                ymin = mean - sd, ymax = mean + sd),
                 colour = 'red', width = 0.4)
-ggsave(filename = "figures/Rplot.png")
+#ggsave(filename = "figures/Rplot.png")
 ```
 Lets see if this works?
