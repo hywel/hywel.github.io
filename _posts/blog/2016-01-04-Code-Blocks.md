@@ -74,7 +74,7 @@ Which displays a formatted table on the site that looks like this:
 |Hornet Sportabout | 18.7|   8|  360| 175| 3.15| 3.440| 17.02|  0|  0|    3|    2|
 |Valiant           | 18.1|   6|  225| 105| 2.76| 3.460| 20.22|  1|  0|    3|    1|
 
-The Tufte package has very elegant tables reminiscent of the `booktabs` package in LaTeX. I will see if I can keep that functionality when I change themes?[^2]
+The Tufte package has very elegant tables reminiscent of the `booktabs` package in LaTeX. I will see if I can keep that functionality when I change themes?[^2] 
 
 [^2]: The tables are not nearly as easy on the eye but much easier to use.
 
