@@ -153,7 +153,7 @@ be sure to include the header between three dashes:
         
         
         
-          <img src="http://hywel.github.io/images/bio-photo.jpg" class="bio-photo" alt="Hywel Stoakes bio photo"></a>
+          <img src="http://hywel.github.io/images/bio-avatar1.png" class="bio-photo" alt="Hywel Stoakes bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Hywel Stoakes</span></span>
         <span class="entry-date date published"><time datetime="2016-01-05T14:23:34+11:00"><i class="fa fa-calendar-o"></i> January 05, 2016</time></span>
@@ -187,7 +187,8 @@ be sure to include the header between three dashes:
 
 <h1 id="testing-code-chunks-take-2">Testing code chunks take 2</h1>
 
-<div class="highlight"><pre><code class="language-r" data-lang="r">df <span class="o">&lt;-</span> <span class="kt">data.frame</span><span class="p">(</span>gp <span class="o">=</span> <span class="kp">factor</span><span class="p">(</span><span class="kp">rep</span><span class="p">(</span><span class="kc">letters</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">],</span> each <span class="o">=</span> <span class="m">10</span><span class="p">)),</span>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kn">require</span><span class="p">(</span>ggplot2<span class="p">)</span>
+df <span class="o">&lt;-</span> <span class="kt">data.frame</span><span class="p">(</span>gp <span class="o">=</span> <span class="kp">factor</span><span class="p">(</span><span class="kp">rep</span><span class="p">(</span><span class="kc">letters</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">],</span> each <span class="o">=</span> <span class="m">10</span><span class="p">)),</span>
                  y <span class="o">=</span> rnorm<span class="p">(</span><span class="m">30</span><span class="p">))</span>
 <span class="c1"># Compute sample mean and standard deviation in each group</span>
 ds <span class="o">&lt;-</span> plyr<span class="o">::</span>ddply<span class="p">(</span>df<span class="p">,</span> <span class="s">&quot;gp&quot;</span><span class="p">,</span> plyr<span class="o">::</span>summarise<span class="p">,</span> mean <span class="o">=</span> <span class="kp">mean</span><span class="p">(</span>y<span class="p">),</span> sd <span class="o">=</span> sd<span class="p">(</span>y<span class="p">))</span>
@@ -201,11 +202,11 @@ ggplot<span class="p">()</span> <span class="o">+</span>
                                ymin <span class="o">=</span> mean <span class="o">-</span> sd<span class="p">,</span> ymax <span class="o">=</span> mean <span class="o">+</span> sd<span class="p">),</span>
                 colour <span class="o">=</span> <span class="s">&#39;red&#39;</span><span class="p">,</span> width <span class="o">=</span> <span class="m">0.4</span><span class="p">)</span></code></pre></div>
 
-<div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): could not find function &quot;ggplot&quot;</code></pre></div>
+<p><img src="/figures/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2" /></p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r">ggsave<span class="p">(</span>filename <span class="o">=</span> <span class="s">&quot;figures/Rplot.png&quot;</span><span class="p">)</span></code></pre></div>
 
-<div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): could not find function &quot;ggsave&quot;</code></pre></div>
+<div class="highlight"><pre><code class="language-text" data-lang="text">## Saving 7 x 7 in image</code></pre></div>
 
 <p>Lets see if this works?</p>
 
@@ -213,8 +214,6 @@ ggplot<span class="p">()</span> <span class="o">+</span>
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
-      
-        <a href="http://hywel.github.io/jekyll,/rstats/jekyll-with-knitr/" class="btn" title="Serve Jekyll Websites with servr and knitr">Previous</a>
       
       
     </nav><!-- /.pagination -->
