@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+categories: blog
 date: 2016-01-05 14:23:34 +1100
 title:  "Serve Jekyll Websites with servr and knitr"
 categories: [jekyll, rstats]
