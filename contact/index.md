@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Articles
-excerpt: "An archive of articles sorted by date."
+title: Contact
+excerpt: "Contact Me"
 search_omit: true
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Articles
-excerpt: "An archive of articles sorted by date."
-search_omit: true
+title: Publication
+excerpt: "Key Publications."
+search_omit: false
 ---
 
 <ul class="post-list">
