@@ -76,7 +76,7 @@ Which displays a formatted table on the site that looks like this:
 
 The Tufte package has very elegant tables reminiscent of the `booktabs` package in LaTeX. I will see if I can keep that functionality when I change themes?[^2] 
 
-[^2]: The tables are not nearly as easy on the eye but much easier to use.
+[^2]: The tables are not nearly as easy on the eye but much easier to generate.
 
 ## Figures
 
