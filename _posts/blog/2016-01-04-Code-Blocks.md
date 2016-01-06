@@ -24,7 +24,7 @@ So back to the highlighting and visualisation of results...
 
 For example, here is the command within *R* that can be used to build a site locally, ready for pushing to github[^1]. This is different to the triple backtick syntax of **RStudio** flavoured Rmarkdown. 
 
-[^1]: Not sure why all of the following code blocks are truncated - it may be the theme? They seem to be generally OK when viewing the actual post.
+[^1]: Not sure why all of the following code blocks are truncated - it may be the theme? They seem to be generally OK when viewing the actual post. Update: I've changed themes and this has resolved.
  
 {% highlight r %}
 servr::jekyll(command="bundle exec jekyll build")
@@ -74,7 +74,9 @@ Which displays a formatted table on the site that looks like this:
 |Hornet Sportabout | 18.7|   8|  360| 175| 3.15| 3.440| 17.02|  0|  0|    3|    2|
 |Valiant           | 18.1|   6|  225| 105| 2.76| 3.460| 20.22|  1|  0|    3|    1|
 
-The Tufte package has very elegant tables reminiscent of the `booktabs` package in LaTeX. I will see if I can keep that functionality when I change themes?
+The Tufte package has very elegant tables reminiscent of the `booktabs` package in LaTeX. I will see if I can keep that functionality when I change themes?[^2]
+
+[^2]: The tables are not nearly as easy on the eye but much easier to use.
 
 ## Figures
 
