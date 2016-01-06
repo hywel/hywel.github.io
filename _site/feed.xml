@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://hywel.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://hywel.github.io" />
-<updated>2016-01-06T11:07:28+11:00</updated>
+<updated>2016-01-07T08:51:19+11:00</updated>
 <id>http://hywel.github.io/</id>
 <author>
   <name>Hywel Stoakes</name>
@@ -17,10 +17,11 @@
 
 <entry>
   <title type="html"><![CDATA[Serve Jekyll Websites with servr and knitr]]></title>
-  <link rel="alternate" type="text/html" href="http://hywel.github.io/jekyll/rstats/The-Next-Step/" />
-  <id>http://hywel.github.io/jekyll/rstats/The-Next-Step</id>
+  <link rel="alternate" type="text/html" href="http://hywel.github.io/blog/The-Next-Step/" />
+  <id>http://hywel.github.io/blog/The-Next-Step</id>
+  <updated>2016-01-07 08:44:52 +1100T00:00:00-00:00</updated>
   <published>2016-01-05T14:23:34+11:00</published>
-  <updated>2016-01-05T14:23:34+11:00</updated>
+  
   <author>
     <name>Hywel Stoakes</name>
     <uri>http://hywel.github.io</uri>
@@ -28,7 +29,7 @@
   </author>
   <content type="html">
     &lt;h1 id=&quot;writing-in-rstudio&quot;&gt;Writing in Rstudio&lt;/h1&gt;
-&lt;p&gt;This blog post has been written in Rstudio and using the &lt;code&gt;rmd2md&lt;/code&gt; function. When this is run it will convert any file (with the &lt;code&gt;*.rmd&lt;/code&gt; extention) that is found in the &lt;code&gt;_rmd&lt;/code&gt; folder to the markdown that can be parsed by Jekyll and served on github pages.&lt;/p&gt;
+&lt;p&gt;This blog post has been written in Rstudio and using the &lt;code&gt;rmd2md&lt;/code&gt; function. When this is run it will convert any file (with the &lt;code&gt;*.rmd&lt;/code&gt; extention) that is found within the &lt;code&gt;_rmd&lt;/code&gt; folder to markdown that can be parsed by Jekyll and served on github pages. This is then moved to the &lt;code&gt;_posts&lt;/code&gt; folder&lt;/p&gt;
 
 &lt;p&gt;be sure to include the header between three dashes:&lt;/p&gt;
 
@@ -37,19 +38,20 @@
 &lt;span class=&quot;c1&quot;&gt;#published: false&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#date: 2016-01-05 14:23:34 +1100&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#title:  &amp;quot;The Post Title&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#categories: tags&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;c1&quot;&gt;#categories: blogs&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The workflow is as follows:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Write a post with the above header, and put it in the &lt;code&gt;_rmd&lt;/code&gt; folder.&lt;/li&gt;
-  &lt;li&gt;Run the &lt;a href=&quot;https://github.com/AndySouth/andysouth.github.io/blob/master/rmd2md.r&quot;&gt;rmd2md()&lt;/a&gt; command within &lt;em&gt;Rstudio&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;Run &lt;code&gt;servr::jekyll(command=&quot;bundle exec jekyll build&quot;,serve=FALSE)&lt;/code&gt; from the &lt;a href=&quot;https://github.com/yihui/servr&quot;&gt;servr&lt;/a&gt; package to check that the site builds.&lt;/li&gt;
-  &lt;li&gt;Use git within &lt;em&gt;Rstudio&lt;/em&gt; to add staged files, commit changes and push to the repository.&lt;/li&gt;
-  &lt;li&gt;Check post has worked.&lt;/li&gt;
+  &lt;li&gt;Run the &lt;a href=&quot;https://github.com/AndySouth/andysouth.github.io/blob/master/rmd2md.r&quot;&gt;rmd2md()&lt;/a&gt; command within &lt;em&gt;Rstudio&lt;/em&gt; which converts and copies the post to the &lt;code&gt;_posts&lt;/code&gt; folder.&lt;/li&gt;
+  &lt;li&gt;Run &lt;code&gt;servr::jekyll(command=&quot;bundle exec jekyll build&quot;,serve=FALSE)&lt;/code&gt; from the &lt;a href=&quot;https://github.com/yihui/servr&quot;&gt;servr&lt;/a&gt; package in &lt;em&gt;Rstudio&lt;/em&gt; to check that the site builds &lt;code&gt;serve=TRUE&lt;/code&gt; allows you to view it locally.&lt;/li&gt;
+  &lt;li&gt;Use the &lt;code&gt;git&lt;/code&gt; version control system within &lt;em&gt;Rstudio&lt;/em&gt; to add staged files, commit changes and push to the repository on &lt;a href=&quot;www.github&quot;&gt;github&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Wait a few minutes for the site to build remotely (time varies) and navigate to page to check post has rendered correctly.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h1 id=&quot;testing-code-chunks-take-2&quot;&gt;Testing code chunks take 2&lt;/h1&gt;
+&lt;p&gt;Here I will test the code display and see if I can generate a figure and place it on the page—it is mainly for my own reference.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;kn&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;ggplot2&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 df &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;data.frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;gp &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;factor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;letters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; each &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt;
@@ -70,11 +72,212 @@ ggplot&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quo
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;ggsave&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;filename &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;figures/Rplot.png&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;## Saving 7 x 7 in image&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
 &lt;p&gt;Lets see if this works?&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://hywel.github.io/jekyll/rstats/The-Next-Step/&quot;&gt;Serve Jekyll Websites with servr and knitr&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://hywel.github.io&quot;&gt;Hywel Stoakes&lt;/a&gt; on January 05, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://hywel.github.io/blog/The-Next-Step/&quot;&gt;Serve Jekyll Websites with servr and knitr&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://hywel.github.io&quot;&gt;Hywel Stoakes&lt;/a&gt; on January 05, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Syntax Highlighting]]></title>
+  <link rel="alternate" type="text/html" href="http://hywel.github.io/blog/Code-Blocks/" />
+  <id>http://hywel.github.io/blog/Code-Blocks</id>
+  <updated>2016-01-06 19:33:42 +1100T00:00:00-00:00</updated>
+  <published>2016-01-05T10:59:11+11:00</published>
+  
+  <author>
+    <name>Hywel Stoakes</name>
+    <uri>http://hywel.github.io</uri>
+    <email>hywel@email.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;I am currently investigating how to embed code blocks and tables within a static page and have them compile on github pages. This post is using the &lt;code&gt;kramdown&lt;/code&gt; markup flavour, but in the future I would like to use &lt;a href=&quot;http://www.rstudio.com&quot;&gt;RStudio IDE&lt;/a&gt; and &lt;a href=&quot;http://rmarkdown.rstudio.com&quot;&gt;Rmarkdown&lt;/a&gt; to add pages to a static server using &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;. I think that the &lt;em&gt;R&lt;/em&gt; package &lt;a href=&quot;https://github.com/yihui/servr&quot;&gt;&lt;strong&gt;servr&lt;/strong&gt;&lt;/a&gt; will also be very useful along with the associated &lt;code&gt;knitr-jekyll&lt;/code&gt; repo developed by &lt;a href=&quot;https://github.com/yihui&quot;&gt;Yihui Xie&lt;/a&gt; who also developed the incredibly useful and very powerful &lt;a href=&quot;https://github.com/yihui/knitr&quot;&gt;knitr&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have also found another &lt;a href=&quot;http://brendanrocks.com/blogging-with-rmarkdown-knitr-jekyll/&quot;&gt;blog post&lt;/a&gt; that details some refinements and use the aforementioned packages as the basis. I will investigate and detail findings here…&lt;/p&gt;
+
+&lt;p&gt;Before getting on to that however, I will start with some tests using the markdown that Jekyll will both understand and github pages will compile - this makes us of Liquid tags such as “% highlight r % endhighlight %”.&lt;/p&gt;
+
+&lt;p&gt;Github pages only supports a subset of the liquid tags and doesn’t allow use of the plug-in architecture. For this reason I had to change my plans to use the very elegant &lt;a href=&quot;https://github.com/clayh53/tufte-jekyll&quot;&gt;Tufte Theme&lt;/a&gt; developed by &lt;a href=&quot;https://github.com/clayh53&quot;&gt;Clay Harmon&lt;/a&gt;, as this doesn’t seem to compile well on github pages - I could compile locally and then push to gituhub, but I was looking for something more flexible and quickly updatable on-the-go!&lt;/p&gt;
+
+&lt;p&gt;So back to the highlighting and visualisation of results…&lt;/p&gt;
+
+&lt;h1 id=&quot;highlighting&quot;&gt;Highlighting&lt;/h1&gt;
+
+&lt;p&gt;For example, here is the command within &lt;em&gt;R&lt;/em&gt; that can be used to build a site locally, ready for pushing to github&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. This is different to the triple backtick syntax of &lt;strong&gt;RStudio&lt;/strong&gt; flavoured Rmarkdown.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;servr&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;jekyll&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;command&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;bundle exec jekyll build&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Note: That I need to use this command rather than the default &lt;code&gt;command=&quot;jekyll build&quot;&lt;/code&gt; as there seems to be some problems finding the ruby gems in &lt;code&gt;/usr/bin/&lt;/code&gt; on OS X &lt;em&gt;El Capitan&lt;/em&gt; (they are installed in &lt;code&gt;/usr/local/bin&lt;/code&gt;). This has been detailed elsewhere and once I settle on a stable implementation I will write about the steps. A related problem is that I can’t use the autoregeneration feature &lt;code&gt;--watch&lt;/code&gt; using the &lt;code&gt;servr::jekyll&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;p&gt;If needed the site can be compiled without serving using the following syntax:.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;servr&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;jekyll&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;command&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;bundle exec jekyll build&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; serve &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;early-days&quot;&gt;Early Days&lt;/h1&gt;
+
+&lt;p&gt;All of this is still early days and I am looking forward to starting to play around with tables that are produced by &lt;code&gt;kable&lt;/code&gt; which can be embedded directly onto pages.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;knitr&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;kable&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;mtcars&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;creates the following table:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;|                  |  mpg| cyl| disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
+|:-----------------|----:|---:|----:|---:|----:|-----:|-----:|--:|--:|----:|----:|
+|Mazda RX4         | 21.0|   6|  160| 110| 3.90| 2.620| 16.46|  0|  1|    4|    4|
+|Mazda RX4 Wag     | 21.0|   6|  160| 110| 3.90| 2.875| 17.02|  0|  1|    4|    4|
+|Datsun 710        | 22.8|   4|  108|  93| 3.85| 2.320| 18.61|  1|  1|    4|    1|
+|Hornet 4 Drive    | 21.4|   6|  258| 110| 3.08| 3.215| 19.44|  1|  0|    3|    1|
+|Hornet Sportabout | 18.7|   8|  360| 175| 3.15| 3.440| 17.02|  0|  0|    3|    2|
+|Valiant           | 18.1|   6|  225| 105| 2.76| 3.460| 20.22|  1|  0|    3|    1|
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Which displays a formatted table on the site that looks like this:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;mpg&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;cyl&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;disp&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;hp&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;drat&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;wt&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;qsec&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;vs&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;am&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;gear&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;carb&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Mazda RX4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;21.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;160&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;110&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3.90&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2.620&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;16.46&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Mazda RX4 Wag&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;21.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;160&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;110&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3.90&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2.875&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;17.02&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Datsun 710&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;22.8&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;108&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;93&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3.85&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2.320&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;18.61&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Hornet 4 Drive&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;21.4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;258&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;110&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3.08&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3.215&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;19.44&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Hornet Sportabout&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;18.7&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;8&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;360&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;175&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3.15&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3.440&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;17.02&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Valiant&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;18.1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;225&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;105&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2.76&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3.460&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;20.22&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The Tufte package has very elegant tables reminiscent of the &lt;code&gt;booktabs&lt;/code&gt; package in LaTeX. I will see if I can keep that functionality when I change themes?&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;figures&quot;&gt;Figures&lt;/h2&gt;
+
+&lt;p&gt;Another important feature will be the ability to generate figures quickly using &lt;a href=&quot;http://ggplot2.org&quot;&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/a&gt; and other packages within &lt;em&gt;R&lt;/em&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;df &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;data.frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;gp &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;factor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;letters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; each &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt;
+                 y &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; rnorm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Compute sample mean and standard deviation in each group&lt;/span&gt;
+ds &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; plyr&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;ddply&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;df&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;gp&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; plyr&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;summarise&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; mean &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;y&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; sd &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; sd&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;y&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+
+ggplot&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+  geom_point&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;data &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; df&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;x &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; gp&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; y &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; y&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+  geom_point&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;data &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; ds&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;x &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; gp&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; y &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+             colour &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; size &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+  geom_errorbar&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;data &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; ds&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;x &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; gp&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; y &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                               ymin &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; mean &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; sd&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; ymax &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; mean &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; sd&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+                colour &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; width &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+ggsave&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;filename &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;assets/img/Rplot.png&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/Rplot.png&quot; alt=&quot;A Plot output from R&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Not sure why all of the following code blocks are truncated - it may be the theme? They seem to be generally OK when viewing the actual post. Update: I’ve changed themes and this has resolved. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;The tables are not nearly as easy on the eye but much easier to generate. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://hywel.github.io/blog/Code-Blocks/&quot;&gt;Syntax Highlighting&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://hywel.github.io&quot;&gt;Hywel Stoakes&lt;/a&gt; on January 05, 2016.&lt;/p&gt;
   </content>
 </entry>
 

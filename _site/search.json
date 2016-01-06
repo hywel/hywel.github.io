@@ -3,9 +3,9 @@
   
     {
       "title"			: "Serve Jekyll Websites with servr and knitr",
-      "link"			: "http://hywel.github.io/jekyll/rstats/The-Next-Step/",
+      "link"			: "http://hywel.github.io/blog/The-Next-Step/",
       "excerpt"		: "<h1 id="writing-in-rstudio">Writing in Rstudio</h1>
-<p>This blog post has been written in Rstudio and using the <code>rmd2md</code> function. When this is run it will convert any file (with the <code>*.rmd</code> extention) that is found in the <code>_rmd</code> folder to the markdown that can be parsed by Jekyll and served on github pages.</p>
+<p>This blog post has been written in Rstudio and using the <code>rmd2md</code> function. When this is run it will convert any file (with the <code>*.rmd</code> extention) that is found within the <code>_rmd</code> folder to markdown that can be parsed by Jekyll and served on github pages. This is then moved to the <code>_posts</code> folder</p>
 
 <p>be sure to include the header between three dashes:</p>
 
@@ -13,7 +13,21 @@
     }
   
 
+  
+    ,{
+      "title"			: "Syntax Highlighting",
+      "link"			: "http://hywel.github.io/blog/Code-Blocks/",
+      "excerpt"		: "<p>I am currently investigating how to embed code blocks and tables within a static page and have them compile on github pages. This post is using the <code>kramdown</code> markup flavour, but in the future I would like to use <a href="http://www.rstudio.com">RStudio IDE</a> and <a href="http://rmarkdown.rstudio.com">Rmarkdown</a> to add pages to a static server using <a href="http://jekyllrb.com">Jekyll</a>. I think that the <em>R</em> package <a href="https://github.com/yihui/servr"><strong>servr</strong></a> will also be very useful along with the associated <code>knitr-jekyll</code> repo developed by <a href="https://github.com/yihui">Yihui Xie</a> who also developed the incredibly useful and very powerful <a href="https://github.com/yihui/knitr">knitr</a>.</p>
 
+"
+    }
+  
+
+
+
+  
+
+  
 
   
 
@@ -34,12 +48,18 @@
   
 
   
-
-  
     ,{
       "title"			: "Theme Setup",
       "link"			: "http://hywel.github.io/theme-setup/",
       "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
+    }
+  
+
+  
+    ,{
+      "title"			: "Publication",
+      "link"			: "http://hywel.github.io/publications/",
+      "excerpt"		: "Key Publications."
     }
   
 

@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <title>Serve Jekyll Websites with servr and knitr &#8211; Hywel Stoakes</title>
 <meta name="description" content="Writing in Rstudio
-This blog post has been written in Rstudio and using the rmd2md function. When this is run it will convert any file (with the *.rmd extention) that is found in the _rmd folder to the markdown that can be parsed by Jekyll and served on github pages.
+This blog post has been written in Rstudio and using the rmd2md function. When this is run it will convert any file (with the *.rmd extention) that is found within the _rmd folder to markdown that can be parsed by Jekyll and served on github pages. This is then moved to the _posts folder
 
 be sure to include the header between three dashes:
 
@@ -19,7 +19,7 @@ be sure to include the header between three dashes:
 <!-- Twitter Cards -->
 <meta name="twitter:title" content="Serve Jekyll Websites with servr and knitr">
 <meta name="twitter:description" content="Writing in Rstudio
-This blog post has been written in Rstudio and using the rmd2md function. When this is run it will convert any file (with the *.rmd extention) that is found in the _rmd folder to the markdown that can be parsed by Jekyll and served on github pages.
+This blog post has been written in Rstudio and using the rmd2md function. When this is run it will convert any file (with the *.rmd extention) that is found within the _rmd folder to markdown that can be parsed by Jekyll and served on github pages. This is then moved to the _posts folder
 
 be sure to include the header between three dashes:
 
@@ -35,19 +35,19 @@ be sure to include the header between three dashes:
 <meta property="og:type" content="article">
 <meta property="og:title" content="Serve Jekyll Websites with servr and knitr">
 <meta property="og:description" content="Writing in Rstudio
-This blog post has been written in Rstudio and using the rmd2md function. When this is run it will convert any file (with the *.rmd extention) that is found in the _rmd folder to the markdown that can be parsed by Jekyll and served on github pages.
+This blog post has been written in Rstudio and using the rmd2md function. When this is run it will convert any file (with the *.rmd extention) that is found within the _rmd folder to markdown that can be parsed by Jekyll and served on github pages. This is then moved to the _posts folder
 
 be sure to include the header between three dashes:
 
 ">
-<meta property="og:url" content="http://hywel.github.io/jekyll/rstats/The-Next-Step/">
+<meta property="og:url" content="http://hywel.github.io/blog/The-Next-Step/">
 <meta property="og:site_name" content="Hywel Stoakes">
 
 
 
 
 
-<link rel="canonical" href="http://hywel.github.io/jekyll/rstats/The-Next-Step/">
+<link rel="canonical" href="http://hywel.github.io/blog/The-Next-Step/">
 <link href="http://hywel.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Hywel Stoakes Feed">
 
 <!-- https://t.co/dKP3o1e -->
@@ -101,11 +101,6 @@ be sure to include the header between three dashes:
 		    
 		        
 		    
-		    <li><a href="http://hywel.github.io/about/" >About</a></li>
-		  
-		    
-		        
-		    
 		    <li><a href="http://hywel.github.io/articles/" >Articles</a></li>
 		  
 		    
@@ -116,7 +111,22 @@ be sure to include the header between three dashes:
 		    
 		        
 		    
+		    <li><a href="http://hywel.github.io/publications/" >Publications</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://hywel.github.io/contact/" >Contact</a></li>
+		  
+		    
+		        
+		    
 		    <li><a href="http://hywel.github.io/search/" >Search</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://hywel.github.io/about/" >Theme</a></li>
 		  
 	    </ul>
 	</nav>
@@ -157,14 +167,14 @@ be sure to include the header between three dashes:
         
         <span class="author vcard">By <span class="fn">Hywel Stoakes</span></span>
         <span class="entry-date date published"><time datetime="2016-01-05T14:23:34+11:00"><i class="fa fa-calendar-o"></i> January 05, 2016</time></span>
-        
+        <span class="entry-date date modified"><time datetime="2016-01-07 08:44:52 +1100"><i class="fa fa-pencil"></i> January 07, 2016</time></span>
         
         
         
       </footer>
       <div class="entry-content">
         <h1 id="writing-in-rstudio">Writing in Rstudio</h1>
-<p>This blog post has been written in Rstudio and using the <code>rmd2md</code> function. When this is run it will convert any file (with the <code>*.rmd</code> extention) that is found in the <code>_rmd</code> folder to the markdown that can be parsed by Jekyll and served on github pages.</p>
+<p>This blog post has been written in Rstudio and using the <code>rmd2md</code> function. When this is run it will convert any file (with the <code>*.rmd</code> extention) that is found within the <code>_rmd</code> folder to markdown that can be parsed by Jekyll and served on github pages. This is then moved to the <code>_posts</code> folder</p>
 
 <p>be sure to include the header between three dashes:</p>
 
@@ -173,19 +183,20 @@ be sure to include the header between three dashes:
 <span class="c1">#published: false</span>
 <span class="c1">#date: 2016-01-05 14:23:34 +1100</span>
 <span class="c1">#title:  &quot;The Post Title&quot;</span>
-<span class="c1">#categories: tags</span></code></pre></div>
+<span class="c1">#categories: blogs</span></code></pre></div>
 
 <p>The workflow is as follows:</p>
 
 <ol>
   <li>Write a post with the above header, and put it in the <code>_rmd</code> folder.</li>
-  <li>Run the <a href="https://github.com/AndySouth/andysouth.github.io/blob/master/rmd2md.r">rmd2md()</a> command within <em>Rstudio</em>.</li>
-  <li>Run <code>servr::jekyll(command="bundle exec jekyll build",serve=FALSE)</code> from the <a href="https://github.com/yihui/servr">servr</a> package to check that the site builds.</li>
-  <li>Use git within <em>Rstudio</em> to add staged files, commit changes and push to the repository.</li>
-  <li>Check post has worked.</li>
+  <li>Run the <a href="https://github.com/AndySouth/andysouth.github.io/blob/master/rmd2md.r">rmd2md()</a> command within <em>Rstudio</em> which converts and copies the post to the <code>_posts</code> folder.</li>
+  <li>Run <code>servr::jekyll(command="bundle exec jekyll build",serve=FALSE)</code> from the <a href="https://github.com/yihui/servr">servr</a> package in <em>Rstudio</em> to check that the site builds <code>serve=TRUE</code> allows you to view it locally.</li>
+  <li>Use the <code>git</code> version control system within <em>Rstudio</em> to add staged files, commit changes and push to the repository on <a href="www.github">github</a>.</li>
+  <li>Wait a few minutes for the site to build remotely (time varies) and navigate to page to check post has rendered correctly.</li>
 </ol>
 
 <h1 id="testing-code-chunks-take-2">Testing code chunks take 2</h1>
+<p>Here I will test the code display and see if I can generate a figure and place it on the page—it is mainly for my own reference.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kn">require</span><span class="p">(</span>ggplot2<span class="p">)</span>
 df <span class="o">&lt;-</span> <span class="kt">data.frame</span><span class="p">(</span>gp <span class="o">=</span> <span class="kp">factor</span><span class="p">(</span><span class="kp">rep</span><span class="p">(</span><span class="kc">letters</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">],</span> each <span class="o">=</span> <span class="m">10</span><span class="p">)),</span>
@@ -206,14 +217,14 @@ ggplot<span class="p">()</span> <span class="o">+</span>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r">ggsave<span class="p">(</span>filename <span class="o">=</span> <span class="s">&quot;figures/Rplot.png&quot;</span><span class="p">)</span></code></pre></div>
 
-<div class="highlight"><pre><code class="language-text" data-lang="text">## Saving 7 x 7 in image</code></pre></div>
-
 <p>Lets see if this works?</p>
 
         
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
+      
+        <a href="http://hywel.github.io/blog/Code-Blocks/" class="btn" title="Syntax Highlighting">Previous</a>
       
       
     </nav><!-- /.pagination -->
