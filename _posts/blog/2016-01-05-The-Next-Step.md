@@ -5,8 +5,8 @@ published: true
 categories: blog
 date: 2016-01-05 14:23:34 +1100
 title:  "Serve Jekyll Websites with servr and knitr"
-categories: [jekyll, rstats]
 ---
+
 # Writing in Rstudio
 This blog post has been written in Rstudio and using the `rmd2md` function. When this is run it will convert any file (with the `*.rmd` extention) that is found in the `_rmd` folder to the markdown that can be parsed by Jekyll and served on github pages. 
  
