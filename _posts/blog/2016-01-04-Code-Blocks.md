@@ -30,7 +30,7 @@ For example, here is the command within *R* that can be used to build a site loc
 servr::jekyll(command="bundle exec jekyll build")
 {% endhighlight %}
 
-Note: That I need to use this command rather than the default `command="jekyll build"` as there seems to be some problems finding the ruby gems in `\usr\bin\` on OS X *El Capitan*. This has been detailed elsewhere and once I settle on a stable implementation I will write about the steps. A related problem is that I can't use the autoregeneration feature `--watch` using the `servr::jekyll` function. 
+Note: That I need to use this command rather than the default `command="jekyll build"` as there seems to be some problems finding the ruby gems in `/usr/bin/` on OS X *El Capitan* (they are installed in `/usr/local/bin`). This has been detailed elsewhere and once I settle on a stable implementation I will write about the steps. A related problem is that I can't use the autoregeneration feature `--watch` using the `servr::jekyll` function. 
 
 If needed the site can be compiled without serving using the following syntax:.
 
