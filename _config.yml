@@ -51,12 +51,13 @@ page_layout: page
 titlecase: true
 
 comments: true
+
 # Site owner
 owner:
   name: Hywel Stoakes
   avatar: bio-avatar1.png
   email: hywel@email.com
-  disqus-shortname: hywelstoakes1.disqus.com
+  disqus-shortname: hywelmain.disqus.com
   twitter: hywel_
   #facebook: #username
   github: hywel

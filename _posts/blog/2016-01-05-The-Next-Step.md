@@ -3,6 +3,7 @@ layout: post
 status: publish
 published: true
 categories: blog
+share: true
 date: 2016-01-05 14:23:34 +1100
 modified: 2016-01-07 08:44:52 +1100
 title:  "Serve Jekyll Websites with servr and knitr"
