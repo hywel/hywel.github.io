@@ -24,7 +24,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..2
   enable_coderay: false
-  
+
 # coderay:
 #   coderay_wrap:              div
 #   coderay_line_numbers:      inline
@@ -50,12 +50,13 @@ page_layout: page
 # Format titles with titlecase?
 titlecase: true
 
+comments: true
 # Site owner
 owner:
   name: Hywel Stoakes
   avatar: bio-avatar1.png
   email: hywel@email.com
-  #disqus-shortname:
+  disqus-shortname: hywelstoakes1.disqus.com
   twitter: hywel_
   #facebook: #username
   github: hywel
