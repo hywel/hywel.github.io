@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Publication
+title: Publications
 excerpt: "Key Publications."
 search_omit: false
 ---

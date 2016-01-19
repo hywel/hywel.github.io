@@ -168,8 +168,17 @@ be sure to include the header between three dashes:
         <span class="author vcard">By <span class="fn">Hywel Stoakes</span></span>
         <span class="entry-date date published"><time datetime="2016-01-05T14:23:34+11:00"><i class="fa fa-calendar-o"></i> January 05, 2016</time></span>
         <span class="entry-date date modified"><time datetime="2016-01-07 08:44:52 +1100"><i class="fa fa-pencil"></i> January 07, 2016</time></span>
-        
-        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=&amp;text=Serve%20Jekyll%20Websites%20with%20servr%20and%20knitr&amp;url=http://hywel.github.io/blog/The-Next-Step/&amp;via=hywel_" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://hywel.github.io/blog/The-Next-Step/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://hywel.github.io/blog/The-Next-Step/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
         
       </footer>
       <div class="entry-content">
@@ -191,7 +200,7 @@ be sure to include the header between three dashes:
   <li>Write a post with the above header, and put it in the <code>_rmd</code> folder.</li>
   <li>Run the <a href="https://github.com/AndySouth/andysouth.github.io/blob/master/rmd2md.r">rmd2md()</a> command within <em>Rstudio</em> which converts and copies the post to the <code>_posts</code> folder.</li>
   <li>Run <code>servr::jekyll(command="bundle exec jekyll build",serve=FALSE)</code> from the <a href="https://github.com/yihui/servr">servr</a> package in <em>Rstudio</em> to check that the site builds <code>serve=TRUE</code> allows you to view it locally.</li>
-  <li>Use the <code>git</code> version control system within <em>Rstudio</em> to add staged files, commit changes and push to the repository on <a href="http;//www.github.com">github</a>.</li>
+  <li>Use the <code>git</code> version control system within <em>Rstudio</em> to add staged files, commit changes and push to the repository on <a href="http://www.github.com">github</a>.</li>
   <li>Wait a few minutes for the site to build remotely (time varies) and navigate to page to check post has rendered correctly.</li>
 </ol>
 
@@ -218,6 +227,31 @@ ggplot<span class="p">()</span> <span class="o">+</span>
 <div class="highlight"><pre><code class="language-r" data-lang="r">ggsave<span class="p">(</span>filename <span class="o">=</span> <span class="s">&quot;figures/Rplot.png&quot;</span><span class="p">)</span></code></pre></div>
 
 <p>Lets see if this works?</p>
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = ''; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
         
       </div><!-- /.entry-content -->

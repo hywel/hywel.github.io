@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://hywel.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://hywel.github.io" />
-<updated>2016-01-07T09:00:44+11:00</updated>
+<updated>2016-01-19T16:56:16+11:00</updated>
 <id>http://hywel.github.io/</id>
 <author>
   <name>Hywel Stoakes</name>
@@ -46,7 +46,7 @@
   &lt;li&gt;Write a post with the above header, and put it in the &lt;code&gt;_rmd&lt;/code&gt; folder.&lt;/li&gt;
   &lt;li&gt;Run the &lt;a href=&quot;https://github.com/AndySouth/andysouth.github.io/blob/master/rmd2md.r&quot;&gt;rmd2md()&lt;/a&gt; command within &lt;em&gt;Rstudio&lt;/em&gt; which converts and copies the post to the &lt;code&gt;_posts&lt;/code&gt; folder.&lt;/li&gt;
   &lt;li&gt;Run &lt;code&gt;servr::jekyll(command=&quot;bundle exec jekyll build&quot;,serve=FALSE)&lt;/code&gt; from the &lt;a href=&quot;https://github.com/yihui/servr&quot;&gt;servr&lt;/a&gt; package in &lt;em&gt;Rstudio&lt;/em&gt; to check that the site builds &lt;code&gt;serve=TRUE&lt;/code&gt; allows you to view it locally.&lt;/li&gt;
-  &lt;li&gt;Use the &lt;code&gt;git&lt;/code&gt; version control system within &lt;em&gt;Rstudio&lt;/em&gt; to add staged files, commit changes and push to the repository on &lt;a href=&quot;http;//www.github.com&quot;&gt;github&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Use the &lt;code&gt;git&lt;/code&gt; version control system within &lt;em&gt;Rstudio&lt;/em&gt; to add staged files, commit changes and push to the repository on &lt;a href=&quot;http://www.github.com&quot;&gt;github&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Wait a few minutes for the site to build remotely (time varies) and navigate to page to check post has rendered correctly.&lt;/li&gt;
 &lt;/ol&gt;
 
