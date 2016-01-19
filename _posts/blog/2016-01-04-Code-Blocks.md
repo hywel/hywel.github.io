@@ -4,6 +4,7 @@ title:  "Syntax Highlighting"
 date:   2016-01-05 10:59:11 +1100
 modified: 2016-01-06 19:33:42 +1100
 categories: blog
+comments: true
 image:
   feature: so-simple-sample-image-8.jpg
   credit: Hywel Stoakes
