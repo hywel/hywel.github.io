@@ -6,7 +6,7 @@ published: true
 modified:
 categories: blog
 excerpt:
-tags: []
+tags: [phonetics]
 image:
   feature:
 date: 2016-01-20T00:06:55+11:00
@@ -25,6 +25,6 @@ I am now testing the work flow to see how the phonetic fonts are rendered and an
 * Rə̄
 * R̀
  
- 
+All of the diacritics seem to render correctly. I will check them along the way.
  
  

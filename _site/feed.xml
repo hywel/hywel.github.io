@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://hywel.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://hywel.github.io" />
-<updated>2016-01-20T10:17:18+11:00</updated>
+<updated>2016-01-20T10:30:13+11:00</updated>
 <id>http://hywel.github.io/</id>
 <author>
   <name>Hywel Stoakes</name>
@@ -43,6 +43,8 @@
   &lt;li&gt;Rə̄&lt;/li&gt;
   &lt;li&gt;R̀&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;All of the diacritics seem to render correctly. I will check them along the way.&lt;/p&gt;
 
 
     &lt;p&gt;&lt;a href=&quot;http://hywel.github.io/blog/a-phonetic-post/&quot;&gt;A Phonetic Post&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://hywel.github.io&quot;&gt;Hywel Stoakes&lt;/a&gt; on January 20, 2016.&lt;/p&gt;
