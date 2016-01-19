@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "A Phonetic Post",
+      "link"			: "http://hywel.github.io/blog/a-phonetic-post/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "Serve Jekyll Websites with servr and knitr",
       "link"			: "http://hywel.github.io/blog/The-Next-Step/",
       "excerpt"		: "<h1 id="writing-in-rstudio">Writing in Rstudio</h1>
