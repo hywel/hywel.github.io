@@ -1,6 +1,8 @@
 ---
 layout: {{ layout }}
 title: {{ title }}
+status: process
+published: false
 modified:
 categories: {{ dir }}
 excerpt:
