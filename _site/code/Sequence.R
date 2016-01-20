@@ -18,5 +18,5 @@ rmd2md(dir_rmd = "_posts/blog", dir_md = "_posts/blog") # for a blog post
 #servr::jekyll(command="bundle exec jekyll build") # Use this if you want to preview the site
 servr::jekyll(command="bundle exec jekyll build", serve = FALSE)
 
-# THen use git to commit the changes and then push to github
+# Then use git to commit the changes and then push to github
 

@@ -7,6 +7,7 @@ modified:
 categories: {{ dir }}
 excerpt:
 tags: []
+share: true
 image:
   feature:
 ---
