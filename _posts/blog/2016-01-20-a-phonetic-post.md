@@ -6,7 +6,7 @@ published: true
 modified:
 categories: blog
 excerpt:
-tags: [phonetics test]
+tags: [phonetics, test]
 image:
   feature:
 date: 2016-01-20T00:06:55+11:00
