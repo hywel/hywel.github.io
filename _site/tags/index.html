@@ -191,6 +191,90 @@
   
   </ul>
 
+<div class="tag-cloud">
+  
+<a href="#posts-tag" id="1" class="__tag" style="margin: 5px">test</a>
+  <ul id="list_1" style="display:none;">
+  
+<li><a href="/blog/a-phonetic-post/">A Phonetic Post</a></li>
+
+<li><a href="/blog/The-Next-Step/">Serve Jekyll Websites with servr and knitr</a></li>
+
+<li><a href="/blog/Code-Blocks/">Syntax Highlighting</a></li>
+
+</ul>
+
+<a href="#posts-tag" id="2" class="__tag" style="margin: 5px">Rstudio</a>
+  <ul id="list_2" style="display:none;">
+  
+<li><a href="/blog/The-Next-Step/">Serve Jekyll Websites with servr and knitr</a></li>
+
+<li><a href="/blog/Code-Blocks/">Syntax Highlighting</a></li>
+
+</ul>
+
+<a href="#posts-tag" id="3" class="__tag" style="margin: 5px">code</a>
+  <ul id="list_3" style="display:none;">
+  
+<li><a href="/blog/The-Next-Step/">Serve Jekyll Websites with servr and knitr</a></li>
+
+</ul>
+
+<a href="#posts-tag" id="4" class="__tag" style="margin: 5px">phonetics</a>
+  <ul id="list_4" style="display:none;">
+  
+<li><a href="/blog/a-phonetic-post/">A Phonetic Post</a></li>
+
+</ul>
+
+</div>
+
+<div id="posts-tags" class="post-list" style="margin: 50px;"></div>
+
+<script type="text/javascript">
+  $(function() {
+    var minFont = 15.0,
+    maxFont = 40.0,
+    diffFont = maxFont - minFont,
+    size = 0;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    size = (Math.log(3) / Math.log(3)) * diffFont + minFont;
+    $("#1").css("font-size", size + "px");
+    
+    size = (Math.log(2) / Math.log(3)) * diffFont + minFont;
+    $("#2").css("font-size", size + "px");
+    
+    size = (Math.log(1) / Math.log(3)) * diffFont + minFont;
+    $("#3").css("font-size", size + "px");
+    
+    size = (Math.log(1) / Math.log(3)) * diffFont + minFont;
+    $("#4").css("font-size", size + "px");
+    
+
+    $('.tag-cloud a[class^="__tag"]').click(function() {
+      $('.post-list').empty();
+      $('#list_' + $(this).attr('id')).each(function() {
+        $('.post-list').append('<ul>' + $(this).html() + '</ul>');
+      });
+    });
+  });
+</script>
+
+
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
   </article>
