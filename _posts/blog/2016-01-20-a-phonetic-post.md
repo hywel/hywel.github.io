@@ -15,7 +15,7 @@ date: 2016-01-20T00:06:55+11:00
 I am now testing the work flow to see how the phonetic fonts are rendered and check unicode compliance.
  
 * /θɪs ɪs eɪ pɐʉst wɪθ ə fɔˈnɛtɪk ˈkɔmpɐʉnənt/
-* This is a post with a fonetic componant
+* This is a post with a phonetic componant
  
 ![Spectrogram](/figures/spectrogram1.png)
  
