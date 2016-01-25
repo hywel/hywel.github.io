@@ -12,7 +12,7 @@ image:
   feature:
 date: 2016-01-25T12:59:43+11:00
 share: true
-comments: false
+comment: false
 ---
 
 This example uses the `phonTools` package, developed by [Santiago Barreda](http://www.santiagobarreda.com/rscripts.html).
