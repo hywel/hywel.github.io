@@ -12,14 +12,14 @@ image:
   feature:
 date: 2016-01-25T12:59:43+11:00
 share: true
-comment: false
+comments: false
 ---
 
 This example uses the `phonTools` package, developed by [Santiago Barreda](http://www.santiagobarreda.com/rscripts.html).
 
 ```{r vowel_space, cache=TRUE}
 require(phonTools)
-## A few examples of some vowel plots. 
+## A few examples of some vowel plots.
 
 ## load the Peterson and Barney data
 data (pb52)
@@ -55,3 +55,4 @@ vplot (pb52$f1, pb52$f2, pb52$vowel, logaxes = TRUE,
 ```
 
 I have moved some of the files around and this is a further test of the workflow functionality. I am hoping to be out of the testing phase within a week or so and then I should be able to post in plain text from anywhere!
+
