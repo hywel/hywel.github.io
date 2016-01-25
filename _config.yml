@@ -1,8 +1,9 @@
 # Site wide configuration
 
 title: Hywel Stoakes
+subtitle: Linguistic Phonetics
 locale: en_AU
-description: Computer aided techniques for phonetics speech language and beyond.
+description: Computer aided techniques for phonetic speech production and perception and beyond...
 logo: site-logo.png
 search: true
 url: http://hywel.github.io
