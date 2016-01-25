@@ -17,7 +17,7 @@ comments: false
 
 This example uses the `phonTools` package, developed by [Santiago Barreda](http://www.santiagobarreda.com/rscripts.html).
 
-```{r,cache=TRUE}
+```{r vowel_space, cache=TRUE}
 require(phonTools)
 ## A few examples of some vowel plots. 
 

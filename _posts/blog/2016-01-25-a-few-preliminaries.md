@@ -32,7 +32,7 @@ pb52 = pb52[pb52$type=='m',]  ## use only the males
 vplot (pb52$f1, pb52$f2, pb52$vowel, xsampa = TRUE)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-1](/figures/unnamed-chunk-1-1.png)
+![plot of chunk vowel_space](/figures/vowel_space-1.png)
 
 {% highlight r %}
 # alternate layout with log axes
@@ -40,7 +40,7 @@ vplot (pb52$f1, pb52$f2, pb52$vowel, logaxes = TRUE,
            alternateaxes = TRUE, xsampa = TRUE)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-1](/figures/unnamed-chunk-1-2.png)
+![plot of chunk vowel_space](/figures/vowel_space-2.png)
 
 {% highlight r %}
 # category means only 
@@ -48,7 +48,7 @@ vplot (pb52$f1, pb52$f2, pb52$vowel, logaxes = TRUE,
            meansonly = TRUE, xsampa = TRUE, cex = 3)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-1](/figures/unnamed-chunk-1-3.png)
+![plot of chunk vowel_space](/figures/vowel_space-3.png)
 
 {% highlight r %}
 # category means only with standard deviation ellipses
@@ -56,7 +56,7 @@ vplot (pb52$f1, pb52$f2, pb52$vowel, logaxes = FALSE,
        meansonly = TRUE, ellipsesd = 2, xsampa = TRUE)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-1](/figures/unnamed-chunk-1-4.png)
+![plot of chunk vowel_space](/figures/vowel_space-4.png)
 
 {% highlight r %}
 # same as above, with alternate axes
@@ -65,7 +65,7 @@ vplot (pb52$f1, pb52$f2, pb52$vowel, logaxes = TRUE,
 	   alternateaxes = TRUE)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-1](/figures/unnamed-chunk-1-5.png)
+![plot of chunk vowel_space](/figures/vowel_space-5.png)
 
 {% highlight r %}
 # individual points with standard deviation ellipses
@@ -75,6 +75,6 @@ vplot (pb52$f1, pb52$f2, pb52$vowel, logaxes = TRUE,
 	   alternateaxes = TRUE)
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-1](/figures/unnamed-chunk-1-6.png)
+![plot of chunk vowel_space](/figures/vowel_space-6.png)
  
 I have moved some of the files around and this is a further test. I am hoping to be out of the testing phase within a week or so and then I should be able to post in plain text from anywhere!
