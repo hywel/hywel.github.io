@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://hywel.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://hywel.github.io" />
-<updated>2016-01-25T13:14:49+11:00</updated>
+<updated>2016-01-25T13:37:54+11:00</updated>
 <id>http://hywel.github.io/</id>
 <author>
   <name>Hywel Stoakes</name>
@@ -76,7 +76,7 @@ vplot &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;pb52&lt;span class=&quot;o&q
 
 &lt;p&gt;&lt;img src=&quot;/figures/vowel_space-6.png&quot; alt=&quot;plot of chunk vowel_space&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I have moved some of the files around and this is a further test. I am hoping to be out of the testing phase within a week or so and then I should be able to post in plain text from anywhere!&lt;/p&gt;
+&lt;p&gt;I have moved some of the files around and this is a further test of the workflow functionality. I am hoping to be out of the testing phase within a week or so and then I should be able to post in plain text from anywhere!&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://hywel.github.io/blog/a-few-preliminaries/&quot;&gt;A Few Preliminaries&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://hywel.github.io&quot;&gt;Hywel Stoakes&lt;/a&gt; on January 25, 2016.&lt;/p&gt;
   </content>

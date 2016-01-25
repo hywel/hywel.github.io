@@ -6,7 +6,7 @@ published: true
 modified:
 categories: blog
 excerpt:
-tags: [test, Rstudio, phonetics]
+tags: [test, Rstudio, phonetics, workflow]
 share: true
 image:
   feature:
@@ -77,4 +77,4 @@ vplot (pb52$f1, pb52$f2, pb52$vowel, logaxes = TRUE,
 
 ![plot of chunk vowel_space](/figures/vowel_space-6.png)
  
-I have moved some of the files around and this is a further test. I am hoping to be out of the testing phase within a week or so and then I should be able to post in plain text from anywhere!
+I have moved some of the files around and this is a further test of the workflow functionality. I am hoping to be out of the testing phase within a week or so and then I should be able to post in plain text from anywhere!
