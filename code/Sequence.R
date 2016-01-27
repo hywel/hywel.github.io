@@ -2,7 +2,7 @@ source("code/rmd2md.R")
 rmd2md = rmd2md
 # This creates a new rmd post
 # blog.title <- "New Blog Post Title"
-blog.title <- "A Phonetic Post"
+blog.title <- "A Few Preliminaries"
 blog.path <-system(paste("bundle exec octopress new post ", blog.title ," --dir blog", sep = ""),intern=TRUE)
 #blog.path <- as.list(blog.path)
 # Edit the post
