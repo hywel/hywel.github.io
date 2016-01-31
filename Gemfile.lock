@@ -91,6 +91,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (= 2.5.3)
+  jekyll-gist
   jekyll-sitemap
   octopress (~> 3.0)
   rouge

@@ -51,6 +51,10 @@ page_layout: page
 # Format titles with titlecase?
 titlecase: true
 
+post_template: post
+page_template: page
+draft_template: draft
+
 comments: true
 
 # Site owner
