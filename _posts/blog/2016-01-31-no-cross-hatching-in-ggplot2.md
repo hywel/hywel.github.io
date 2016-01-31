@@ -18,7 +18,7 @@ After some very brief [web searching](http://stackoverflow.com/questions/2895319
  
 My rather crude solution was to add this in a graphics package. Applying a "half-tone" filter in a new layer and then reducing the opacity.
  
-[!Figure](Figure_6_modified.png)
+![Figure](/figures/Figure_6_modified.png)
  
 This will appear in [@Blythe:2016ac].
  
