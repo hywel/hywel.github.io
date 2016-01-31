@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "No Cross-hatching in Ggplot2",
+      "link"			: "http://hywel.github.io/blog/no-cross-hatching-in-ggplot2/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "A Few Preliminaries",
       "link"			: "http://hywel.github.io/blog/a-few-preliminaries/",
       "excerpt"		: ""
