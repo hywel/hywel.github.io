@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://hywel.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://hywel.github.io" />
-<updated>2016-02-02T12:42:22+11:00</updated>
+<updated>2016-02-02T12:44:57+11:00</updated>
 <id>http://hywel.github.io/</id>
 <author>
   <name>Hywel Stoakes</name>
@@ -41,7 +41,7 @@
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;I used &lt;em&gt;Pixelmator&lt;/em&gt; on OS X but any similar tool would do. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;I used &lt;a href=&quot;http://www.pixelmator.com/mac/&quot;&gt;&lt;em&gt;Pixelmator&lt;/em&gt;&lt;/a&gt; on OS X but any similar tool would work &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:2&quot;&gt;
       &lt;p&gt;I am investigating ways to parse references but this was inserted manually. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;

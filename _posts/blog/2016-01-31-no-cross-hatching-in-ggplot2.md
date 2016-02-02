@@ -20,7 +20,7 @@ My rather crude solution was to add this in a graphics package[^1]. Applying a "
  
 ![Figure](/figures/Figure_6_modified.png)
  
-[^1]: I used *Pixelmator* on OS X but any similar tool would do.
+[^1]: I used [*Pixelmator*](http://www.pixelmator.com/mac/) on OS X but any similar tool would work
  
 This will appear in [Blythe et al., 2016][^2].
  
