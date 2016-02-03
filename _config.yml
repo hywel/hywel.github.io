@@ -12,12 +12,11 @@ url: http://hywel.github.io
 
 permalink:   /:categories/:title/
 markdown:    kramdown
-highlighter: pygments
+#highlighter: pygments
 sass:
   sass_dir: _sass
   style: compressed
-gems:
-  - jekyll-sitemap
+gems: [jekyll-sitemap, jekyll-paginate, jekyll-gist]
 
 kramdown:
   auto_ids: true
@@ -25,6 +24,8 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..2
   enable_coderay: false
+  # input: GFM
+  #   syntax_highlighter: rouge
 
 # coderay:
 #   coderay_wrap:              div

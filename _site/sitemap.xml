@@ -24,13 +24,16 @@
     <loc>http://hywel.github.io/</loc>
   </url>
   <url>
-    <loc>http://hywel.github.io/articles/</loc>
+    <loc>http://hywel.github.io/publications/</loc>
+  </url>
+  <url>
+    <loc>http://hywel.github.io/contact/</loc>
   </url>
   <url>
     <loc>http://hywel.github.io/blog/</loc>
   </url>
   <url>
-    <loc>http://hywel.github.io/contact/</loc>
+    <loc>http://hywel.github.io/articles/</loc>
   </url>
   <url>
     <loc>http://hywel.github.io/tags/</loc>
@@ -39,9 +42,21 @@
     <loc>http://hywel.github.io/theme-setup/</loc>
   </url>
   <url>
-    <loc>http://hywel.github.io/publications/</loc>
-  </url>
-  <url>
     <loc>http://hywel.github.io/about/</loc>
   </url>
+    <url>
+      <loc>http://hywel.github.io/blog/Code-Blocks/</loc>
+    </url>
+    <url>
+      <loc>http://hywel.github.io/blog/The-Next-Step/</loc>
+    </url>
+    <url>
+      <loc>http://hywel.github.io/blog/a-phonetic-post/</loc>
+    </url>
+    <url>
+      <loc>http://hywel.github.io/blog/a-few-preliminaries/</loc>
+    </url>
+    <url>
+      <loc>http://hywel.github.io/blog/no-cross-hatching-in-ggplot2/</loc>
+    </url>
 </urlset>

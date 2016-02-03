@@ -4,7 +4,28 @@
     {
       "title"			: "No Cross-hatching in Ggplot2",
       "link"			: "http://hywel.github.io/blog/no-cross-hatching-in-ggplot2/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>After some very brief <a href="http://stackoverflow.com/questions/2895319/how-to-add-texture-to-fill-colors-in-ggplot2?lq=1">web searching</a>, I have reached the conclusion that it is currently not possible to apply cross-hatching effects to the fill in a <code class="highlighter-rouge">ggplot</code>.</p>
+
+<p>My rather crude solution was to add this in a graphics package<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Selecting each of the bars, including the box within the key, then applying a “half-tone” filter in a new layer. Once the effect is applyed the opacity can be reduced in the hatching layer.</p>
+
+<p><img src="/figures/Figure_6_modified.png" alt="Figure" /></p>
+
+<p>The figure above will appear in [Blythe et al., 2016]<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</p>
+
+<h3 id="references">References</h3>
+<p>Blythe, J., Mardigan, K. C., Perdjert, M. E., and Stoakes, H. (2016). Pointing out directions in Murrinhpatha. <em>Open Linguistics</em>, In Press.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>I used <a href="http://www.pixelmator.com/mac/"><em>Pixelmator</em></a> on OS X but any similar tool would work <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>I am investigating ways to parse references but this was inserted manually. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+"
     }
   
 
@@ -12,7 +33,9 @@
     ,{
       "title"			: "A Few Preliminaries",
       "link"			: "http://hywel.github.io/blog/a-few-preliminaries/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>This example uses the <code class="highlighter-rouge">phonTools</code> package, developed by <a href="http://www.santiagobarreda.com/rscripts.html">Santiago Barreda</a>.</p>
+
+"
     }
   
 
@@ -20,7 +43,42 @@
     ,{
       "title"			: "A Phonetic Post",
       "link"			: "http://hywel.github.io/blog/a-phonetic-post/",
-      "excerpt"		: ""
+      "excerpt"		: "<p>I am now testing the work flow to see how the phonetic fonts are rendered and check unicode compliance.</p>
+
+<ul>
+  <li>/θɪs ɪs eɪ pɐʉst wɪθ ə fɔˈnɛtɪk ˈkɔmpɐʉnənt/</li>
+  <li>This is a post with a phonetic componant</li>
+</ul>
+
+<p><img src="/figures/spectrogram1.png" alt="Spectrogram" /></p>
+
+<h2 id="diacritics">Diacritics</h2>
+<ul>
+  <li>Diacritics are often a problem</li>
+  <li>pʰɜt̪o</li>
+  <li>Rə̄</li>
+  <li>Su̺ <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></li>
+</ul>
+
+<p>All of the diacritics seem to render correctly <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>. I will check them along the way.</p>
+
+<p>Below I will embed an audio file from <a href="https://www.soundcloud.com">soundcloud</a>.</p>
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240731199&amp;color=333666&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+<p>In the future this will include a relavent phonetic example rather than this example - but in the meantime enjoy! :).</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Rendering on Chrome seems different so will keep close eye on any differences. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Apart from where noted. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+"
     }
   
 
@@ -29,7 +87,7 @@
       "title"			: "Serve Jekyll Websites with servr and knitr",
       "link"			: "http://hywel.github.io/blog/The-Next-Step/",
       "excerpt"		: "<h1 id="writing-in-rstudio">Writing in Rstudio</h1>
-<p>This blog post has been written in Rstudio and using the <code>rmd2md</code> function. When this is run it will convert any file (with the <code>*.rmd</code> extention) that is found within the <code>_rmd</code> folder to markdown that can be parsed by Jekyll and served on github pages. This is then moved to the <code>_posts</code> folder</p>
+<p>This blog post has been written in Rstudio and using the <code class="highlighter-rouge">rmd2md</code> function. When this is run it will convert any file (with the <code class="highlighter-rouge">*.rmd</code> extention) that is found within the <code class="highlighter-rouge">_rmd</code> folder to markdown that can be parsed by Jekyll and served on github pages. This is then moved to the <code class="highlighter-rouge">_posts</code> folder</p>
 
 <p>be sure to include the header between three dashes:</p>
 
@@ -41,7 +99,7 @@
     ,{
       "title"			: "Syntax Highlighting",
       "link"			: "http://hywel.github.io/blog/Code-Blocks/",
-      "excerpt"		: "<p>I am currently investigating how to embed code blocks and tables within a static page and have them compile on github pages. This post is using the <code>kramdown</code> markup flavour, but in the future I would like to use <a href="http://www.rstudio.com">RStudio IDE</a> and <a href="http://rmarkdown.rstudio.com">Rmarkdown</a> to add pages to a static server using <a href="http://jekyllrb.com">Jekyll</a>. I think that the <em>R</em> package <a href="https://github.com/yihui/servr"><strong>servr</strong></a> will also be very useful along with the associated <code>knitr-jekyll</code> repo developed by <a href="https://github.com/yihui">Yihui Xie</a> who also developed the incredibly useful and very powerful <a href="https://github.com/yihui/knitr">knitr</a>.</p>
+      "excerpt"		: "<p>I am currently investigating how to embed code blocks and tables within a static page and have them compile on github pages. This post is using the <code class="highlighter-rouge">kramdown</code> markup flavour, but in the future I would like to use <a href="http://www.rstudio.com">RStudio IDE</a> and <a href="http://rmarkdown.rstudio.com">Rmarkdown</a> to add pages to a static server using <a href="http://jekyllrb.com">Jekyll</a>. I think that the <em>R</em> package <a href="https://github.com/yihui/servr"><strong>servr</strong></a> will also be very useful along with the associated <code class="highlighter-rouge">knitr-jekyll</code> repo developed by <a href="https://github.com/yihui">Yihui Xie</a> who also developed the incredibly useful and very powerful <a href="https://github.com/yihui/knitr">knitr</a>.</p>
 
 "
     }
@@ -55,6 +113,12 @@
 
   
 
+  
+    ,{
+      "title"			: "Publications",
+      "link"			: "http://hywel.github.io/publications/",
+      "excerpt"		: "Key Publications."
+    }
   
 
   
@@ -75,18 +139,12 @@
 
   
     ,{
-      "title"			: "Publications",
-      "link"			: "http://hywel.github.io/publications/",
-      "excerpt"		: "Key Publications."
-    }
-  
-
-  
-    ,{
       "title"			: "About the Jekyll Theme",
       "link"			: "http://hywel.github.io/about/",
       "excerpt"		: "So Simple is a responsive Jekyll theme for your words and images."
     }
+  
+
   
 
   
