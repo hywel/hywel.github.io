@@ -4,7 +4,7 @@ title: Contact
 excerpt: "About Me"
 search_omit: true
 ---
-This is the personal website of Hywel Stoakes. I am a phonetician primarily undertaking research into the comparative phonetics of Australian languages. I am currently a Postdoctoral Research Fellow affiliated with School of Languages and Linguistics at [The University of Melbourne](http://languages-linguistics.unimelb.edu.au), [The Centre of Excellence for the Dynamics of Language](http://dynamicsoflanguage.edu.au) and the [The Research Unit for Indigenous Language](https://indiglang.arts.unimelb.edu.au/home/).  
+This is the personal website of Hywel Stoakes. I am a phonetician, primarily undertaking research into the comparative phonetics of Australian languages. I am currently a Postdoctoral Research Fellow affiliated with School of Languages and Linguistics at [The University of Melbourne](http://languages-linguistics.unimelb.edu.au), [The Centre of Excellence for the Dynamics of Language](http://dynamicsoflanguage.edu.au) and the [The Research Unit for Indigenous Language](https://indiglang.arts.unimelb.edu.au/home/).  
 
 I can be contacted using the address: hstoakes \|*at*\| unimelb \|*dot*\| edu \|*dot*\|au  
 
