@@ -18,4 +18,4 @@ I am hoping that this will become a central location for my public research and 
 
 ## Contact ##
 
-Please visit the [site](http://hywel.gihub.io) for personal contact information and details about current projects.
+Please visit the [site](http://hywel.github.io) for personal contact information and details about current projects.
