@@ -10,7 +10,7 @@ I can be contacted using the address: hstoakes \|*at*\| unimelb \|*dot*\| edu \|
 
 Otherwise contact me via [twitter](https://www.twitter.com) or [g+](https://plus.google.com) using the icons below.
 
-Fine print: All the usual disclaimers apply to the content of this site: all views are my own and do not represent that of my affiliated.
+Fine print: All the usual disclaimers apply to the content of this site: all views are my own and do not represent that of my affiliated organisations or institutions.
 
 
 <ul class="post-list">
