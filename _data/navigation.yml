@@ -5,6 +5,12 @@
 
 - title: Blog
   url: /blog/
+  
+- title: Phonetics
+  url: /phonetics/
+
+- title: Tools
+  url: /tools/  
 
 - title: Publications
   url: /publications/  
@@ -15,11 +21,12 @@
 # - title: Made Mistakes
 #   url: http://mademistakes.com
 
+
 - title: Contact
   url: /contact/ 
   
 - title: Search
   url: /search/
   
-- title: Theme
-  url: /about/
+# - title: Theme
+#   url: /about/
