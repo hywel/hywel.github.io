@@ -5,15 +5,15 @@
 
 - title: Blog
   url: /blog/
-  
+
 - title: Phonetics
   url: /phonetics/
 
 - title: Tools
-  url: /tools/  
+  url: /tools/
 
 - title: Publications
-  url: /publications/  
+  url: /publications/
 
 # - title: Theme Setup
 #   url: /theme-setup/
@@ -23,10 +23,10 @@
 
 
 - title: Contact
-  url: /contact/ 
-  
+  url: /contact/
+
 - title: Search
   url: /search/
-  
+
 # - title: Theme
 #   url: /about/
