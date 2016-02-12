@@ -130,10 +130,20 @@
   
 
   
+
+  
     ,{
       "title"			: "Theme Setup",
       "link"			: "http://hywel.github.io/theme-setup/",
       "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
+    }
+  
+
+  
+    ,{
+      "title"			: "Tools",
+      "link"			: "http://hywel.github.io/tools/",
+      "excerpt"		: "Tools and links for the investigation of the phonetics of Australian languages"
     }
   
 

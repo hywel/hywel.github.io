@@ -30,6 +30,9 @@
     <loc>http://hywel.github.io/contact/</loc>
   </url>
   <url>
+    <loc>http://hywel.github.io/phonetics/</loc>
+  </url>
+  <url>
     <loc>http://hywel.github.io/blog/</loc>
   </url>
   <url>
@@ -40,6 +43,9 @@
   </url>
   <url>
     <loc>http://hywel.github.io/theme-setup/</loc>
+  </url>
+  <url>
+    <loc>http://hywel.github.io/tools/</loc>
   </url>
   <url>
     <loc>http://hywel.github.io/about/</loc>
@@ -59,4 +65,8 @@
     <url>
       <loc>http://hywel.github.io/blog/no-cross-hatching-in-ggplot2/</loc>
     </url>
+  <url>
+    <loc>http://hywel.github.io/README.html</loc>
+    <lastmod>2016-02-12T14:40:44+11:00</lastmod>
+  </url>
 </urlset>
