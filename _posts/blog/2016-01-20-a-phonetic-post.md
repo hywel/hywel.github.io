@@ -31,7 +31,7 @@ All of the diacritics seem to render correctly [^2]. I will check them along the
  
 [^2]: Apart from where noted.
  
-Below I will embed an audio file from [soundcloud](https://www.soundcloud.com).
+Below I will embed an audio file from [soundcloud](http://www.soundcloud.com).
  
 {% include embed1.html %}
  

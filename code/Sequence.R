@@ -5,7 +5,7 @@ rmd2md = rmd2md
 #### Create a Blog Post ####
 # This creates a new rmd post
 # blog.title <- "New Blog Post Title"
-blog.title <- ""
+blog.title <- readline("What would you like to call your post?")
 blog.path <-system(paste("bundle exec octopress new post ", blog.title ," --dir blog", sep = ""),intern=TRUE)
 
 # Edit the post
