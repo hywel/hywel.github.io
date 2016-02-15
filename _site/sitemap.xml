@@ -21,6 +21,10 @@
     <lastmod>2016-01-05T10:59:11+11:00</lastmod>
   </url>
   <url>
+    <loc>http://hywel.github.io/sample-post/</loc>
+    <lastmod>2011-03-10T00:00:00+11:00</lastmod>
+  </url>
+  <url>
     <loc>http://hywel.github.io/</loc>
   </url>
   <url>
@@ -50,6 +54,9 @@
   <url>
     <loc>http://hywel.github.io/about/</loc>
   </url>
+    <url>
+      <loc>http://hywel.github.io/sample-post/</loc>
+    </url>
     <url>
       <loc>http://hywel.github.io/blog/Code-Blocks/</loc>
     </url>

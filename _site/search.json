@@ -62,9 +62,9 @@
 
 <p>All of the diacritics seem to render correctly <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>. I will check them along the way.</p>
 
-<p>Below I will embed an audio file from <a href="https://www.soundcloud.com">soundcloud</a>.</p>
+<p>Below I will embed an audio file from <a href="http://www.soundcloud.com">soundcloud</a>.</p>
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A//api.soundcloud.com/tracks/240731199&amp;color=333666&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240731199&amp;color=333666&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 
 <p>In the future this will include a relavent phonetic example rather than this example - but in the meantime enjoy! :).</p>
 
@@ -102,6 +102,14 @@
       "excerpt"		: "<p>I am currently investigating how to embed code blocks and tables within a static page and have them compile on github pages. This post is using the <code class="highlighter-rouge">kramdown</code> markup flavour, but in the future I would like to use <a href="http://www.rstudio.com">RStudio IDE</a> and <a href="http://rmarkdown.rstudio.com">Rmarkdown</a> to add pages to a static server using <a href="http://jekyllrb.com">Jekyll</a>. I think that the <em>R</em> package <a href="https://github.com/yihui/servr"><strong>servr</strong></a> will also be very useful along with the associated <code class="highlighter-rouge">knitr-jekyll</code> repo developed by <a href="https://github.com/yihui">Yihui Xie</a> who also developed the incredibly useful and very powerful <a href="https://github.com/yihui/knitr">knitr</a>.</p>
 
 "
+    }
+  
+
+  
+    ,{
+      "title"			: "Sample Post",
+      "link"			: "http://hywel.github.io/sample-post/",
+      "excerpt"		: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
     }
   
 
