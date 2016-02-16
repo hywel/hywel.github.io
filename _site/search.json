@@ -122,17 +122,25 @@
   
 
   
+
+  
+
+  
     ,{
-      "title"			: "Publications",
-      "link"			: "http://hywel.github.io/publications/",
-      "excerpt"		: "Key Publications."
+      "title"			: "Phonetics",
+      "link"			: "http://hywel.github.io/phonetics/teaching/",
+      "excerpt"		: "Teaching phonetic theory"
     }
   
 
   
 
   
-
+    ,{
+      "title"			: "Publications",
+      "link"			: "http://hywel.github.io/publications/",
+      "excerpt"		: "Key Publications."
+    }
   
 
   
