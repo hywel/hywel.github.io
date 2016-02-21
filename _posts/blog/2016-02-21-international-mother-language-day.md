@@ -13,7 +13,7 @@ image:
 date: 2016-02-21T11:44:28+11:00
 ---
  
-Today is International Mother Language Day. Although it is not my mother tongue (or even my grandmother tongue), it *is* my great grandmother tongue.
+Today is International Mother Language Day. Below are a few ways to say hello in some languages that are dear to me. Welsh, although it is not my mother tongue--or even my grandmother tongue--*is* my great grandmother tongue.
  
 > Shwmae, Sut ydych chi? (Welsh)  
 > "Hello, How are you"
