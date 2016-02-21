@@ -5,7 +5,9 @@ rmd2md = rmd2md
 #### Create a Blog Post ####
 # This creates a new rmd post
 # blog.title <- "New Blog Post Title"
-blog.title <- readline("What would you like to call your post?")
+rm(blog.title)
+blog.title <- readline("What would you like to name your post?")
+
 blog.path <-system(paste("bundle exec octopress new post ", blog.title ," --dir blog", sep = ""),intern=TRUE)
 
 # Edit the post
@@ -13,6 +15,7 @@ file.edit(blog.path)
 
 # process the rmd to md file
 rmd2md(dir_rmd = "_posts/blog", dir_md = "_posts/blog") # for a blog post
+servr::jekyll(command="bundle exec jekyll build", serve = FALSE)
 #-----------------------------#
 
 
