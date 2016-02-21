@@ -20,8 +20,10 @@ Today is International Mother Language Day. Below are a few ways to say hello in
  
 Some other languages that are close to my heart include some languages spoken in Australia, these too are not my mother tongues.
  
-> Baleh yire? (Bininj Kunwok, Kunwinjku)   
-> "How (where) are you going?"
+> Ngudda kamak?, Baleh yire? (Bininj Kunwok, Kunwinjku)   
+> "How are you? Where are you going?"
+ 
+Reply (in another language): 
  
 > Manymak, ngurra. (Yolŋu Matha, Gumatj)  
 > "I'm OK/good."
