@@ -18,7 +18,7 @@ Today is International Mother Language Day. Below are a few ways to say hello in
 > Shwmae, Sut ydych chi? (Welsh)  
 > "Hello, How are you"
  
-Some other languages that are close to my heart although they too are not my mother tongues.
+Some other languages that are close to my heart include some languages spoken in Australia, these too are not my mother tongues.
  
 > Baleh yire? (Bininj Kunwok, Kunwinjku)   
 > "How (where) are you going?"
@@ -26,14 +26,15 @@ Some other languages that are close to my heart although they too are not my mot
 > Manymak, ngurra. (Yolŋu Matha, Gumatj)  
 > "I'm OK/good."
  
-My mother language is English which is that of many people across Australia. This is just one amongst so many. Here's to celebrating all of the languages spoken around Australia right now as a mother tongue!
+I live in Australia and my mother language is British English . In my daily life I speak Australian English. These are just two amongst so many languages and varieties spoken across the Australian continent. Here's to celebrating all of the languages spoken as a mother tongue around Australia as we speak!
  
 > Hello, how are you? I'm fine thanks, and you? (Australian English)  
 > "Hello, how are you? I'm fine thanks, and you?"
  
-Here are some links to resources on some of the languages mentioned:  
+Here are some links to resources on some of the languages mentioned in this post:  
  
 * [Welsh](http://www.bbc.co.uk/wales/learning/learnwelsh/)
 * [Bininj Kunwok](http://bininjgunwok.org.au)
-* [Yolŋu Matha](http://learnline.cdu.edu.au/yolngustudies/)  
+* [Yolŋu Matha](http://learnline.cdu.edu.au/yolngustudies/)
+* [Australian English](https://en.wikipedia.org/wiki/Australian_English)  
  
