@@ -1,89 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>http://hywel.github.io/blog/international-mother-language-day/</loc>
-    <lastmod>2016-02-21T11:44:28+11:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/blog/no-cross-hatching-in-ggplot2/</loc>
-    <lastmod>2016-01-31T14:44:54+11:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/blog/a-few-preliminaries/</loc>
-    <lastmod>2016-01-25T12:59:43+11:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/blog/a-phonetic-post/</loc>
-    <lastmod>2016-01-20T00:06:55+11:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/blog/The-Next-Step/</loc>
-    <lastmod>2016-01-05T14:23:34+11:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/blog/Code-Blocks/</loc>
-    <lastmod>2016-01-05T10:59:11+11:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/sample-post/</loc>
-    <lastmod>2011-03-10T00:00:00+11:00</lastmod>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/</loc>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/phonetics/</loc>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/contact/</loc>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/phonetics/teaching/</loc>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/blog/</loc>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/publications/</loc>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/articles/</loc>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/tags/</loc>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/theme-setup/</loc>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/tools/</loc>
-  </url>
-  <url>
-    <loc>http://hywel.github.io/about/</loc>
-  </url>
-    <url>
-      <loc>http://hywel.github.io/sample-post/</loc>
-    </url>
-    <url>
-      <loc>http://hywel.github.io/blog/Code-Blocks/</loc>
-    </url>
-    <url>
-      <loc>http://hywel.github.io/blog/The-Next-Step/</loc>
-    </url>
-    <url>
-      <loc>http://hywel.github.io/blog/a-phonetic-post/</loc>
-    </url>
-    <url>
-      <loc>http://hywel.github.io/blog/a-few-preliminaries/</loc>
-    </url>
-    <url>
-      <loc>http://hywel.github.io/blog/no-cross-hatching-in-ggplot2/</loc>
-    </url>
-    <url>
-      <loc>http://hywel.github.io/blog/international-mother-language-day/</loc>
-    </url>
-  <url>
-    <loc>http://hywel.github.io/README.html</loc>
-    <lastmod>2016-02-12T14:40:44+11:00</lastmod>
-  </url>
+<url>
+<loc>http://hywel.github.io/blog/international-mother-language-day/</loc>
+<lastmod>2016-02-21T11:44:28+11:00</lastmod>
+</url>
+<url>
+<loc>http://hywel.github.io/blog/no-cross-hatching-in-ggplot2/</loc>
+<lastmod>2016-01-31T14:44:54+11:00</lastmod>
+</url>
+<url>
+<loc>http://hywel.github.io/blog/a-few-preliminaries/</loc>
+<lastmod>2016-01-25T12:59:43+11:00</lastmod>
+</url>
+<url>
+<loc>http://hywel.github.io/blog/a-phonetic-post/</loc>
+<lastmod>2016-01-20T00:06:55+11:00</lastmod>
+</url>
+<url>
+<loc>http://hywel.github.io/blog/The-Next-Step/</loc>
+<lastmod>2016-01-05T14:23:34+11:00</lastmod>
+</url>
+<url>
+<loc>http://hywel.github.io/blog/Code-Blocks/</loc>
+<lastmod>2016-01-05T10:59:11+11:00</lastmod>
+</url>
+<url>
+<loc>http://hywel.github.io/sample-post/</loc>
+<lastmod>2011-03-10T00:00:00+11:00</lastmod>
+</url>
+<url>
+<loc>http://hywel.github.io/</loc>
+</url>
+<url>
+<loc>http://hywel.github.io/phonetics/</loc>
+</url>
+<url>
+<loc>http://hywel.github.io/contact/</loc>
+</url>
+<url>
+<loc>http://hywel.github.io/phonetics/teaching/</loc>
+</url>
+<url>
+<loc>http://hywel.github.io/blog/</loc>
+</url>
+<url>
+<loc>http://hywel.github.io/publications/</loc>
+</url>
+<url>
+<loc>http://hywel.github.io/articles/</loc>
+</url>
+<url>
+<loc>http://hywel.github.io/tags/</loc>
+</url>
+<url>
+<loc>http://hywel.github.io/theme-setup/</loc>
+</url>
+<url>
+<loc>http://hywel.github.io/tools/</loc>
+</url>
+<url>
+<loc>http://hywel.github.io/about/</loc>
+</url>
+<url>
+<loc>http://hywel.github.io/README.html</loc>
+<lastmod>2016-02-12T14:40:44+11:00</lastmod>
+</url>
 </urlset>
