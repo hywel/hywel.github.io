@@ -25,9 +25,9 @@ system(paste("bundle exec octopress new draft ", draft.title , sep = ""))
 #-----------------------------#
 
 #### Create an Article ####
-# article.title <- "New Article Title"
-# system(paste("bundle exec octopress new post ", article.title ," --dir article", sep = ""))
-#rmd2md(dir_rmd = "_posts/articles", dir_md = "_posts/articles") # for an article
+article.title <- readline("What would you like to name your post?")
+system(paste("bundle exec octopress new post ", article.title ," --dir article", sep = ""),intern=TRUE)
+rmd2md(dir_rmd = "_posts/articles", dir_md = "_posts/articles") # for an article
 
 #-----------------------------#
 

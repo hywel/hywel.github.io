@@ -17,8 +17,7 @@ file.edit(blog.path)
 rmd2md(dir_rmd = "_posts/blog", dir_md = "_posts/blog") # for a blog post
 servr::jekyll(command="bundle exec jekyll build", serve = FALSE)
 
-#-----------------------------#
-
+##-----------------------------##
 
 #### Create a Draft ####
 draft.title <- "draft1"
@@ -26,15 +25,15 @@ system(paste("bundle exec octopress new draft ", draft.title , sep = ""))
 #-----------------------------#
 
 #### Create an Article ####
-# article.title <- "New Article Title"
-# system(paste("bundle exec octopress new post ", article.title ," --dir article", sep = ""))
-#rmd2md(dir_rmd = "_posts/articles", dir_md = "_posts/articles") # for an article
+article.title <- readline("What would you like to name your post?")
+system(paste("bundle exec octopress new post ", article.title ," --dir article", sep = ""),intern=TRUE)
+rmd2md(dir_rmd = "_posts/articles", dir_md = "_posts/articles") # for an article
 
 #-----------------------------#
 
 #### Convert a Draft into a Post ####
 blog.path <-system(paste("bundle exec octopress publish"))
-#-----------------------------#
+##-----------------------------##
 
 #### Build the site using Jekyll ####
 #servr::jekyll(command="bundle exec jekyll build") # Use this if you want to preview the site
@@ -42,4 +41,4 @@ servr::jekyll(command="bundle exec jekyll build", serve = FALSE)
 
 # Then use git to commit the changes and then push to github
 
-#-----------------------------#
+##-----------------------------##
