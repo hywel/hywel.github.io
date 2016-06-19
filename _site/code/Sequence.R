@@ -12,7 +12,7 @@ blog.path <-system(paste("bundle exec octopress new post ", blog.title ," --dir 
 
 # Edit the post
 file.edit(blog.path)
-
+warning("Edit the blog file and then return to Sequence.R to process and push to git")
 # process the rmd to md file
 rmd2md(dir_rmd = "_posts/blog", dir_md = "_posts/blog") # for a blog post
 servr::jekyll(command="bundle exec jekyll build", serve = FALSE)
