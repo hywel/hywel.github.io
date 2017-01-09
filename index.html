@@ -1,0 +1,15 @@
+---
+layout: page
+title: Latest Activity
+excerpt: "Computer aided techniques for phonetic speech analysis and laboratory phonology."
+search_omit: true
+---
+<center>
+<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/hywel_" data-widget-id="688652775337504768">Tweets by @hywel_</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</center>
+
+<ul class="post-list">
+{% for post in site.posts limit:10 %}
+  <li><article><a href="{{ site.url }}{{ post.url }}"><i><h3><font color="#336699">{{ post.title }}</font></h3></i><span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>
