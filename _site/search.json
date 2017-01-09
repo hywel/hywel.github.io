@@ -2,6 +2,16 @@
 
   
     {
+      "title"			: "A New Year",
+      "link"			: "http://hywel.github.io/blog/a-new-year/",
+      "excerpt"		: "<p>The first part of this year I am concentrating on coming to grips with a new set of tools for managing workflows. Specifically the <a href="https://galaxyproject.org">Galaxy</a> platform and <a href="https://www.docker.com">Docker</a>, a platform for self contained virtual environments. The aim is to distribute highly customizable and flexible workflows for working with speech and associated labels. This will be mainly using tools developed in <a href="www.r-project.org">R</a> but the beauty of Galaxy is that you can string together tools from a variety of sources (e.g. Python or C) and cobble them together into a workflow that can be tailored to the needs of the user.</p>
+
+"
+    }
+  
+
+  
+    ,{
       "title"			: "All Long Time Between Posts",
       "link"			: "http://hywel.github.io/blog/all-long-time-between-posts/",
       "excerpt"		: "<p>It has been a long time since updates and considering the effort I put in to set up this frame work, I thought I should start this up again. I will try to post some articles/tutorials on the new <a href="http://ips-lmu.github.io/EMU.html">Emu Speech Database</a> and my experiences with using it for teaching and research.</p>

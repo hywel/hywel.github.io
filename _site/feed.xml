@@ -4,13 +4,36 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://hywel.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://hywel.github.io" />
-<updated>2017-01-09T17:12:14+11:00</updated>
+<updated>2017-01-09T18:25:29+11:00</updated>
 <id>http://hywel.github.io/</id>
 <author>
   <name>Hywel Stoakes</name>
   <uri>http://hywel.github.io/</uri>
   <email>hywel.stoakes@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[A New Year]]></title>
+  <link rel="alternate" type="text/html" href="http://hywel.github.io/blog/a-new-year/" />
+  <id>http://hywel.github.io/blog/a-new-year</id>
+  <published>2017-01-09T17:13:07+11:00</published>
+  <updated>2017-01-09T17:13:07+11:00</updated>
+  <author>
+    <name>Hywel Stoakes</name>
+    <uri>http://hywel.github.io</uri>
+    <email>hywel.stoakes@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;The first part of this year I am concentrating on coming to grips with a new set of tools for managing workflows. Specifically the &lt;a href=&quot;https://galaxyproject.org&quot;&gt;Galaxy&lt;/a&gt; platform and &lt;a href=&quot;https://www.docker.com&quot;&gt;Docker&lt;/a&gt;, a platform for self contained virtual environments. The aim is to distribute highly customizable and flexible workflows for working with speech and associated labels. This will be mainly using tools developed in &lt;a href=&quot;www.r-project.org&quot;&gt;R&lt;/a&gt; but the beauty of Galaxy is that you can string together tools from a variety of sources (e.g. Python or C) and cobble them together into a workflow that can be tailored to the needs of the user.&lt;/p&gt;
+
+&lt;p&gt;Galaxy was developed for the bioinformatics market and has been very influential in the progress of genetics research as highly computationally intensive work can be distributed and replicated quickly and efficiently. Tools and Wokflows can be shared and customized. In recent times Galaxy has been re-purposed as a way of working with all manners of medium to big data. This is the platform chosen by &lt;a href=&quot;http://alveo.edu.au&quot;&gt;Alveo&lt;/a&gt; to interact with &lt;a href=&quot;https://austalk.edu.au&quot;&gt;Austalk&lt;/a&gt; and related speech and text corpora. This can be thought of as a virtual laboratory which produces replicable and citable research that can be published.&lt;/p&gt;
+
+&lt;p&gt;My current project is to find an efficient way to handle relatively long recordings and quickly segmenting and label these, either manually or automatically, at a word and phoneme level. These can then be then be phonetically analysed more closely. The plan is to use Galaxy and a set of R tools to parse a variety of labelling standards and keep them time-aligned with their associated audio files. I will see if I can write a semi-regular blog of my exploits and then I will compile that into something a little more readable - and hopefully publishable?&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://hywel.github.io/blog/a-new-year/&quot;&gt;A New Year&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://hywel.github.io&quot;&gt;Hywel Stoakes&lt;/a&gt; on January 09, 2017.&lt;/p&gt;
+  </content>
+</entry>
 
 
 <entry>
