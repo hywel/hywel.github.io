@@ -1,0 +1,2 @@
+gem update
+sudo gem install -n /usr/local/bin GEM_NAME_HERE

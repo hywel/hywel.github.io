@@ -146,7 +146,7 @@
           <img src="http://hywel.github.io/images/bio-avatar1.png" class="bio-photo" alt="Hywel Stoakes bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Hywel Stoakes</span></span>
-        <span class="entry-date date published"><time datetime="2016-01-25T11:59:43+10:00"><i class="fa fa-calendar-o"></i> January 25, 2016</time></span>
+        <span class="entry-date date published"><time datetime="2016-01-25T12:59:43+11:00"><i class="fa fa-calendar-o"></i> January 25, 2016</time></span>
         
         <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
         <span class="social-share-twitter">
@@ -164,50 +164,50 @@
       <div class="entry-content">
         <p>This example uses the <code class="highlighter-rouge">phonTools</code> package, developed by <a href="http://www.santiagobarreda.com/rscripts.html">Santiago Barreda</a>.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">require</span><span class="p">(</span><span class="n">phonTools</span><span class="p">)</span>
-<span class="c1">## A few examples of some vowel plots. 
-</span> 
-<span class="c1">## load the Peterson and Barney data
-</span><span class="n">data</span> <span class="p">(</span><span class="n">pb52</span><span class="p">)</span>
-<span class="n">pb52</span> <span class="o">=</span> <span class="n">pb52</span><span class="p">[</span><span class="n">pb52</span><span class="o">$</span><span class="n">type</span><span class="o">==</span><span class="s1">'m'</span><span class="p">,]</span>  <span class="c1">## use only the males
-</span> 
-<span class="c1"># par (mfrow = c(3,2), mar = c(4.2,4.2,1,1))
-</span> 
-<span class="c1"># standard layout with linear axes
-</span><span class="n">vplot</span> <span class="p">(</span><span class="n">pb52</span><span class="o">$</span><span class="n">f1</span><span class="p">,</span> <span class="n">pb52</span><span class="o">$</span><span class="n">f2</span><span class="p">,</span> <span class="n">pb52</span><span class="o">$</span><span class="n">vowel</span><span class="p">,</span> <span class="n">xsampa</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">require</span><span class="p">(</span><span class="n">phonTools</span><span class="p">)</span><span class="w">
+</span><span class="c1">## A few examples of some vowel plots. 
+</span><span class="w"> 
+</span><span class="c1">## load the Peterson and Barney data
+</span><span class="n">data</span><span class="w"> </span><span class="p">(</span><span class="n">pb52</span><span class="p">)</span><span class="w">
+</span><span class="n">pb52</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pb52</span><span class="p">[</span><span class="n">pb52</span><span class="o">$</span><span class="n">type</span><span class="o">==</span><span class="s1">'m'</span><span class="p">,]</span><span class="w">  </span><span class="c1">## use only the males
+</span><span class="w"> 
+</span><span class="c1"># par (mfrow = c(3,2), mar = c(4.2,4.2,1,1))
+</span><span class="w"> 
+</span><span class="c1"># standard layout with linear axes
+</span><span class="n">vplot</span><span class="w"> </span><span class="p">(</span><span class="n">pb52</span><span class="o">$</span><span class="n">f</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">pb52</span><span class="o">$</span><span class="n">f</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">pb52</span><span class="o">$</span><span class="n">vowel</span><span class="p">,</span><span class="w"> </span><span class="n">xsampa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span></code></pre></figure>
 
 <p><img src="/figures/vowel_space-1.png" alt="plot of chunk vowel_space" /></p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># alternate layout with log axes
-</span><span class="n">vplot</span> <span class="p">(</span><span class="n">pb52</span><span class="o">$</span><span class="n">f1</span><span class="p">,</span> <span class="n">pb52</span><span class="o">$</span><span class="n">f2</span><span class="p">,</span> <span class="n">pb52</span><span class="o">$</span><span class="n">vowel</span><span class="p">,</span> <span class="n">logaxes</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> 
-           <span class="n">alternateaxes</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> <span class="n">xsampa</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span></code></pre></figure>
+</span><span class="n">vplot</span><span class="w"> </span><span class="p">(</span><span class="n">pb52</span><span class="o">$</span><span class="n">f</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">pb52</span><span class="o">$</span><span class="n">f</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">pb52</span><span class="o">$</span><span class="n">vowel</span><span class="p">,</span><span class="w"> </span><span class="n">logaxes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> 
+           </span><span class="n">alternateaxes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">xsampa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span></code></pre></figure>
 
 <p><img src="/figures/vowel_space-2.png" alt="plot of chunk vowel_space" /></p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># category means only 
-</span><span class="n">vplot</span> <span class="p">(</span><span class="n">pb52</span><span class="o">$</span><span class="n">f1</span><span class="p">,</span> <span class="n">pb52</span><span class="o">$</span><span class="n">f2</span><span class="p">,</span> <span class="n">pb52</span><span class="o">$</span><span class="n">vowel</span><span class="p">,</span> <span class="n">logaxes</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> 
-           <span class="n">meansonly</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> <span class="n">xsampa</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> <span class="n">cex</span> <span class="o">=</span> <span class="m">3</span><span class="p">)</span></code></pre></figure>
+</span><span class="n">vplot</span><span class="w"> </span><span class="p">(</span><span class="n">pb52</span><span class="o">$</span><span class="n">f</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">pb52</span><span class="o">$</span><span class="n">f</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">pb52</span><span class="o">$</span><span class="n">vowel</span><span class="p">,</span><span class="w"> </span><span class="n">logaxes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> 
+           </span><span class="n">meansonly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">xsampa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">cex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">)</span></code></pre></figure>
 
 <p><img src="/figures/vowel_space-3.png" alt="plot of chunk vowel_space" /></p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># category means only with standard deviation ellipses
-</span><span class="n">vplot</span> <span class="p">(</span><span class="n">pb52</span><span class="o">$</span><span class="n">f1</span><span class="p">,</span> <span class="n">pb52</span><span class="o">$</span><span class="n">f2</span><span class="p">,</span> <span class="n">pb52</span><span class="o">$</span><span class="n">vowel</span><span class="p">,</span> <span class="n">logaxes</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">,</span> 
-       <span class="n">meansonly</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> <span class="n">ellipsesd</span> <span class="o">=</span> <span class="m">2</span><span class="p">,</span> <span class="n">xsampa</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span></code></pre></figure>
+</span><span class="n">vplot</span><span class="w"> </span><span class="p">(</span><span class="n">pb52</span><span class="o">$</span><span class="n">f</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">pb52</span><span class="o">$</span><span class="n">f</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">pb52</span><span class="o">$</span><span class="n">vowel</span><span class="p">,</span><span class="w"> </span><span class="n">logaxes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> 
+       </span><span class="n">meansonly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">ellipsesd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">xsampa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span></code></pre></figure>
 
 <p><img src="/figures/vowel_space-4.png" alt="plot of chunk vowel_space" /></p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># same as above, with alternate axes
-</span><span class="n">vplot</span> <span class="p">(</span><span class="n">pb52</span><span class="o">$</span><span class="n">f1</span><span class="p">,</span> <span class="n">pb52</span><span class="o">$</span><span class="n">f2</span><span class="p">,</span> <span class="n">pb52</span><span class="o">$</span><span class="n">vowel</span><span class="p">,</span> <span class="n">logaxes</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> 
-       <span class="n">meansonly</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> <span class="n">ellipsesd</span> <span class="o">=</span> <span class="m">2</span><span class="p">,</span> <span class="n">xsampa</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> 
-	   <span class="n">alternateaxes</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span></code></pre></figure>
+</span><span class="n">vplot</span><span class="w"> </span><span class="p">(</span><span class="n">pb52</span><span class="o">$</span><span class="n">f</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">pb52</span><span class="o">$</span><span class="n">f</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">pb52</span><span class="o">$</span><span class="n">vowel</span><span class="p">,</span><span class="w"> </span><span class="n">logaxes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> 
+       </span><span class="n">meansonly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">ellipsesd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">xsampa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> 
+	   </span><span class="n">alternateaxes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span></code></pre></figure>
 
 <p><img src="/figures/vowel_space-5.png" alt="plot of chunk vowel_space" /></p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># individual points with standard deviation ellipses
 # and alternate axes
-</span><span class="n">vplot</span> <span class="p">(</span><span class="n">pb52</span><span class="o">$</span><span class="n">f1</span><span class="p">,</span> <span class="n">pb52</span><span class="o">$</span><span class="n">f2</span><span class="p">,</span> <span class="n">pb52</span><span class="o">$</span><span class="n">vowel</span><span class="p">,</span> <span class="n">logaxes</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> 
-	   <span class="n">meansonly</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">,</span> <span class="n">ellipsesd</span> <span class="o">=</span> <span class="m">2</span><span class="p">,</span> <span class="n">xsampa</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> 
-	   <span class="n">alternateaxes</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span></code></pre></figure>
+</span><span class="n">vplot</span><span class="w"> </span><span class="p">(</span><span class="n">pb52</span><span class="o">$</span><span class="n">f</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">pb52</span><span class="o">$</span><span class="n">f</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">pb52</span><span class="o">$</span><span class="n">vowel</span><span class="p">,</span><span class="w"> </span><span class="n">logaxes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> 
+	   </span><span class="n">meansonly</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">ellipsesd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">xsampa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> 
+	   </span><span class="n">alternateaxes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span></code></pre></figure>
 
 <p><img src="/figures/vowel_space-6.png" alt="plot of chunk vowel_space" /></p>
 
@@ -282,6 +282,22 @@ s.setAttribute('data-timestamp', +new Date());
 <script>window.jQuery || document.write('<script src="http://hywel.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="http://hywel.github.io/assets/js/scripts.min.js"></script>
 
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ 'https://www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-82298071-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
 
 

@@ -1,9 +1,0 @@
-#To create a new page
-# bundle exec octopress new page test/
-
-#To create a new blog post
-bundle exec octopress new post "New Blog Post Title" --dir blog
-system('bundle exec octopress new post "New Blog Post Title" --dir blog')
-#To create a new article
-bundle exec octopress new post "New Article Title" --dir articles
-
