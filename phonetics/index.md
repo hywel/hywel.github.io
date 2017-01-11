@@ -5,28 +5,14 @@ excerpt: "Phonetic theory and analysis techniques"
 search_omit: true
 ---
 
-# Some useful tools for computer aided phonetics
+A link to the [Phonetics Laboratory at The University of Melbourne](http://arts.unimelb.edu.au/soll/research/research-groups/phonetics-laboratory)
 
-There are many researchers within the phonetic sciences that have compiled comprehensive and very useful lists of tools that they use for phonetics.[^1] This small list doesn't seek to replace these, but I will hopefully add to this and provide some links to tutorial information in the future.
+# Teaching
 
-[^1]: One of my personal favorites is a post by Will Syler (http://linguisticmystic.com/2015/03/10/a-phoneticians-software-toolkit/)
+- [LING20005](https://handbook.unimelb.edu.au/view/current/LING20005): Phonetics
+- [LING90015](https://handbook.unimelb.edu.au/view/current/LING90015): English Phonetics and Phonology
 
-## Labeling and Segmenting 
+## Practical Phonetics
 
-- [Praat](www.praat.org): Should be in every linguist's toolbox.
-- [Elan](https://tla.mpi.nl/tools/tla-tools/elan/): from The Language Archive at MPI.
-- [Emu](https://ips-lmu.github.io/EMU-webApp/) The webapp front end for the [EmuR Speech Database Management System](http://ips-lmu.github.io/EMU.html)
-
-## Analysis and Graphical Representation
-
-- [R](r-project.org)
-- [Rstudio](https://www.rstudio.com): A development environment and GUI frontend for R
-- various R packages including `ggplot2` and the whole tidyverse suite of packages.
-- [Python](https://www.python.org)
-
-## Report Generation
-
-- [LaTex](http://www.latex-project.org) specifically XeLaTex and MacTex 2016: although sometimes creates problems of its own but makes using Unicode in LaTex much simpler - and inputting IPA transcriptions.
-- Markdown - for when I can't be bothered with LaTex (read:always) - built into Rstudio with pandoc and is the smart way to write replicatable documents incorporating primary data analysis.
-
-This is by no means an exhaustive list and will grow as time progresses.
+- My favourite site for visualising and learning the sounds of the IPA: [Seeing Speech](www.seeingspeech.ac.uk)
+- A great clickable IPA chart on that site that shows MRI, Ultrasound and some animations of the different speech sounds defined by the IPA ([IPA Chart](http://www.seeingspeech.ac.uk/ipachart/display.php?chart=1&datatype=1&speaker=1))
