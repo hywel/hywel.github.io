@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/hywel_
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://hywel.github.io
+  * I am hywel_ (https://keybase.io/hywel_) on keybase.
+  * I have a public key ASACHr7Paq6032siJIhBX7U6MbrbZ31tSE27OpEd9bVULgo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120021ebecf6aaeb4df6b222488415fb53a31badb677d6d484dbb3a911df5b5542e0a",
+            "host": "keybase.io",
+            "kid": "0120021ebecf6aaeb4df6b222488415fb53a31badb677d6d484dbb3a911df5b5542e0a",
+            "uid": "7514fe86af63e3238ddc08b333cb5719",
+            "username": "hywel_"
+        },
+        "service": {
+            "hostname": "hywel.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.21"
+    },
+    "ctime": 1492480962,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1492480885,
+        "hash": "fc97a0746befce8278ab9a738fd2869a1f3588a49aea8937afa3ccd4392d59884360fda22436ecda1fd389db1c69be36a48517c8286a703aabee22113fb0de37",
+        "seqno": 1025267
+    },
+    "prev": "f5bac2fa513e553df70a72df1ff343a4e5869d9205a9ff5a77106d6ba2d2cbdc",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgAh6+z2qutN9rIiSIQV+1OjG622d9bUhNuzqRHfW1VC4Kp3BheWxvYWTFAvZ7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMDIxZWJlY2Y2YWFlYjRkZjZiMjIyNDg4NDE1ZmI1M2EzMWJhZGI2NzdkNmQ0ODRkYmIzYTkxMWRmNWI1NTQyZTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMDIxZWJlY2Y2YWFlYjRkZjZiMjIyNDg4NDE1ZmI1M2EzMWJhZGI2NzdkNmQ0ODRkYmIzYTkxMWRmNWI1NTQyZTBhIiwidWlkIjoiNzUxNGZlODZhZjYzZTMyMzhkZGMwOGIzMzNjYjU3MTkiLCJ1c2VybmFtZSI6Imh5d2VsXyJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiaHl3ZWwuZ2l0aHViLmlvIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjEifSwiY3RpbWUiOjE0OTI0ODA5NjIsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ5MjQ4MDg4NSwiaGFzaCI6ImZjOTdhMDc0NmJlZmNlODI3OGFiOWE3MzhmZDI4NjlhMWYzNTg4YTQ5YWVhODkzN2FmYTNjY2Q0MzkyZDU5ODg0MzYwZmRhMjI0MzZlY2RhMWZkMzg5ZGIxYzY5YmUzNmE0ODUxN2M4Mjg2YTcwM2FhYmVlMjIxMTNmYjBkZTM3Iiwic2Vxbm8iOjEwMjUyNjd9LCJwcmV2IjoiZjViYWMyZmE1MTNlNTUzZGY3MGE3MmRmMWZmMzQzYTRlNTg2OWQ5MjA1YTlmZjVhNzcxMDZkNmJhMmQyY2JkYyIsInNlcW5vIjo3LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQHnFNxfNkryRSWgjqVmuG4GWTq8ITWdaB1whuSaQrsLmFxpm2lykBUxZHDJTCUpEMXgmarsCLLWdbfvYDZ6h3gaoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCD4gwwG331TbkfwDGt+3vAU3L2+kXMYpr9TAVUtBJM786N0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hywel_
+
+==================================================================
