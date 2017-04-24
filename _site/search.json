@@ -2,6 +2,16 @@
 
   
     {
+      "title"			: "Audio_test",
+      "link"			: "http://hywel.github.io/blog/audio_test/",
+      "excerpt"		: "<h1 id="a-test-of-html-audio">A test of html audio</h1>
+
+"
+    }
+  
+
+  
+    ,{
       "title"			: "A New Year",
       "link"			: "http://hywel.github.io/blog/a-new-year/",
       "excerpt"		: "<p>The first part of this year I am concentrating on coming to grips with a new set of tools for managing workflows. Specifically the <a href="https://galaxyproject.org">Galaxy</a> environment and <a href="https://www.docker.com">Docker</a>, a platform for deploying self contained virtual environments. The aim of the project is to distribute highly customizable and flexible workflows for interacting with speech and associated labels. This will be mainly be achieved using tools developed in <a href="www.r-project.org">R</a> but the beauty of Galaxy is that you can string together tools from a variety of sources (e.g. Python or C), cobbling them together into a workflow that can be tailored to the needs of the user.</p>
