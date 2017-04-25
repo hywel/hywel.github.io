@@ -9,7 +9,7 @@ image:
   creditlink: https://www.internationalphoneticassociation.org
 ---
 
-![pulmonics](ipa-pulmonic.jpg) 
+![pulmonics](/images/ipa-pulmonic.jpg) 
 
 A link to the [Phonetics Laboratory at The University of Melbourne](http://arts.unimelb.edu.au/soll/research/research-groups/phonetics-laboratory)
 
