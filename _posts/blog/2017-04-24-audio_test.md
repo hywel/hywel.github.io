@@ -9,7 +9,7 @@ excerpt:
 tags: []
 share: true
 image:
-  feature: waveform.jpg
+  feature: images/waveform.jpg
 date: 2017-04-24T17:36:09+10:00
 ---
 
