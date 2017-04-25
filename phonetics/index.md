@@ -6,6 +6,7 @@ search_omit: true
 image:
   feature: ipapulmonics.jpg
   credit: The International Phonetic Association
+  creditlink: https://www.internationalphoneticassociation.org
 ---
 
 # Work
