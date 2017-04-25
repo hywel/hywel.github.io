@@ -3,8 +3,8 @@ layout: page
 title: Phonetics
 excerpt: "Phonetic theory and analysis techniques"
 search_omit: true
-header:
-  image: so-simple-sample-image-1.jpg
+image:
+  feature: so-simple-sample-image-1.jpg
   credit: International Phonetic Association
   creditlink: https://www.internationalphoneticassociation.org
 ---
