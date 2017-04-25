@@ -8,8 +8,8 @@ categories: blog
 excerpt:
 tags: []
 share: true
-image:
-  feature: images/waveform.jpg
+header:
+  image: waveform.jpg
 date: 2017-04-24T17:36:09+10:00
 ---
 
