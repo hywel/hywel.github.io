@@ -2,9 +2,9 @@
 
   
     {
-      "title"			: "Audio_test",
+      "title"			: "Test of HTML5 audio in Jekyll",
       "link"			: "http://hywel.github.io/blog/audio_test/",
-      "excerpt"		: "<h1 id="a-test-of-html-audio">A test of html audio</h1>
+      "excerpt"		: "<h1 id="a-test-of-html5-audio-in-jekyll">A test of html5 audio in Jekyll</h1>
 
 "
     }
