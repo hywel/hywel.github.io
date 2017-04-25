@@ -3,8 +3,8 @@ layout: page
 title: Phonetics
 excerpt: "Phonetic theory and analysis techniques"
 search_omit: true
-image:
-  feature: /images/ipa_pulmonics.png
+header:
+  image: /images/ipa_pulmonics.png
   credit: International Phonetic Association
   creditlink: https://www.internationalphoneticassociation.org
 ---
