@@ -5,11 +5,11 @@ status: process
 published: true
 modified:
 categories: blog
-excerpt:
-tags: []
+excerpt: "Just a test"
+tags: [audio html5]
 share: true
 header:
-  image: waveform.jpg
+  image: /images/waveform.jpg
 date: 2017-04-24T17:36:09+10:00
 ---
 
