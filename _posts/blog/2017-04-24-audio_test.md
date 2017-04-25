@@ -8,7 +8,7 @@ categories: blog
 excerpt: "This is a test of the audio capabilites in HTML5 and Jekyll."
 tags: [audio, html5]
 share: true
-header:
+image:
   feature: waveform.jpg
 date: 2017-04-24T17:36:09+10:00
 ---
