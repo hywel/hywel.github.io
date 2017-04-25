@@ -2,7 +2,7 @@
 layout: post
 title: Test of HTML5 audio in Jekyll 
 status: process
-published: false
+published: true
 modified:
 categories: blog
 excerpt:
