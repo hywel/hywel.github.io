@@ -6,7 +6,7 @@ published: true
 modified:
 categories: blog
 excerpt: "Just a test"
-tags: [audio html5]
+tags: [audio, html5]
 share: true
 header:
   image: waveform.jpg
@@ -23,11 +23,11 @@ Here are a couple of audio files (pulmonic consonants between two vowels).
   <a href="/audio/arda.wav">WAV</a></audio>  
 
 Here is some text to break them up.
+  
+## Can I use an waveform as the image?
+This is an open question.
 
 <audio controls>
   <source src="/audio/aGa.wav">
 <p>Your browser does not support audio playback, download the file:
   <a href="/audio/aGa.wav">WAV</a></audio>
-  
-## Can I use an waveform as the image?
-This is an open question.
