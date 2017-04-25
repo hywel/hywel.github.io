@@ -21,8 +21,7 @@ Here are a couple of audio files (pulmonic consonants between two vowels).
 <source src="/audio/arda.wav">
 <source src="/audio/aGa.wav">
 <p>Your browser does not support audio playback, download the file:
-  <a href="/audio/arda.wav">WAV</a>
-  <a href="/audio/aGa.wav">WAV</a>
-  </audio>  
+  <a href="/audio/arda.wav">WAV</a>,
+  <a href="/audio/aGa.wav">WAV</a></audio>  
   
 ## Can I use an waveform as the image?
