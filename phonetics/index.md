@@ -4,7 +4,7 @@ title: Phonetics
 excerpt: "Phonetic theory and analysis techniques"
 search_omit: true
 header:
-  image: /images/ipa_pulmonics.png
+  image: ipa_pulmonics.png
   credit: International Phonetic Association
   creditlink: https://www.internationalphoneticassociation.org
 ---

@@ -9,7 +9,7 @@ excerpt: "Just a test"
 tags: [audio html5]
 share: true
 header:
-  image: /images/waveform.jpg
+  image: waveform.jpg
 date: 2017-04-24T17:36:09+10:00
 ---
 
