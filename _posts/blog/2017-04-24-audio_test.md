@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Audio_test
+title: Test of HTML5 audio in Jekyll 
 status: process
 published: true
 modified:
@@ -9,20 +9,21 @@ excerpt:
 tags: []
 share: true
 image:
-  feature:
+  feature: figures/waveform.jpg
 date: 2017-04-24T17:36:09+10:00
 ---
 
-# A test of html audio
+# A test of html5 audio in Jekyll
 
-Here is an audio file  
+Here are a couple of audio files (pulmonic consonants between two vowels).  
 
 <audio controls>
-<source src="/audio/d.mp3">
+<source src="/audio/arda.wav">
 <p>Your browser does not support audio playback, download the file:
-  <a href="/audio/d.mp3">MP3</a></audio>  
+  <a href="/audio/arda.wav">WAV</a></audio>  
   
-## Embedded MP3
-
-There should be an embedded mp3
-
+<audio controls>
+<source src="/audio/aGa.wav">
+<p>Your browser does not support audio playback, download the file:
+  <a href="/audio/aGa.wav">WAV</a></audio> 
+  
