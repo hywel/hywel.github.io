@@ -5,6 +5,7 @@ excerpt: "Phonetic theory and analysis techniques"
 search_omit: true
 image:
   feature: ipapulmonics.jpg
+  credit: The International Phonetic Association
 ---
 
 # Work
