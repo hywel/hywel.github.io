@@ -8,7 +8,9 @@ categories: blog
 excerpt: "Just a test"
 tags: [audio, html5]
 share: true
-image: waveform.jpg
+images:
+  - url: /images/waveform.jpg
+    alt: Waveform !
 date: 2017-04-24T17:36:09+10:00
 ---
 
