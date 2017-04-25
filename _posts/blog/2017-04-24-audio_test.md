@@ -10,6 +10,7 @@ tags: [audio, html5]
 share: true
 image:
   feature: waveform.jpg
+  credit: the internet
 date: 2017-04-24T17:36:09+10:00
 ---
 
