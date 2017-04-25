@@ -3,6 +3,10 @@ layout: page
 title: Phonetics
 excerpt: "Phonetic theory and analysis techniques"
 search_omit: true
+image:
+  feature: figures/ipa_pulmonics.png
+  credit: International Phonetic Association
+  creditlink: https://www.internationalphoneticassociation.org
 ---
 
 A link to the [Phonetics Laboratory at The University of Melbourne](http://arts.unimelb.edu.au/soll/research/research-groups/phonetics-laboratory)
