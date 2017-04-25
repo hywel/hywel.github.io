@@ -5,7 +5,7 @@ status: process
 published: true
 modified:
 categories: blog
-excerpt: "Just a test"
+excerpt: "This is a test of the audio capabilites in HTML5 and Jekyll."
 tags: [audio, html5]
 share: true
 images:
