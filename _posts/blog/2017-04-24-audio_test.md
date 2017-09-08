@@ -27,7 +27,8 @@ Here is some text to break them up.
 <audio controls>
   <source src="/audio/aGa.wav">
 <p>Your browser does not support audio playback, download the file:
-  <a href="/audio/aGa.wav">WAV</a></audio> 
-
+  <a href="/audio/aGa.wav">WAV</a></audio>  
+  
+  
 ## Can I use an waveform as the image?
 This is an open question.
