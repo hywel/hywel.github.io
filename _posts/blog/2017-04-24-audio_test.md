@@ -25,15 +25,12 @@ Here are a couple of audio files (pulmonic consonants between two vowels).
 Here is some text to break them up.
 
 <audio controls id="audio_play">
-  <source src="/audio/aGa.wav" type="audio/wav" />
-  <source src="/audio/aGa.ogg" type="audio/ogg" />
-  <source src="/audio/aGa.mp3" type="audio/mpeg" />
-  <p>Your browser does not support audio playback, download the file:
-  <a href="/audio/aGa.wav">WAV</a>
-  </audio>
+  <source src="/audio/aGa.wav">
+  <source src="/audio/aGa.ogg">
+  <source src="/audio/aGa.mp3">
+ </audio>
   <img src="/audio/img/play.jpg" onClick="document.getElementById('audio_play').play(); return false;" />
   <img src="/audio/img/pause.png" onClick="document.getElementById('audio_play').pause(); return false;" />
-  
   
 ## Can I use an waveform as the image?
 This is an open question.
