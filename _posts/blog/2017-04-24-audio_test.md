@@ -6,7 +6,7 @@ published: true
 modified:
 categories: blog
 excerpt:
-tags: []
+tags: [audio, html5]
 share: true
 header:
   image: /images/waveform.jpg
@@ -33,6 +33,7 @@ Here is some text to break them up.
   </audio>
   <img src="/audio/img/play.jpg" onClick="document.getElementById('audio_play').play(); return false;" />
   <img src="/audio/img/pause.png" onClick="document.getElementById('audio_play').pause(); return false;" />
+  
   
 ## Can I use an waveform as the image?
 This is an open question.
