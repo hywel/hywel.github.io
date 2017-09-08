@@ -6,24 +6,30 @@
 <head>
 <meta charset="utf-8">
 <title>Test of HTML5 audio in Jekyll &#8211; Hywel Stoakes</title>
-<meta name="description" content="This is a test of the audio capabilites in HTML5 and Jekyll.">
-<meta name="keywords" content="audio, html5">
+<meta name="description" content="A test of HTML5 audio in Jekyll
+
+">
+<meta name="keywords" content="">
 
 
 <!-- Twitter Cards -->
 <meta name="twitter:title" content="Test of HTML5 audio in Jekyll">
-<meta name="twitter:description" content="This is a test of the audio capabilites in HTML5 and Jekyll.">
+<meta name="twitter:description" content="A test of HTML5 audio in Jekyll
+
+">
 <meta name="twitter:site" content="@hywel_">
 <meta name="twitter:creator" content="@hywel_">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://hywel.github.io/images/waveform.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://hywel.github.io/images/site-logo.png">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_AU">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Test of HTML5 audio in Jekyll">
-<meta property="og:description" content="This is a test of the audio capabilites in HTML5 and Jekyll.">
+<meta property="og:description" content="A test of HTML5 audio in Jekyll
+
+">
 <meta property="og:url" content="http://hywel.github.io/blog/audio_test/">
 <meta property="og:site_name" content="Hywel Stoakes">
 
@@ -110,24 +116,25 @@
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 
 <header class="masthead">
-	
-		<div class="wrap">
-			<a href="http://hywel.github.io/" class="site-logo" rel="home" title="Hywel Stoakes"><img src="http://hywel.github.io/images/site-logo.png" width="200" height="200" alt="Hywel Stoakes logo" class="animated fadeInDown"></a>
-		</div>
-	
+	<div class="wrap">
+      
+  		<a href="http://hywel.github.io/" class="site-logo" rel="home" title="Hywel Stoakes"><img src="http://hywel.github.io/images/site-logo.png" width="200" height="200" alt="Hywel Stoakes logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://hywel.github.io/">Hywel Stoakes</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">Computer aided techniques for phonetic speech analysis and laboratory phonology.</h2>
+	</div>
 </header><!-- /.masthead -->
-
 
 <div class="js-menu-screen menu-screen"></div>
 
 
 <div id="main" role="main">
   <article class="hentry">
-    <img src="http://hywel.github.io/images/waveform.jpg" class="entry-feature-image" alt="Test of HTML5 audio in Jekyll" ><p class="image-credit">Image credit: <a href="">the internet</a></p>
+    
     <div class="entry-wrapper">
       <header class="entry-header">
         <ul class="entry-tags">
-          <li><a href="http://hywel.github.io/tags/#audio" title="Pages tagged audio">audio</a></li><li><a href="http://hywel.github.io/tags/#html5" title="Pages tagged html5">html5</a></li>
+          
         </ul>
         
           <h1 class="entry-title">Test of HTML5 audio in Jekyll</h1>
@@ -143,7 +150,7 @@
         
         <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
         <span class="social-share-twitter">
-  <a href="https://twitter.com/intent/tweet?hashtags=audio,html5&amp;text=Test%20of%20HTML5%20audio%20in%20Jekyll&amp;url=http://hywel.github.io/blog/audio_test/&amp;via=hywel_" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+  <a href="https://twitter.com/intent/tweet?hashtags=&amp;text=Test%20of%20HTML5%20audio%20in%20Jekyll&amp;url=http://hywel.github.io/blog/audio_test/&amp;via=hywel_" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
 </span>
 <span class="social-share-facebook">
   <a href="https://www.facebook.com/sharer/sharer.php?u=http://hywel.github.io/blog/audio_test/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
@@ -161,18 +168,24 @@
 
 <audio controls="">
   <source src="/audio/arda.wav" />
-<p>Your browser does not support audio playback, download the file:</p>
-  <a href="/audio/arda.wav">WAV</a></audio>
+<p>Your browser does not support audio playback, download the file:
+  <a href="/audio/arda.wav">WAV</a>&lt;/audio&gt;  
 
-<p>Here is some text to break them up.</p>
+Here is some text to break them up.
 
-<h2 id="can-i-use-an-waveform-as-the-image">Can I use an waveform as the image?</h2>
-<p>This is an open question.</p>
-
-<audio controls="">
-  <source src="/audio/aGa.wav" />
-<p>Your browser does not support audio playback, download the file:</p>
-  <a href="/audio/aGa.wav">WAV</a></audio>
+<audio controls="" id="audio_play">
+  <source src="/audio/aGa.wav" type="audio/wav" />
+  <source src="/audio/aGa.ogg" type="audio/ogg" />
+  <source src="/audio/aGa.mp3" type="audio/mpeg" />
+  <p>Your browser does not support audio playback, download the file:
+  <a href="/audio/aGa.wav">WAV</a>
+  &lt;/audio&gt;
+  <img src="/audio/img/play.jpg" onclick="document.getElementById('audio_play').play(); return false;" />
+  <img src="/audio/img/pause.png" onclick="document.getElementById('audio_play').pause(); return false;" />
+  
+## Can I use an waveform as the image?
+This is an open question.
+</p></audio></p></audio>
 
         
           <div id="disqus_thread"></div><!-- /#disqus_thread -->
