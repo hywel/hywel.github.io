@@ -26,11 +26,8 @@ Here is some text to break them up.
 
 <audio controls id="audio_play">
   <source src="/audio/aGa.wav">
-  <source src="/audio/aGa.ogg">
-  <source src="/audio/aGa.mp3">
- </audio>
-  <img src="/audio/img/play.jpg" onClick="document.getElementById('audio_play').play(); return false;" />
-  <img src="/audio/img/pause.png" onClick="document.getElementById('audio_play').pause(); return false;" />
-  
+<p>Your browser does not support audio playback, download the file:
+  <a href="/audio/aGa.wav">WAV</a></audio> 
+
 ## Can I use an waveform as the image?
 This is an open question.
