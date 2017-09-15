@@ -36,15 +36,5 @@ This is an open question?
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.4.0/wavesurfer.min.js"></script>
 
-<script>
-<div id="waveform"></div>
 
-var wavesurfer = WaveSurfer.create({
-    container: '#waveform',
-    waveColor: 'violet',
-    progressColor: 'purple'
-});
-
-wavesurfer.load('/audio/arda.mp3');
-</script>
 

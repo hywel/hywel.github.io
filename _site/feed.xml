@@ -4,7 +4,11 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://hywel.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://hywel.github.io" />
+<<<<<<< HEAD
 <updated>2017-09-15T14:13:14+10:00</updated>
+=======
+<updated>2017-09-15T14:08:25+10:00</updated>
+>>>>>>> 27a0da5b091ecb37c80a6d4613081e2637fd7a69
 <id>http://hywel.github.io/</id>
 <author>
   <name>Hywel Stoakes</name>
@@ -48,6 +52,7 @@
 
 &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.4.0/wavesurfer.min.js&quot;&gt;&lt;/script&gt;
 
+<<<<<<< HEAD
 &lt;script&gt;
 &lt;div id=&quot;waveform&quot;&gt;&lt;/div&gt;
 
@@ -59,6 +64,17 @@ var wavesurfer = WaveSurfer.create({
 
 wavesurfer.load(&#39;/audio/arda.mp3&#39;);
 &lt;/script&gt;
+=======
+&lt;div id=&quot;waveform&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;var wavesurfer = WaveSurfer.create({
+    container: ‘#waveform’,
+    waveColor: ‘violet’,
+    progressColor: ‘purple’
+});&lt;/p&gt;
+
+&lt;p&gt;wavesurfer.load(‘/audio/arda.mp3’);&lt;/p&gt;
+>>>>>>> 27a0da5b091ecb37c80a6d4613081e2637fd7a69
 
 
     &lt;p&gt;&lt;a href=&quot;http://hywel.github.io/blog/audio_test/&quot;&gt;Test of HTML5 audio in Jekyll&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://hywel.github.io&quot;&gt;Hywel Stoakes&lt;/a&gt; on April 24, 2017.&lt;/p&gt;
