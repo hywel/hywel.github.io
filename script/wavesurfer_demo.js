@@ -4,7 +4,7 @@ var wavesurfer = WaveSurfer.create({
   progressColor: 'purple'
 });
 
-wavesurfer.load('../audio/arda.wav');
+wavesurfer.load('//hywel.github.io/audio/arda.wav');
 
 var slider = document.querySelector('#slider');
 
