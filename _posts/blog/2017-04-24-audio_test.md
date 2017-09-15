@@ -48,4 +48,3 @@ var wavesurfer = WaveSurfer.create({
 wavesurfer.load('/audio/arda.mp3');
 </script>
 
-
