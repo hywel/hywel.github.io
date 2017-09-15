@@ -21,7 +21,6 @@ Here is an audio file (pulmonic consonant between two vowels).
     <source src='/audio/aGa.wav' type='audio/wav' />
 </audio>
 <a href="#" id="audioControl">play!</a>
-And add some functionality:
 
 var yourAudio = document.getElementById('yourAudio'),
     ctrl = document.getElementById('audioControl');
