@@ -166,9 +166,9 @@
 
 <p>Here is an audio file (pulmonic consonant between two vowels).</p>
 
-<audio controls="controls">
+<audio controls="controls" tabindex="0">
     <source src="/audio/arda.mp3" type="audio/mpeg" />
-    <source src="/audio/arda.ogg" type="audio/ogg" />
+    <source src="/audio/arda.wav" type="audio/wav" />
     Your browser does not support the HTML5 Audio element.
 </audio>
 
@@ -180,6 +180,22 @@
     <source src="/audio/aGa.ogg" type="audio/ogg" />
     Your browser does not support the HTML5 Audio element.
 </audio>
+
+<h2 id="using-java-script">Using Java Script</h2>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.4.0/wavesurfer.min.js"></script>
+
+<script>
+<div id="waveform"></div>
+
+var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: 'violet',
+    progressColor: 'purple'
+});
+
+wavesurfer.load('/audio/arda.mp3');
+</script>
 
 
         
