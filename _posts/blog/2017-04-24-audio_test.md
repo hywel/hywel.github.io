@@ -22,13 +22,33 @@ Here are a couple of audio files (pulmonic consonants between two vowels).
 <p>Your browser does not support audio playback, download the file:
   <a href="/audio/arda.wav">WAV</a></audio>  
 
-Here is some text to break them up.
+Here is some text to break them up.  
 
-<audio controls>
-  <source src="/audio/aGa.wav">
-<p>Your browser does not support audio playback, download the file:
-  <a href="/audio/aGa.wav">WAV</a></audio>  
-  
+<audio id="yourAudio" preload='none'>
+    <source src='/audio/aGa.wav' type='audio/wav' />
+</audio>
+<a href="#" id="audioControl">play!</a>
+And add some functionality:
+
+var yourAudio = document.getElementById('yourAudio'),
+    ctrl = document.getElementById('audioControl');
+
+ctrl.onclick = function () {
+
+    // Update the Button
+    var pause = ctrl.innerHTML === 'pause!';
+    ctrl.innerHTML = pause ? 'play!' : 'pause!';
+
+    // Update the Audio
+    var method = pause ? 'pause' : 'play';
+    yourAudio[method]();
+
+    // Prevent Default Action
+    return false;
+};
+
   
 ## Can I use an waveform as the image?
 This is an open question.
+
+
