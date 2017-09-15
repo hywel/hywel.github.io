@@ -17,9 +17,9 @@ date: 2017-04-24T17:36:09+10:00
 
 Here is an audio file (pulmonic consonant between two vowels).  
 
-<audio controls="controls">
+<audio controls="controls" tabindex="0">
     <source src="/audio/arda.mp3" type="audio/mpeg">
-    <source src="/audio/arda.ogg" type="audio/ogg">
+    <source src="/audio/arda.wav" type="audio/wav">
     Your browser does not support the HTML5 Audio element.
 </audio>
 
@@ -31,4 +31,20 @@ This is an open question?
     <source src="/audio/aGa.ogg" type="audio/ogg">
     Your browser does not support the HTML5 Audio element.
 </audio>
+
+## Using Java Script
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.4.0/wavesurfer.min.js"></script>
+
+<div id="waveform"></div>
+
+var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: 'violet',
+    progressColor: 'purple'
+});
+
+wavesurfer.load('/audio/arda.mp3');
+
+
 
