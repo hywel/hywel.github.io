@@ -15,14 +15,7 @@ date: 2017-04-24T17:36:09+10:00
 
 # A test of HTML5 audio in Jekyll
 
-Here are a couple of audio files (pulmonic consonants between two vowels).  
-
-<audio controls>
-  <source src="/audio/arda.wav">
-<p>Your browser does not support audio playback, download the file:
-  <a href="/audio/arda.wav">WAV</a></audio>  
-
-Here is some text to break them up.  
+Here is an audio file (pulmonic consonant between two vowels).  
 
 <audio id="yourAudio" preload='none'>
     <source src='/audio/aGa.wav' type='audio/wav' />
@@ -47,8 +40,7 @@ ctrl.onclick = function () {
     return false;
 };
 
-  
 ## Can I use an waveform as the image?
-This is an open question.
+This is an open question?
 
 

@@ -164,44 +164,35 @@
       <div class="entry-content">
         <h1 id="a-test-of-html5-audio-in-jekyll">A test of HTML5 audio in Jekyll</h1>
 
-<p>Here are a couple of audio files (pulmonic consonants between two vowels).</p>
-
-<audio controls="">
-  <source src="/audio/arda.wav" />
-<p>Your browser does not support audio playback, download the file:
-  <a href="/audio/arda.wav">WAV</a>&lt;/audio&gt;  
-
-Here is some text to break them up.  
+<p>Here is an audio file (pulmonic consonant between two vowels).</p>
 
 <audio id="yourAudio" preload="none">
     <source src="/audio/aGa.wav" type="audio/wav" />
 </audio>
-<a href="#" id="audioControl">play!</a>
-And add some functionality:
+<p><a href="#" id="audioControl">play!</a>
+And add some functionality:</p>
 
-var yourAudio = document.getElementById('yourAudio'),
-    ctrl = document.getElementById('audioControl');
+<p>var yourAudio = document.getElementById(‘yourAudio’),
+    ctrl = document.getElementById(‘audioControl’);</p>
 
-ctrl.onclick = function () {
+<p>ctrl.onclick = function () {</p>
 
-    // Update the Button
-    var pause = ctrl.innerHTML === 'pause!';
-    ctrl.innerHTML = pause ? 'play!' : 'pause!';
+<div class="highlighter-rouge"><pre class="highlight"><code>// Update the Button
+var pause = ctrl.innerHTML === 'pause!';
+ctrl.innerHTML = pause ? 'play!' : 'pause!';
 
-    // Update the Audio
-    var method = pause ? 'pause' : 'play';
-    yourAudio[method]();
+// Update the Audio
+var method = pause ? 'pause' : 'play';
+yourAudio[method]();
 
-    // Prevent Default Action
-    return false;
-};
+// Prevent Default Action
+return false; };
+</code></pre>
+</div>
 
-  
-## Can I use an waveform as the image?
-This is an open question.
+<h2 id="can-i-use-an-waveform-as-the-image">Can I use an waveform as the image?</h2>
+<p>This is an open question?</p>
 
-
-</p></audio>
 
         
           <div id="disqus_thread"></div><!-- /#disqus_thread -->

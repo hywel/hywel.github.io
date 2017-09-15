@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://hywel.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://hywel.github.io" />
-<updated>2017-09-15T11:41:22+10:00</updated>
+<updated>2017-09-15T11:48:16+10:00</updated>
 <id>http://hywel.github.io/</id>
 <author>
   <name>Hywel Stoakes</name>
@@ -27,44 +27,35 @@
   <content type="html">
     &lt;h1 id=&quot;a-test-of-html5-audio-in-jekyll&quot;&gt;A test of HTML5 audio in Jekyll&lt;/h1&gt;
 
-&lt;p&gt;Here are a couple of audio files (pulmonic consonants between two vowels).&lt;/p&gt;
-
-&lt;audio controls=&quot;&quot;&gt;
-  &lt;source src=&quot;/audio/arda.wav&quot; /&gt;
-&lt;p&gt;Your browser does not support audio playback, download the file:
-  &lt;a href=&quot;/audio/arda.wav&quot;&gt;WAV&lt;/a&gt;&amp;lt;/audio&amp;gt;  
-
-Here is some text to break them up.  
+&lt;p&gt;Here is an audio file (pulmonic consonant between two vowels).&lt;/p&gt;
 
 &lt;audio id=&quot;yourAudio&quot; preload=&quot;none&quot;&gt;
     &lt;source src=&quot;/audio/aGa.wav&quot; type=&quot;audio/wav&quot; /&gt;
 &lt;/audio&gt;
-&lt;a href=&quot;#&quot; id=&quot;audioControl&quot;&gt;play!&lt;/a&gt;
-And add some functionality:
+&lt;p&gt;&lt;a href=&quot;#&quot; id=&quot;audioControl&quot;&gt;play!&lt;/a&gt;
+And add some functionality:&lt;/p&gt;
 
-var yourAudio = document.getElementById(&#39;yourAudio&#39;),
-    ctrl = document.getElementById(&#39;audioControl&#39;);
+&lt;p&gt;var yourAudio = document.getElementById(‘yourAudio’),
+    ctrl = document.getElementById(‘audioControl’);&lt;/p&gt;
 
-ctrl.onclick = function () {
+&lt;p&gt;ctrl.onclick = function () {&lt;/p&gt;
 
-    // Update the Button
-    var pause = ctrl.innerHTML === &#39;pause!&#39;;
-    ctrl.innerHTML = pause ? &#39;play!&#39; : &#39;pause!&#39;;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Update the Button
+var pause = ctrl.innerHTML === &#39;pause!&#39;;
+ctrl.innerHTML = pause ? &#39;play!&#39; : &#39;pause!&#39;;
 
-    // Update the Audio
-    var method = pause ? &#39;pause&#39; : &#39;play&#39;;
-    yourAudio[method]();
+// Update the Audio
+var method = pause ? &#39;pause&#39; : &#39;play&#39;;
+yourAudio[method]();
 
-    // Prevent Default Action
-    return false;
-};
+// Prevent Default Action
+return false; };
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-  
-## Can I use an waveform as the image?
-This is an open question.
+&lt;h2 id=&quot;can-i-use-an-waveform-as-the-image&quot;&gt;Can I use an waveform as the image?&lt;/h2&gt;
+&lt;p&gt;This is an open question?&lt;/p&gt;
 
-
-&lt;/p&gt;&lt;/audio&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://hywel.github.io/blog/audio_test/&quot;&gt;Test of HTML5 audio in Jekyll&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://hywel.github.io&quot;&gt;Hywel Stoakes&lt;/a&gt; on April 24, 2017.&lt;/p&gt;
   </content>
