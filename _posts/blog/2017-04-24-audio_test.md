@@ -36,8 +36,10 @@ This is an open question?
 
 
 <!-- main wavesurfer.js lib -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/wavesurfer.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.4.0/wavesurfer.min.js"></script>
 
+
+<script>
 <div id="waveform"></div>
 
 <div style="text-align: center">
@@ -60,6 +62,7 @@ This is an open question?
     </div>
   </p>
 </div>
+</script>
 
 <script src="script/wavesurfer_demo.js"></script>
 
@@ -71,7 +74,7 @@ This is an open question?
 
 <h2 id="zoom">Zoom</h2>
 
-<p data-height="243" data-theme-id="0" data-slug-hash="GozaaG" data-default-tab="result" data-user="katspaugh" class='codepen'>See the Pen <a href='http://codepen.io/katspaugh/pen/GozaaG/'>wavesurfer.js zoom</a> by katspaugh (<a href='http://codepen.io/katspaugh'>@katspaugh</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="243" data-theme-id="0" data-slug-hash="GozaaG" data-default-tab="result" data-user="katspaugh" class='codepen'>See the Pen <a href='https://codepen.io/anon/pen/ZXGBPa/'>wavesurfer.js zoom</a> by xxxx (<a href='http://codepen.io/katspaugh'>@katspaugh</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
   <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
   <p>
