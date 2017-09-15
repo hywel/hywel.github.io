@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://hywel.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://hywel.github.io" />
-<updated>2017-09-15T13:39:38+10:00</updated>
+<updated>2017-09-15T13:45:41+10:00</updated>
 <id>http://hywel.github.io/</id>
 <author>
   <name>Hywel Stoakes</name>
@@ -38,9 +38,11 @@
 &lt;h2 id=&quot;can-i-use-an-waveform-as-the-image&quot;&gt;Can I use an waveform as the image?&lt;/h2&gt;
 &lt;p&gt;This is an open question?&lt;/p&gt;
 
-&lt;embed src=&quot;/audio/aGa.mp3&quot; width=&quot;200px&quot; height=&quot;50px&quot; /&gt;
-
-&lt;embed src=&quot;/audio/aGa.ogg&quot; width=&quot;200px&quot; height=&quot;50px&quot; /&gt;
+&lt;audio controls=&quot;controls&quot;&gt;
+    &lt;source src=&quot;/audio/aGa.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+    &lt;source src=&quot;/audio/aGa.ogg&quot; type=&quot;audio/ogg&quot; /&gt;
+    Your browser does not support the HTML5 Audio element.
+&lt;/audio&gt;
 
 
     &lt;p&gt;&lt;a href=&quot;http://hywel.github.io/blog/audio_test/&quot;&gt;Test of HTML5 audio in Jekyll&lt;/a&gt; was originally published by Hywel Stoakes at &lt;a href=&quot;http://hywel.github.io&quot;&gt;Hywel Stoakes&lt;/a&gt; on April 24, 2017.&lt;/p&gt;

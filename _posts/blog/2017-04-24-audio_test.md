@@ -26,6 +26,9 @@ Here is an audio file (pulmonic consonant between two vowels).
 ## Can I use an waveform as the image?
 This is an open question?
 
-<embed src="/audio/aGa.mp3" width="200px" height="50px">
-<embed src="/audio/aGa.ogg" width="200px" height="50px">
+<audio controls="controls">
+    <source src="/audio/aGa.mp3" type="audio/mpeg">
+    <source src="/audio/aGa.ogg" type="audio/ogg">
+    Your browser does not support the HTML5 Audio element.
+</audio>
 
