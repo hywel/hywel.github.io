@@ -17,29 +17,15 @@ date: 2017-04-24T17:36:09+10:00
 
 Here is an audio file (pulmonic consonant between two vowels).  
 
-<audio id="yourAudio" preload='none'>
-    <source src='/audio/aGa.wav' type='audio/wav' />
+<audio controls="controls">
+    <source src="/audio/arda.mp3" type="audio/mpeg">
+    <source src="/audio/arda.ogg" type="audio/ogg">
+    Your browser does not support the HTML5 Audio element.
 </audio>
-<a href="#" id="audioControl">play!</a>
-
-var yourAudio = document.getElementById('yourAudio'),
-    ctrl = document.getElementById('audioControl');
-
-ctrl.onclick = function () {
-
-    // Update the Button
-    var pause = ctrl.innerHTML === 'pause!';
-    ctrl.innerHTML = pause ? 'play!' : 'pause!';
-
-    // Update the Audio
-    var method = pause ? 'pause' : 'play';
-    yourAudio[method]();
-
-    // Prevent Default Action
-    return false;
-};
 
 ## Can I use an waveform as the image?
 This is an open question?
 
+<embed src="/audio/aGa.mp3" width="200px" height="50px">
+<embed src="/audio/aGa.ogg" width="200px" height="50px">
 

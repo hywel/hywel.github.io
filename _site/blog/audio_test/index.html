@@ -166,31 +166,18 @@
 
 <p>Here is an audio file (pulmonic consonant between two vowels).</p>
 
-<audio id="yourAudio" preload="none">
-    <source src="/audio/aGa.wav" type="audio/wav" />
+<audio controls="controls">
+    <source src="/audio/arda.mp3" type="audio/mpeg" />
+    <source src="/audio/arda.ogg" type="audio/ogg" />
+    Your browser does not support the HTML5 Audio element.
 </audio>
-<p><a href="#" id="audioControl">play!</a></p>
-
-<p>var yourAudio = document.getElementById(‘yourAudio’),
-    ctrl = document.getElementById(‘audioControl’);</p>
-
-<p>ctrl.onclick = function () {</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>// Update the Button
-var pause = ctrl.innerHTML === 'pause!';
-ctrl.innerHTML = pause ? 'play!' : 'pause!';
-
-// Update the Audio
-var method = pause ? 'pause' : 'play';
-yourAudio[method]();
-
-// Prevent Default Action
-return false; };
-</code></pre>
-</div>
 
 <h2 id="can-i-use-an-waveform-as-the-image">Can I use an waveform as the image?</h2>
 <p>This is an open question?</p>
+
+<embed src="/audio/aGa.mp3" width="200px" height="50px" />
+
+<embed src="/audio/aGa.ogg" width="200px" height="50px" />
 
 
         
