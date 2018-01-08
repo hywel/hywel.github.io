@@ -14,12 +14,12 @@ There are many researchers within the phonetic sciences that have compiled compr
 ## Labeling and Segmenting 
 
 - [Praat](http://www.praat.org): Should be in every linguist's toolbox.
-- [Elan](https://tla.mpi.nl/tools/tla-tools/elan/): from The Language Archive at MPI.
+- [ELAN](https://tla.mpi.nl/tools/tla-tools/elan/): from The Language Archive at MPI.
 - [Emu](https://ips-lmu.github.io/EMU-webApp/) The webapp front end for the [EmuR Speech Database Management System](http://ips-lmu.github.io/EMU.html)
 
 ## Analysis and Graphical Representation
 
-- [R](r-project.org)
+- [R](www.r-project.org)
 - [Rstudio](https://www.rstudio.com): A development environment and GUI frontend for R
 - various R packages including `ggplot2` and the whole tidyverse suite of packages.
 - [Python](https://www.python.org)
