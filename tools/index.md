@@ -9,7 +9,7 @@ search_omit: false
 
 There are many researchers within the phonetic sciences that have compiled comprehensive and very useful lists of tools that they use for phonetics.[^1] This small list doesn't seek to replace these, but I will hopefully add to the knowledge base and give a few links to future tutorials relevent to the phonetician and data scientist.
 
-[^1]: One of my personal favorites is a post by [Will Styler](http://linguisticmystic.com/2015/03/10/a-phoneticians-software-toolkit/). 
+[^1]: One of my personal favorites is a post by [Will Styler](http://savethevowels.org/posts/phoneticians_software.html) who also has a great guide for [Praat](http://savethevowels.org/praat/) that is regularly updated. 
 
 ## Labeling and Segmenting 
 
