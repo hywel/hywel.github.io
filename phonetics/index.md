@@ -12,9 +12,9 @@ image:
 # Work
 A link to the [Phonetics Laboratory at The University of Melbourne](http://arts.unimelb.edu.au/soll/research/research-groups/phonetics-laboratory)
 
-- The Segmental Phonetics of Consonants Australian Languages
-- Coarticulation
-- Nasalisation
+- The Segmental Phonetics of Consonants: Australian Languages
+- Coarticulation and Prosody in Australian Languages
+- Nasalisation - crosslinguistic patterns
 
 # Teaching
 
