@@ -12,6 +12,10 @@ image:
 # Work
 A link to the [Phonetics Laboratory at The University of Melbourne](http://arts.unimelb.edu.au/soll/research/research-groups/phonetics-laboratory)
 
+- The Segmental Phonetics of Consonants Australian Languages
+- Coarticulation
+- Nasalisation
+
 # Teaching
 
 - [LING20005](https://handbook.unimelb.edu.au/view/current/LING20005): Phonetics
